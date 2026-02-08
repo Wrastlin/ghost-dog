@@ -217,6 +217,75 @@ These pages contain SLA-relevant content but are web-only. Save as PDF from your
 
 ---
 
+## SLA-Specific Documents (New -- from SLA Booklet)
+
+These sources were added as part of the [SLA Booklet](/sla-booklet.md) cataloguing effort.
+
+### Insurance TPA Service Level Agreements
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| Lloyd's TPA Agreement (LMA 9008) | International standard TPA agreement | https://assets.lloyds.com/assets/pdf-premium-and-claims-handling-lma-9008-third-party-administrator-agreement-1/1/pdf-premium-and-claims-handling-LMA-9008-Third-Party-Administrator-Agreement.pdf |
+| New India Assurance TPA SLA | Sample SLA per CIC Order | https://newindia.co.in/cms/66272c21-8900-4312-9220-3933bb3c23c3/SAMPLE%20OF%20SLA%20AS%20PER%20CIC%20ORDER.pdf |
+| Mississippi TPA Services Contract | Public sector TPA contract | https://srm.magic.ms.gov/SAP/EBP/DOCSERVER/?ATTKGET&KPID=8B4E7B085F0B1EEC92977028D2F619F1&KPCLASS=BBP_L_DOC&SAP-CLIENT=100 |
+| SEC.gov TPA Agreement Template | SEC-filed TPA agreement | https://www.sec.gov/Archives/edgar/data/1020523/000102052302000030/exi.htm |
+| Citizens MRP RFI (15-0015) | Contractor Repair Management RFI | https://www.citizensfla.com/documents/20702/15153077/RFI+15-0015+-+Contractor+Repair+Management+Program.pdf |
+| Citizens MRP Addendum (ITN 25-0001) | MRP addendum No. 2 | https://www.citizensfla.com/documents/20702/35120301/Addendum+No.+2.pdf |
+
+### IICRC Standards
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| IICRC S500 Water Damage Standard Overview | Foundational water damage restoration standard | https://graduation.escoffier.edu/filedownload.ashx/scholarship/dlFnNE/Iicrc-Water-Damage-Standard-S500.pdf |
+| AS-IICRC S500 Press Release (2025) | Latest edition updates | https://iicrc.org/wp-content/uploads/2025/04/AS-IICRC-S500-Published-Press-Release_March-2025.pdf |
+| IICRC S500 (Scribd) | Community-uploaded reference | https://www.scribd.com/document/673040884/IICRC-S500-Professional-Water-Damage-Restoration |
+| WRT/ASD Training Manual (UK, 2023) | Practical S500 application manual | https://nationalfloodschool.co.uk/wp-content/uploads/WRT-ASD-Manual-2023-V2.1-ASD-and-WRT-August-2023.pdf |
+
+### RIA Position Statements
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| RIA Position Paper Summary Guide | Main portal for all position papers | http://www.restorationindustry.org/ria-position-paper-summary-guide |
+| RIA TPA Pricing Position Statements | Contractor rights positions | https://training.restorationindustry.org/pricing-position-statements |
+| RIA Position Statements #3 & #4 Press Release | September 2022 release | https://www.restorationindustry.org/sites/default/files/docs/ria-press-release-pricing-position-statements-3-and-4-release-september-2022.pdf |
+| RIA TPA Statement #3 -- Referral Fees | Referral fees for non-TPA-referred jobs | https://www.restorationindustry.org/sites/default/files/docs/RIA%20TPA%20Position%20Statement%203%20-%20Referral%20Fees%20for%20Jobs%20Not%20Referred%20by%20the%20TPA.pdf |
+| RIA TPA Statement #5 -- Deviations from Guidelines | TPA guideline deviation practices | https://www.restorationindustry.org/sites/default/files/docs/RIA%20TPA%20Position%20Statement%205%20-%20Deviations%20from%20Guidelines.pdf |
+
+### Contractor/Vendor Agreements
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| Repair Shop Agreement (Managed Repair Network) | Scribd-hosted managed repair agreement | https://www.scribd.com/document/718925335/Repair-Shop-Agreement |
+| Sweetwater Restoration Subcontractor Agreement | Real restoration subcontractor agreement (2021) | https://sweetwaterrestoration.com/wp-content/uploads/2022/12/1-Subcontractor-Agreement-5.2021.pdf |
+
+### SLA Templates & Reference
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| BrightGauge MSA Template | Well-structured managed services agreement | http://info.brightgauge.com/hubfs/Files/Managed%20Services%20Agreement%20Template.pdf |
+| Service Desk Institute SLA Template | Detailed SLA template with KPIs | https://www.servicedeskinstitute.com/wp-content/uploads/2024/08/Naked_Service_Desk_Series__Service_Level_Agreement_Template.pdf |
+| ScopeStack MSA Template | Modern MSA format with KPIs | https://scopestack.io/wp-content/uploads/2024/07/ScopeStack-Managed-Services-Agreement-MSA-Template.pdf |
+| HelixOps SLA Examples | SLA examples with enforcement strategies | https://blogs.helixops.ai/sla-template-examples/?print-posts=pdf |
+
+### Academic & Research
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| CAS TPA Service Pricing Paper | Actuarial paper on TPA fee structures | https://www.casact.org/sites/default/files/database/dpp_dpp96_96dpp137.pdf |
+| UNL TPA Service Pricing Research | Academic research on TPA pricing models | https://digitalcommons.unl.edu/context/joap/article/1111/viewcontent/Jeng.pdf |
+
+### Government/Public Sector SLAs
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| WKU Facilities Management SLA | University facilities SLA | https://www.wku.edu/facilities/sla_dfm22.pdf |
+| System Automation Evoke SLA | Technology services SLA | https://systemautomation.com/wp-content/uploads/2024/02/Evoke-SLA.pdf |
+| Secured Data Technologies MSA (2025) | Managed services agreement with SLA tiers | https://www.securedatatech.com/wp-content/uploads/2025/06/Managed-Services-Agreement.pdf |
+| Mazagon Dock SLA | Detailed penalty/remedy clause language | https://mazagondock.in/app/writereaddata/tenders/800263424202323950PMSLA-3208053.pdf |
+
+### Regulatory Frameworks
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| NAIC Model Guidelines GDL-1090 | Definitive regulatory framework for TPAs | https://content.naic.org/sites/default/files/GL1090.pdf |
+| NAIC Independent Adjuster Guidelines GL-1224 | Independent adjuster licensing framework | https://content.naic.org/sites/default/files/inline-files/GDL-1224.pdf |
+| NAIC State Licensing Handbook Ch. 28 (TPAs) | State-by-state TPA licensing requirements | https://content.naic.org/sites/default/files/inline-files/Chapter%2028.pdf |
+| Sedgwick JBWCP Service Guidelines | Public sector TPA service guidelines | https://courts.ca.gov/system/files/file/jbwcp_sedgwick_service_guidelines.pdf |
+
+---
+
 ## Review & Complaint Sources
 
 | TPA | BBB | Glassdoor | Indeed |

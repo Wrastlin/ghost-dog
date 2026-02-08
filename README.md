@@ -9,6 +9,7 @@ TPA SLA research, competitive analysis, and contractor service level agreement f
 | Document | Description |
 |----------|-------------|
 | [**Contractor SLA**](contractor-sla.md) | Complete Contractor Service Level Agreement for mitigation and reconnaissance services |
+| [**SLA Booklet**](sla-booklet.md) | Curated catalogue of 35 TPA SLA documents, contractor guidelines, and industry booklets with direct links |
 | [**Executive Summary**](executive-summary.md) | One-page overview of the TPA landscape, SLA benchmarks, and recommended differentiators |
 
 ---
