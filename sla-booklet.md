@@ -3,7 +3,7 @@
 > **Curated catalogue of TPA Service Level Agreements, contractor guidelines, and industry booklets.**
 > For use by [ReliableClaim.com](https://reliableclaim.com) in building competitive SLA frameworks.
 >
-> Last updated: 2026-02-08 (v2 -- expanded to 90+ documents)
+> Last updated: 2026-02-08 (v3 -- expanded to 112 documents)
 
 ---
 
@@ -169,7 +169,82 @@ Useful for structuring ReliableClaim's own SLA documents. These provide formatti
 
 ## 7. Contractor/Vendor Specific Agreements
 
-Real contractor and subcontractor agreements from the restoration industry.
+Real contractor and subcontractor agreements from the restoration industry. This section contains the most operationally valuable documents in the entire booklet -- actual agreements that restoration contractors sign with TPAs.
+
+### Alacrity Solutions (5 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 91 | **Alacrity Master Contract (COMPLETE 20+ PAGE AGREEMENT)** -- The goldmine: full contractor agreement with all SLA terms, network fees, payment terms, warranty requirements | [PDF](https://em.alacrity.net/Download/Master_Contract.pdf) |
+| 92 | **Alacrity Network Fee Addendum (EXACT PRICING)** -- 7% GC, 11% service-only, 4% other, 5.5% tree removal | [PDF](https://em.alacrity.net/Download/NetworkFeeAddendum.pdf) |
+| 93 | **Alacrity Network Contractor Insurance Requirements** -- Coverage limits, additional insured requirements | [PDF](https://em.alacrity.net/Download/Insurance%20Requirements.pdf) |
+| 94 | **Alacrity Contractor Network Requirements** -- Pre-qual: 2 yrs business, licenses, Xactimate, financial stability, background checks | [Web](https://www.alacritysolutions.com/solutions/network-solutions/join-our-contractor-network/) |
+| 95 | **Alacrity MRP Contractor Pre-qualification Application** | [Web](https://www.alacritysolutions.com/contractor-prequal/) |
+
+**Key terms from Alacrity Master Contract:**
+- Work orders issued at sole discretion of Network Administrator
+- Compensation = unit prices in estimating software modified by Adjustment Factor
+- Policyholder is sole party obligated to pay contractor (not TPA)
+- Network fee required for AlacNet system access, training, proprietary documents
+- Warranties run from Final Completion date with Certificate of Satisfaction/Completion
+- Contractor must indemnify Network Administrator against all claims/judgments
+- No lost profits or consequential damages recoverable from Network Administrator
+- Contract termination: 30 days written notice by either party
+
+### Contractor Connection / Crawford (3 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 96 | **Contractor Connection Employee Background Screening Addendum** -- Mandatory background check requirements for all contractor employees | [PDF](https://apps.contractorconnection.com/contrDocs/BackGroundAddendum.pdf) |
+| 97 | **Contractor Connection Terms & Conditions** -- 5-year workmanship warranty, repair dispute procedures | [Web](https://home.contractorconnection.com/terms/) |
+| 98 | **Contractor Connection Resources Page** -- Contractor documentation portal | [Web](https://home.contractorconnection.com/resources/) |
+
+### FirstOnSite Property Restoration (4 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 99 | **FirstOnSite Client Work Agreement Terms & Conditions (October 2025)** -- Current 3-page terms with emergency work disclaimers, arbitration clauses, liability waivers | [PDF](https://firstonsite.com/es/wp-content/uploads/client-work-agreement-terms-conditions_effective-10.10.25.pdf) |
+| 100 | **FirstOnSite California Home Improvement Contract Addendum** -- California-specific compliance, mechanics lien warnings, payment protections | [PDF](https://firstonsite.com/wp-content/uploads/california-addendum_3.29.21.pdf) |
+| 101 | **FirstOnSite Homeowner's Guide to Disaster Recovery** -- Process overview, preferred contractor relationships, sub-trade standards | [PDF](https://firstonsite.com/en-CA/wp-content/uploads/2020/07/homeowners-guide-to-disaster-recovery.pdf) |
+| 102 | **FirstService Corporation Annual Information Form (2024)** -- Corporate overview of parent company (FirstOnSite, Paul Davis, Interstate, Blue) | [PDF](https://www.firstservice.com/wp-content/uploads/2025/03/Q4-2024-AIF-FINAL-21Feb25.pdf) |
+
+**Key terms from FirstOnSite Agreement:**
+- Emergency work disclaimer: temporary repairs, not liable for damages during/after temporary work
+- No environmental liability: not liable for mold, asbestos, viral contamination
+- Default remedies: can suspend work, terminate, recover all amounts plus legal fees
+- Arbitration required for all disputes
+
+### Paul Davis Restoration (4 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 103 | **Paul Davis Restoration Agreement (Court Filing -- Actual Contract)** -- Real restoration agreement from 2022 court case showing actual contract terms | [Web](https://www.scribd.com/document/915206014/Paul-Davis-Restoration-Restoration-Agreement-case-number-2022cv000659-Dawn-R-Jackson-Racine-Couty-Court) |
+| 104 | **Paul Davis Preferred Vendor Programs Overview** -- 300+ franchise network, 24/7 response, IICRC training, performance warranty, satisfaction surveys | [Web](https://pauldavis.com/insurance/preferred-vendors/) |
+| 105 | **Paul Davis Addressing Insurance Needs** -- 50-year history, full-service restoration, national network standards | [Web](https://pauldavis.com/insurance/addressing-needs/) |
+| 106 | **Paul Davis Business/Franchise Portal** -- Franchise model overview, insurance partnerships | [Web](https://www.pauldavisbusiness.com) |
+
+### BluSky Restoration Contractors (1 document)
+
+| # | Document | Link |
+|---|----------|------|
+| 107 | **BluSky Subcontractor Qualification Packet (COMPLETE 14-PAGE AGREEMENT)** -- Master subcontractor agreement, insurance requirements ($1M GL, $500K WC), performance standards, liquidated damages, warranty terms | [PDF](https://goblusky.com/media/subcontractor-qualification-packet-rev.-12.14.2021.pdf) |
+
+**Key terms from BluSky Agreement:**
+- General Liability: $1,000,000 aggregate minimum
+- Workers Comp: $500,000 per occurrence; Commercial Auto: $500,000 per occurrence
+- BluSky named as additional insured with waiver of subrogation
+- Time is of the essence -- liquidated damages for delays
+- 10% retainage withheld until project completion
+- $25/day fine for failing to clean jobsite
+- $1,000 fine for skipping safety orientation meetings
+
+### ServiceChannel (Multi-TPA Platform) (1 document)
+
+| # | Document | Link |
+|---|----------|------|
+| 108 | **ServiceChannel Provider Standard Services Agreement** -- Platform agreement used by multiple TPAs, work order terms, acceptance criteria, insurance minimums ($2M GL aggregate, $1M WC), independent contractor status | [PDF](https://servicechannel.com/resources-download/customer_scmprovider_services_agreement.pdf) |
+
+### General/Legacy Agreements
 
 | # | Document | Link |
 |---|----------|------|
@@ -243,6 +318,15 @@ Public sector TPA contracts are gold -- they're fully transparent, include expli
 | 76 | **California CPUC Lifeline TPA Contract Management Audit (2020)** | [PDF](https://www.cpuc.ca.gov/-/media/cpuc-website/transparency/commissioner-committees/finance-and-administration/2020/sept-2-2020-commission-meeting-items/cpuc-lifeline-tpa-contract-management-audit-presentation-9-2-2020.pdf) |
 | 77 | **PRISM Risk Management TPA Comparison Guide** | [Web](https://www.prismrisk.gov/member-services/services/vendor-services/third-party-administrators-tpas/) |
 | 78 | **ICRMA Workers Compensation TPA Performance Standards (2023)** | [PDF](https://www.icrma.org/assets/private/files/Policy_WC_TPA_PerformanceStandards_20230810.pdf) |
+
+### Additional Comparative / Network Agreement Templates
+
+| # | Document | Link |
+|---|----------|------|
+| 109 | **California DHCS Network Provider Agreement Checklist** -- Comprehensive checklist for network provider agreements (medical but applicable to TPA networks) | [PDF](https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/APL2019/APL19-001AttachmentA.pdf) |
+| 110 | **FirstEnergy Network Access Agreement (Infrastructure)** -- Network connection agreement template showing SLA structure | [PDF](https://www.firstenergycorp.com/content/dam/supplychain/files/docs-coupa-update/Network%20Access%20Agreement.pdf) |
+| 111 | **Oracle Services Provider Agreement (SPA) Sample** -- Statement of Work structure, deliverables, acceptance criteria, payment terms | [PDF](https://www.oracle.com/a/ocom/docs/billable-spa-sample.pdf) |
+| 112 | **Comcast Enterprise Services SLA (Interstate Wavelength)** -- Restoration standards, response objectives, service level definitions | [PDF](https://business.comcast.com/~/media/business_comcast_com/PDFs/Terms-and-Conditions---Enterprise/2024%20Terms%20and%20Conditions%20Interstate%20Wavelength%20v.1.0.pdf) |
 
 ---
 
@@ -378,6 +462,8 @@ For TPAs using independent adjusters as contractors:
 
 ## 14. Summary by TPA Provider
 
+### Insurance/WC TPAs
+
 | TPA | # Docs | Key Findings |
 |-----|--------|--------------|
 | **Sedgwick** | 5 | NFIB programs (2023-2024), school district agreements, county/municipal contracts. Royal Oak MI had service level concerns. |
@@ -387,7 +473,18 @@ For TPAs using independent adjusters as contractors:
 | **ESIS (Chubb)** | 4 | Seamless transition methodology, technology/analytics overview, ProClaim playbook. |
 | **York Risk Services** | 4 | Performance audit found SLA tracking gaps and no financial penalties. California regulatory audit results. |
 
-### TPA Fee Structures (from academic research)
+### Restoration TPAs & Contractor Networks
+
+| TPA/Network | # Docs | Key Findings |
+|-------------|--------|--------------|
+| **Alacrity Solutions** | 5 | **Complete master contract available.** Network fees: 7% GC, 11% service-only, 4% other, 5.5% tree. Work orders at TPA sole discretion. Policyholder pays contractor (not TPA). 30-day termination. |
+| **Contractor Connection (Crawford)** | 3 | Background screening addendum, 5-year workmanship warranty, contractor resources portal. |
+| **FirstOnSite** | 4 | Current 2025 terms, CA-specific addendum, arbitration required, no environmental liability, Chubb insured. |
+| **Paul Davis** | 4 | Actual contract from 2022 court filing, 300+ franchise network, IICRC training, performance warranty. |
+| **BluSky** | 1 | **Complete 14-page subcontractor packet.** $1M GL, $500K WC, 10% retainage, $25/day jobsite cleaning fine, $1K safety orientation fine. |
+| **ServiceChannel** | 1 | Multi-TPA platform agreement. $2M GL aggregate, $1M WC. Independent contractor status. 7-day cert deadline or termination. |
+
+### TPA Fee Structures (from academic research + Alacrity addendum)
 
 | Model | Description |
 |-------|-------------|
@@ -396,6 +493,7 @@ For TPAs using independent adjusters as contractors:
 | **% of incurred/paid loss** | Fee scales with claim costs |
 | **% of premium** | Fee tied to premium volume |
 | **% of employees** | Fee based on covered population |
+| **Flat % of job (Alacrity)** | 7% GC, 11% service-only, 4% other programs, 5.5% tree removal |
 
 ---
 
@@ -403,13 +501,16 @@ For TPAs using independent adjusters as contractors:
 
 For ReliableClaim.com SLA development, review in this order:
 
-### Phase 1 -- Actual TPA Contracts (MUST READ)
+### Phase 1 -- Actual Contractor/TPA Agreements (MUST READ)
 
-1. **Citizens-Crawford Agreement (#1 or #2)** -- 67-page real contract with all SLA details
-2. **Lloyd's TPA Agreement (#6)** -- International standard
-3. **Mississippi TPA Contract (#8)** -- Public sector requirements
-4. **Orange County Sedgwick WC Contract (#39)** -- County-level TPA contract
-5. **Aon SLA Template (#80)** -- Major broker's standard SLA structure
+1. **Alacrity Master Contract (#91)** -- Complete 20+ page restoration TPA contractor agreement with exact terms
+2. **Alacrity Network Fee Addendum (#92)** -- Exact fee percentages (7%/11%/4%/5.5%)
+3. **BluSky Subcontractor Packet (#107)** -- 14-page agreement with insurance, fines, retainage
+4. **Citizens-Crawford Agreement (#1 or #2)** -- 67-page managed repair TPA contract
+5. **FirstOnSite Client Work Agreement (#99)** -- Current 2025 restoration terms
+6. **Paul Davis Restoration Agreement (#103)** -- Actual contract from court filing
+7. **Lloyd's TPA Agreement (#6)** -- International standard
+8. **Aon SLA Template (#80)** -- Major broker's standard SLA structure
 
 ### Phase 2 -- Industry Standards
 
@@ -456,13 +557,22 @@ For ReliableClaim.com SLA development, review in this order:
 
 ### Publicly Available (High Value)
 
-- **Citizens Florida contracts (#1-5)** -- The goldmine. Actual 67-page contracts with specific SLA terms, payment structures, warranty requirements, and performance metrics
+- **Alacrity Master Contract + Fee Addendum (#91-93)** -- Complete restoration TPA contractor agreement with exact fee percentages. The single most valuable find.
+- **BluSky Subcontractor Packet (#107)** -- 14-page agreement with insurance minimums, liquidated damages, fines
+- **FirstOnSite Client Work Agreement (#99)** -- Current 2025 restoration terms
+- **ServiceChannel Provider Agreement (#108)** -- Multi-TPA platform terms with $2M GL requirement
+- **Citizens Florida contracts (#1-5)** -- 67-page managed repair TPA contract
 - **Lloyd's agreement (#6)** -- International perspective on TPA governance
-- **Sweetwater subcontractor agreement (#28)** -- Real restoration industry subcontractor terms
 - **All government RFPs (#62-78)** -- Public records, fully transparent SLA requirements
 - **GB Carrier Practice Overviews (#41-42)** -- How a top TPA presents its service standards
 - **ESIS white papers (#54-56)** -- Chubb's TPA methodology documents
 - **York Risk audit (#58)** -- Critical lessons on SLA enforcement failures
+
+### Scribd (Free with Account)
+
+- IICRC S500 document (#13) -- May require Scribd subscription
+- Repair Shop Agreement (#27) -- Managed repair contractor agreement
+- Paul Davis Restoration Agreement (#103) -- Court filing, may require Scribd access
 
 ### Scribd (Free with Account)
 

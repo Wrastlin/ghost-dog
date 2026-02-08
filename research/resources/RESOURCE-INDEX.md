@@ -349,6 +349,32 @@ These sources were added as part of the [SLA Booklet](/sla-booklet.md) catalogui
 | YCPARMIA "What is a TPA?" Guide | TPA overview for public entities | http://www.ycparmia.org/risk/20.pdf |
 | PRISM TPA Comparison Guide | Public entity risk management | https://www.prismrisk.gov/member-services/services/vendor-services/third-party-administrators-tpas/ |
 
+### Restoration TPA Contractor Agreements (v3 expansion)
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| Alacrity Master Contract | Complete 20+ page contractor agreement | https://em.alacrity.net/Download/Master_Contract.pdf |
+| Alacrity Network Fee Addendum | Exact fee %: 7% GC, 11% svc, 4% other, 5.5% tree | https://em.alacrity.net/Download/NetworkFeeAddendum.pdf |
+| Alacrity Insurance Requirements | Coverage limits, additional insured | https://em.alacrity.net/Download/Insurance%20Requirements.pdf |
+| Alacrity Contractor Network Page | Pre-qualification requirements | https://www.alacritysolutions.com/solutions/network-solutions/join-our-contractor-network/ |
+| Alacrity MRP Pre-qualification | Application portal | https://www.alacritysolutions.com/contractor-prequal/ |
+| CC Background Screening Addendum | Employee background check requirements | https://apps.contractorconnection.com/contrDocs/BackGroundAddendum.pdf |
+| CC Terms & Conditions | 5-year warranty, dispute procedures | https://home.contractorconnection.com/terms/ |
+| CC Resources Page | Contractor documentation portal | https://home.contractorconnection.com/resources/ |
+| FirstOnSite Client Work Agreement (2025) | Current restoration terms | https://firstonsite.com/es/wp-content/uploads/client-work-agreement-terms-conditions_effective-10.10.25.pdf |
+| FirstOnSite CA Addendum | California-specific compliance | https://firstonsite.com/wp-content/uploads/california-addendum_3.29.21.pdf |
+| FirstOnSite Homeowner's Guide | Disaster recovery process | https://firstonsite.com/en-CA/wp-content/uploads/2020/07/homeowners-guide-to-disaster-recovery.pdf |
+| FirstService Corp AIF (2024) | Parent company overview | https://www.firstservice.com/wp-content/uploads/2025/03/Q4-2024-AIF-FINAL-21Feb25.pdf |
+| Paul Davis Restoration Agreement (Court) | Actual contract from 2022 court case | https://www.scribd.com/document/915206014/Paul-Davis-Restoration-Restoration-Agreement-case-number-2022cv000659-Dawn-R-Jackson-Racine-Couty-Court |
+| Paul Davis Preferred Vendor Programs | 300+ franchise network standards | https://pauldavis.com/insurance/preferred-vendors/ |
+| Paul Davis Addressing Insurance Needs | 50-year history, national standards | https://pauldavis.com/insurance/addressing-needs/ |
+| Paul Davis Business Portal | Franchise model overview | https://www.pauldavisbusiness.com |
+| BluSky Subcontractor Qualification Packet | 14-page agreement, $1M GL, $500K WC | https://goblusky.com/media/subcontractor-qualification-packet-rev.-12.14.2021.pdf |
+| ServiceChannel Provider Agreement | Multi-TPA platform, $2M GL, $1M WC | https://servicechannel.com/resources-download/customer_scmprovider_services_agreement.pdf |
+| CA DHCS Network Provider Checklist | Network provider agreement checklist | https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/APL2019/APL19-001AttachmentA.pdf |
+| FirstEnergy Network Access Agreement | Network connection SLA template | https://www.firstenergycorp.com/content/dam/supplychain/files/docs-coupa-update/Network%20Access%20Agreement.pdf |
+| Oracle SPA Sample | SOW structure, deliverables, acceptance | https://www.oracle.com/a/ocom/docs/billable-spa-sample.pdf |
+| Comcast Enterprise SLA | Restoration standards, response objectives | https://business.comcast.com/~/media/business_comcast_com/PDFs/Terms-and-Conditions---Enterprise/2024%20Terms%20and%20Conditions%20Interstate%20Wavelength%20v.1.0.pdf |
+
 ---
 
 ## Review & Complaint Sources
