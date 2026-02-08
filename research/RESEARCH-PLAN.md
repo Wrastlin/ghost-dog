@@ -13,7 +13,7 @@ Build competitive SLAs for [reliableclaim.com](https://reliableclaim.com) by res
 /
 ├── README.md                                 ← Repo overview and quick reference
 ├── contractor-sla.md                         ← Primary deliverable: Contractor SLA
-├── sla-booklet.md                            ← Catalogue of 35 TPA SLA docs and guidelines
+├── sla-booklet.md                            ← Catalogue of 112 TPA SLA docs, contractor agreements, and guidelines
 ├── executive-summary.md                      ← One-page landscape overview
 ├── research/
 │   ├── RESEARCH-PLAN.md                      ← This file (living plan)
@@ -114,7 +114,9 @@ Build competitive SLAs for [reliableclaim.com](https://reliableclaim.com) by res
 | Date | Session | Work Completed |
 |------|---------|---------------|
 | 2026-02-07 | Initial | Full data collection, TPA profiles, resource index, industry standards, contractor real-world research. Files committed to branch. |
-| 2026-02-08 | SLA Booklet | Created SLA Booklet cataloguing 35 TPA SLA documents, contractor guidelines, IICRC standards, RIA position statements, SLA templates, academic papers, and regulatory frameworks. Updated RESOURCE-INDEX.md with all new sources. |
+| 2026-02-08 | SLA Booklet v1 | Created SLA Booklet cataloguing 35 TPA SLA documents, contractor guidelines, IICRC standards, RIA position statements, SLA templates, academic papers, and regulatory frameworks. Updated RESOURCE-INDEX.md with all new sources. |
+| 2026-02-08 | SLA Booklet v2 | Expanded booklet to 91 documents. Added 6 major TPA providers (Sedgwick, GB, CorVel, Broadspire, ESIS, York Risk) with 26 contracts/overviews/audits. Added 17 government RFPs (state, county, transit). Added 8 insurance industry SLAs (Aon, FIGA, LSG, Safire, AdvantageRCM). Added performance audit findings and TPA fee structure analysis. Updated RESOURCE-INDEX.md. |
+| 2026-02-08 | SLA Booklet v3 | Expanded booklet to 112 documents. Added actual restoration contractor agreements: Alacrity (5 docs incl. complete master contract + exact fee addendum), CC/Crawford (3), FirstOnSite (4 incl. 2025 terms), Paul Davis (4 incl. court-filed agreement), BluSky (14-page subcontractor packet), ServiceChannel (multi-TPA platform agreement). Added 4 comparative network/SPA templates. Key finding: Alacrity 7%/11% fee structure now documented. |
 
 ---
 
