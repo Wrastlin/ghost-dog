@@ -1,0 +1,773 @@
+RELIABLECLAIM.COM - TPA SLA COMPETITIVE RESEARCH
+==================================================
+February 2026
+
+TABLE OF CONTENTS
+-----------------
+1. EXECUTIVE SUMMARY
+2. MARKET LANDSCAPE
+3. SLA BENCHMARKS (Industry Floor/Ceiling)
+4. TPA PROFILES & SOURCE DOCUMENTS
+5. SLA COMPARISON MATRIX
+6. CONTRACTOR PAIN POINTS
+7. LEGAL / REGULATORY
+8. PROPOSED RELIABLECLAIM SLA FRAMEWORK
+9. ALL SOURCE DOCUMENT LINKS
+
+
+========================================
+1. EXECUTIVE SUMMARY
+========================================
+
+TPAs Researched: 15+
+Source Documents Found: 80+
+Native PDFs Cataloged: 22+
+SLA Tiers Proposed: 6
+
+THREE BIG DIFFERENTIATORS FOR RELIABLECLAIM:
+
+1. PUBLISH YOUR SLAs
+   No TPA does this publicly. Contractor Connection publishes a few
+   metrics; everyone else hides behind portals. Publishing SLAs
+   signals confidence and builds trust with carriers and contractors.
+
+2. PAY CONTRACTORS FAST
+   Net 15 days vs. industry norm of 60-180 days. This alone would
+   make ReliableClaim the clear choice for quality contractors who
+   currently avoid TPA work. Better contractors = better outcomes.
+
+3. OWN THE COMMUNICATION GAP
+   48-hour update cadence, 2-hour callbacks, milestone notifications.
+   This is the #1 unmet need cited by both policyholders and adjusters.
+
+MARKET OPPORTUNITY:
+- Alacrity selling its MRP division (Jan 2026) creates a gap
+- 45% of contractors would prefer no TPA work at all
+- Whoever treats contractors best wins the talent
+
+
+========================================
+2. MARKET LANDSCAPE
+========================================
+
+CONTRACTOR CONNECTION (Crawford & Company)
+  Scale: 6,000+ contractors, $3B/yr, 500K assignments
+  Owner: Crawford & Company (NYSE: CRD-A/CRD-B)
+  Key: 99.1% customer reuse rate, J.D. Power 5 yrs
+
+SEDGWICK REPAIR
+  Scale: 2,000+ locations
+  Owner: Sedgwick
+  Key: Iron Clad Warranty (Sedgwick assumes if contractor fails)
+
+ALACRITY SOLUTIONS
+  Scale: National network
+  Owner: Selling MRP division (Jan 2026)
+  Key: AlacNet platform, Nationwide Insurance partner
+
+HANCOCK CLAIMS PRN
+  Scale: National
+  Owner: Independent
+  Key: #1 RIA credentialing score (4.0), Exemplar platform
+
+ACCUSERVE
+  Scale: National
+  Owner: Independent
+  Key: 1-day onboarding via Sublynk, no fees to join, 84% resolution
+
+ONCORE REPAIR
+  Key: #1 RIA TPA Scorecard for 3 consecutive years
+
+CORELOGIC / COTALITY
+  Scale: 8,700+ restoration companies on platform
+  Owner: Cotality
+  Key: VPASS (Six Sigma scoring), DASH platform, Mitigate suite
+
+
+========================================
+3. SLA BENCHMARKS
+========================================
+
+METRIC                    | FLOOR (WORST) | CEILING (BEST) | MOST COMMON
+--------------------------|---------------|----------------|------------
+Emergency contact         | 2 hours       | 15 minutes     | 1 hour
+Emergency on-site         | 24 hours      | 2 hours        | 4 hours
+Non-emergency 1st contact | 48 hours      | 4 hours        | 24 hours
+Non-emergency inspection  | 72 hours      | 24 hours       | 48 hours
+Estimate upload           | 7+ days       | 24 hours       | 5 days
+Workmanship warranty      | 1 year        | 5 years        | 3-5 years
+Customer reuse rate       | 85%           | 99.1%          | 95%+
+Payment to contractors    | 90-180 days   | Net 15         | 30-90 days
+
+
+========================================
+4. TPA PROFILES & SOURCE DOCUMENTS
+========================================
+
+--------------------------------------------
+CONTRACTOR CONNECTION (Crawford & Company)
+--------------------------------------------
+HQ: Jacksonville, FL | Phone: 1 (800) 690-0174
+Network: 6,000+ contractors globally
+Volume: ~500,000 assignments/yr, ~$3B annual cost
+Clients: 7 of top 10 US insurance providers
+Markets: US, Canada, UK, Australia, Germany
+
+SLA REQUIREMENTS:
+  - Mitigation assignment acceptance: 15 MINUTES
+  - Emergency 3-way call (center + customer + contractor): 1 HOUR
+  - Emergency crew on-site: 4 HOURS
+  - Non-emergency first contact: 24 HOURS
+  - Non-emergency on-site inspection: 48 HOURS
+  - Estimate delivery to policyholder: 5 DAYS
+  - Customer reuse rate: 99.1%
+  - Communication satisfaction: 97% (vs 89% industry)
+  - Callback return rate: 96% (vs 89% industry)
+
+POMS SCORING (Performance Objective Monitoring System):
+  1. TIP (Time in Process) - estimate upload speed / cycle time
+  2. Customer Service Scores - direct policyholder feedback
+  3. Professionalism in Communication
+  4. Estimate Accuracy - 100% line-item review
+  5. Overall Quality of Service
+  Monthly electronic scorecard to each contractor.
+  Top 100 = Golden Hammer Award at RESTORE Conference.
+
+5-POINT QUALITY ASSURANCE:
+  1. Electronic Audit - automated estimating compliance
+  2. Technical Scope & Quantity Audit - 100% line items reviewed
+  3. Re-Inspection Program - random re-inspections
+  4. Customer Satisfaction Monitoring
+  5. Contractor Performance Monitoring
+
+CREDENTIALING:
+  - Insurance restoration experience required
+  - $1M General Liability minimum
+  - $1M Auto insurance minimum
+  - Workers' Compensation required
+  - All state licensing current
+  - Background checks on all job-site employees
+  - 12 quality references
+  - Professional commercial/industrial facilities
+  - Xactimate required
+  - 5-year workmanship warranty (US standard)
+  - Facility inspection required
+  - Annual renewal
+
+WARRANTY BY CARRIER:
+  Standard (CC): 5 years
+  USAA: 3 years
+  Nationwide: 5 years
+  Kemper: 1 year
+
+TECHNOLOGY:
+  - Contractor Central (management portal)
+  - JobTrack (real-time project tracking)
+  - Policyholder Dashboard
+  - Digital Review (auto estimate review)
+  - Proactive Insights (issue detection)
+  - Xactimate/XactAnalysis
+  - Encircle Hydro (moisture analytics)
+
+PDFs:
+  Service Sheet: https://assets.crawco.com/docs/CCC-SS-Generic.pdf
+  Brochure: https://assets.crawco.com/docs/us-contractorconnection-managed-repair-advantage-brochure.pdf
+  FAQ PDF: https://cdn.bfldr.com/RY9Y61B5/at/482h48r96skbt9ft586zh3qh/ccc-us-website-faq.pdf
+  Canada Insurance Reqs: https://apps.contractorconnection.com/contrdocs/canada_insurance.pdf
+
+WEB PAGES:
+  Performance Metrics: https://www.contractorconnection.com/insurance-programs/insurance-programsperformance-metrics/
+  Quality Assurance: https://www.contractorconnection.com/insurance-programs/insurance-programsperformance-metrics/insurance-programsinsurance-programsperformance-metricsquality-assurance/
+  Contractor Requirements: https://home.contractorconnection.com/potential-contractors/overview/potential-contractorsoverviewrequirements/
+  FAQ: https://www.contractorconnection.com/faqs/
+
+REVIEWS:
+  BBB: https://www.bbb.org/us/fl/jacksonville/profile/contractor-referral/contractor-connection-0403-5595/complaints
+  Indeed: https://www.indeed.com/cmp/Crawford-Contractor-Connection/reviews
+  Glassdoor: https://www.glassdoor.com/Overview/Working-at-Contractor-Connection-EI_IE952692.11,32.htm
+
+
+--------------------------------------------
+CITIZENS PROPERTY INSURANCE (Florida)
+Uses Contractor Connection
+--------------------------------------------
+
+PDFs:
+  Managed Repair Brochure: https://www.citizensfla.com/documents/20702/7979944/Managed+Repair+Program+Brochure.pdf
+  FULL Contractor Agreement: https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2022/05/Citizens-Agreement-for-Contractor-Managed-Repair-Program-1.pdf
+  Redacted Agreement: https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2021/12/Redacted-contract-Citizens-Agreement-for-Contractor-Managed-Repair-Program-1.pdf
+  OIR Market Conduct Exam 2025: https://floir.com/docs-sf/property-casualty-libraries/market-regulation/2025/citizens-property-insurance-corporation_final-exam-report.pdf
+
+
+--------------------------------------------
+ALACRITY SOLUTIONS
+--------------------------------------------
+NOTE: Announced strategic sale of Managed Repair Division Jan 20, 2026
+
+REQUIREMENTS:
+  - 24/7/365 operations center for FNOL intake
+  - AlacNet platform manages timelines, assignments, payment
+  - Annual contractor review: CSAT surveys, on-site visits, credentialing
+  - Regional Field Managers conduct job site compliance visits
+  - 5-year workmanship warranty
+  - Certificate of Satisfaction issued per job
+  - CGL and CPL with Contractual Liability
+  - Pollution Liability with 3-year extended discovery
+  - Waiver of Subrogation in favor of Network Administrator
+
+CARRIER RELATIONSHIPS:
+  - Nationwide Insurance (via ala-nw.com)
+  - Tower Hill / CastleCare
+
+PDFs:
+  Insurance Requirements: https://em.alacrity.net/Download/Insurance%20Requirements.pdf
+  MASTER CONTRACT: https://em.alacrity.net/Download/Master_Contract.pdf
+  CPG Claims Brochure: https://www.cpg.org/globalassets/documents/publications/cic-understanding-the-claims-process-using-alacrity-services-brochure.pdf
+
+WEB PAGES:
+  MRP FAQ: https://www.alacritysolutions.com/mrp-faqs/
+  Join Network: https://www.alacritysolutions.com/solutions/network-solutions/join-our-contractor-network/
+  Contractor Insurance (ARMR): https://armr.net/alacrity
+
+REVIEWS:
+  BBB: https://www.bbb.org/us/in/fishers/profile/insurance-agency/alacrity-solutions-0382-90034139/complaints
+
+
+--------------------------------------------
+SEDGWICK REPAIR
+--------------------------------------------
+Network: 2,000+ locations across all major/secondary markets
+
+REQUIREMENTS:
+  - Thorough credentialing + annual recertification
+  - Built-in performance rating from first claim
+  - File Cycle Time Standards tracked
+  - Monthly/quarterly/annual performance reports
+  - Non-performers removed from network
+
+QUALITY ASSURANCE:
+  - File Audits (desk audits for technical accuracy)
+  - Re-inspections (physical, measuring satisfaction + quality)
+  - Customer Service Surveys (timeliness, professionalism, NPS)
+
+IRON CLAD WARRANTY:
+  Roof/siding REPLACEMENT: 5 years
+  Roof/siding REPAIR: 1 year
+  General contracting: 3 years
+  KEY: If contractor goes out of business, SEDGWICK ASSUMES WARRANTY
+
+PDFs:
+  Repair Solutions 2024: https://www.sedgwickrepair.com/wp-content/uploads/2024/11/SEDGWICK_REPAIR_SOLUTIONS.pdf
+  Repair Solutions (Distinguished): https://distinguished.com/wp-content/uploads/2021/01/Sedgwick-Repair-Solutions.pdf
+
+WEB PAGES:
+  Repair Solutions: https://www.sedgwick.com/repair-solutions/
+  Become Provider: http://repair.sedgwick.com/become-a-service-provider/
+
+
+--------------------------------------------
+HANCOCK CLAIMS CONSULTANTS
+#1 RIA TPA Scorecard (Credentialing: 4.0)
+--------------------------------------------
+
+SLA REQUIREMENTS:
+  - Inspection scheduling: 4-8 HOURS
+  - Deploy to any area: 24-48 HOURS
+  - Report to adjuster: 24 HOURS
+  - Cycle time: 7+ DAYS FASTER than traditional
+  - LAE reduction: 50%
+  - CSAT improvement: 10-15% over baseline
+  - 5-year workmanship warranty
+
+CONTRACTOR STANDARDS:
+  - Haag-certified technicians required
+  - Background in roofing, construction, or claims adjusting
+  - Valid driver's license + truck for 32-ft ladder
+  - Vetting via ProfileGorilla
+  - Top performers get more work via algorithm
+  - Payment via escrow until job approval
+
+TECHNOLOGY:
+  - Exemplar Platform (required fields/checkpoints)
+  - ProfileGorilla (compliance management)
+  - XactAnalysis / Symbility
+  - Automated comms (adjuster, vendor, policyholder)
+
+WEB PAGES:
+  Preferred Repair Network: https://hancockclaims.com/preferred-repair-network/
+  How HCC Vets Contractors: https://hancockclaims.com/how-hcc-vets-contractors-in-the-preferred-repair-network/
+  TPA Scorecard Recognition: https://hancockclaims.com/hancocks-preferred-repair-network-receives-highest-marks-in-tpa-scorecard/
+
+
+--------------------------------------------
+ACCUSERVE
+--------------------------------------------
+
+KEY FACTS:
+  - No signup, membership, or renewal fees
+  - 1-day onboarding (Sublynk partnership, Oct 2024)
+  - Performance-based assignment (top performers get more)
+  - 84% resolution rate
+  - Quarterly Premier Program: $1,000 bonus for top performers
+
+INSURANCE REQUIREMENTS:
+  GL: $1,000,000 per occ / $2,000,000 aggregate
+  Workers Comp: Per state (waived if no W-2 employees w/ attestation)
+  Auto/HNOA: Hired and Non-Owned Auto endorsement required
+  Pollution Liability: Must include mold, microbial, fungus, bio
+  Additional Insured: CG 2010 07 04 and CG 2037 07 04
+  Waiver of Subrogation: In favor of Accuserve Solutions, Inc.
+
+CERTIFICATIONS REQUIRED:
+  IICRC WRT: REQUIRED on-site every water mitigation visit
+  IICRC AMRT: REQUIRED for mold remediation
+  ASD: Preferred
+
+WEB PAGES:
+  Onboarding Requirements: https://help.sublynk.com/article/50-accuserve-onboarding-compliance-requirements
+  Insurance Specifics: https://help.sublynk.com/article/17-insurance-specifics
+  Sublynk Portal: https://app.sublynk.com/accuserve
+
+REVIEWS:
+  BBB: https://www.bbb.org/us/oh/springfield/profile/insurance-claims-processing/accuserve-solutions-inc-0322-20505/complaints
+  Indeed (105 reviews): https://www.indeed.com/cmp/Accuserve-3/reviews
+
+
+--------------------------------------------
+CORELOGIC / COTALITY
+--------------------------------------------
+Scale: 8,700+ restoration companies on platform
+
+SLA FRAMEWORK:
+  - Each metric defined in carrier-restoration company SLA contract
+  - Time component tethered to most service requirements
+  - VPASS (Value Progression Adjusted Sigma Score) for real-time compliance
+  - Based on Six Sigma methodology
+
+TECHNOLOGY:
+  - DASH: Cloud job management with compliance tracking
+  - Mitigate: Water mitigation suite with S500 compliance
+  - SettleAssist: Automated estimate review (SOC 2 Type II)
+  - Claims Dispatch: Locates, schedules, tracks resources
+
+WEB PAGES:
+  Restoration KPIs: https://www.nextgearsolutions.com/blog/restoration-business-tips/restoration-kpis-for-quality-compliance/
+  Restoration Solutions: https://www.corelogic.com/insurance/restoration-solutions/
+
+
+--------------------------------------------
+OTHER NOTABLE TPAs
+--------------------------------------------
+
+ONCORE REPAIR
+  #1 RIA TPA Scorecard for 3 CONSECUTIVE YEARS (2023-2025)
+  Source: https://www.candrmagazine.com/oncore-repair-ranked-1-in-2025-ria-tpa-scorecard-for-third-consecutive-year/
+
+BRIGHTSERV (BrightClaim subsidiary)
+  - ProfileGorilla credentialing
+  - IICRC certs required (Water, Mold, Lead, BioHazard)
+  - 3+ years in business
+  - "Lowest fees in the industry"
+  Web: https://www.brightserv.com/
+
+MADSKY MRP
+  PDF - MRP vs Other TPAs: http://madskymrp.com/wp-content/uploads/2016/10/Executive-Summary-MRP-vs.-Other-TPAs.pdf
+
+PUROCLEAN
+  - SPAR Tiers: Strategic / Preferred / Approved / Restricted
+  - SOC2 Type 2 required for Preferred tier
+  - 500+ locations, $80M national accounts in 2025
+  - Quarterly vendor roadmap required
+  Web: https://www.puroclean.com/spar/
+  White Paper: https://www.puroclean.com/whitepaper/how-restoration-providers-and-insurance-companies-collaborate-to-improve-property-damage-recovery/
+
+
+--------------------------------------------
+NATIONAL NETWORKS
+--------------------------------------------
+
+DKI: On-site within 2 HOURS. Min $500K revenue. Full-service required.
+  Web: https://www.dkiservices.com/
+
+PAUL DAVIS: IICRC-approved training center with flood house. Pioneered 3-day drying.
+  Web: https://pauldavis.com/
+
+BELFOR: #1 Contractor on Top 500 Remodelers since 2001. Contributed to IICRC S500/S520.
+  Quality Assurance: https://www.belfor.com/us/en/resources/quality-assurance/
+  OMNIA Contracts: https://www.omniapartners.com/suppliers/belfor-usa-group-inc/public-sector/contract-documents
+
+FIRST ONSITE: 2,300+ team members, 90+ locations. Pre-loss partnership programs.
+  Web: https://firstonsite.com/
+
+ATI RESTORATION: 70+ locations. Emergency Response Agreements with pre-approval.
+  Web: https://atirestoration.com/
+
+
+========================================
+5. SLA COMPARISON MATRIX
+========================================
+
+--- RESPONSE TIMES ---
+
+SLA                    | Contractor Connection | Hancock  | Accuserve     | DKI
+-----------------------|-----------------------|----------|---------------|--------
+Emergency accept       | 15 min                | --       | --            | --
+Emergency 3-way call   | 1 hour                | --       | --            | --
+Emergency on-site      | 4 hours               | --       | --            | 2 hours
+Inspection scheduling  | --                    | 4-8 hrs  | --            | --
+Non-emergency contact  | 24 hours              | --       | --            | --
+Non-emergency on-site  | 48 hours              | 24-48 hrs| --            | --
+Report to adjuster     | --                    | 24 hours | --            | --
+Estimate upload        | 5-7 days              | --       | 24 hrs prelim | --
+
+--- WARRANTIES ---
+
+Category                  | CC     | Sedgwick          | Alacrity | Hancock | Floor
+--------------------------|--------|-------------------|----------|---------|------
+General workmanship       | 5 yr   | 3 yr              | 5 yr     | 5 yr    | 1 yr
+Roof/siding replacement   | 5 yr   | 5 yr              | --       | --      | --
+Roof/siding repair        | --     | 1 yr              | --       | --      | --
+Contractor goes bankrupt  | --     | SEDGWICK ASSUMES  | --       | --      | N/A
+USAA (via CC)             | 3 yr   | --                | --       | --      | --
+
+--- SCORING SYSTEMS ---
+
+POMS       | Contractor Connection | Cycle time, CSAT, professionalism, accuracy, quality
+Exemplar   | Hancock Claims        | Required checkpoints, carrier metrics, capacity
+VPASS      | CoreLogic             | Six Sigma real-time compliance
+Iron Clad  | Sedgwick              | File cycle time, NPS, estimate accuracy
+SPAR       | PuroClean             | Strategic/Preferred/Approved/Restricted tiers
+
+--- RIA 2025 TPA SCORECARD ---
+
+#1  OnCORE Repair         - #1 for 3 consecutive years
+#2  Hancock Claims PRN    - Highest credentialing score (4.0)
+--  Contractor Connection  - Largest network, most public data
+--  Accuserve             - Fastest onboarding (1 day)
+--  Sedgwick              - Iron Clad Warranty differentiator
+
+--- CREDENTIALING ---
+
+Requirement        | CC      | Hancock      | Accuserve    | Alacrity   | BrightServ
+-------------------|---------|--------------|--------------|------------|----------
+General Liability  | $1M     | --           | $1M/$2M      | CGL+CPL    | Stringent
+Workers Comp       | Req'd   | --           | Waivable     | Req'd      | Req'd
+Pollution Liab     | --      | --           | REQUIRED     | REQUIRED   | --
+IICRC WRT          | --      | --           | EVERY VISIT  | --         | Req'd
+Haag Certified     | --      | REQUIRED     | --           | --         | --
+Xactimate          | REQUIRED| --           | --           | --         | --
+Background checks  | All     | All          | --           | All        | --
+Compliance system  | CC Central | ProfileGorilla | Sublynk | AlacNet   | ProfileGorilla
+
+
+========================================
+6. CONTRACTOR PAIN POINTS
+========================================
+
+45% OF CONTRACTORS WOULD PREFER NO TPA WORK AT ALL.
+
+PAYMENT DELAYS
+  30-90 days standard. Disputed claims add another 30-90 days.
+  Contractors front all labor and material costs.
+  TPA referral fees: 5-20% off the top.
+
+SCOPE SHORTFALL
+  Initial estimates cover only 50-65% of actual repair cost.
+  35-50% supplement gap is the norm.
+  Experienced contractors add 25-30% through supplements.
+
+ADMIN BURDEN
+  Most successful contractors dedicate at least 1 FTE to TPA portals.
+  Multiple proprietary software portals to manage.
+  Xactimate, ProfileGorilla, drying logs, OSHA, moisture reports.
+  "It's the office, computer, documentation work that is so time consuming."
+
+UNREALISTIC RESPONSE TIMES
+  "Feel compressed" and "interfere with ability to execute the work."
+  Need to "hire administrative help to remain compliant."
+
+SLA ENFORCEMENT
+  Reduced assignments for underperformers.
+  30-day disciplinary action for untimely repairs.
+  Network removal for persistent non-compliance.
+  "Minor errors can result in sudden reduction in work."
+
+OVERHEAD GAP
+  Actual contractor overhead: ~30%
+  What insurers allow: ~10%
+  Industry recommendation: Keep TPA work <= 20% of total revenue.
+
+FINANCIAL REALITY:
+  TPA referral fees: 5-20% of gross
+  Xactimate subscription: Required
+  ProfileGorilla/compliance: Additional subscription
+  Dedicated admin FTE: ~1 person
+  Total overhead for TPA work: Can approach 13%+ of revenue
+
+SOURCES:
+  R&R: Apprehension is the A in TPA: https://www.randrmagonline.com/articles/90826-for-restoration-contractors-apprehension-is-the-a-in-tpa
+  One Claim Solution survey: https://www.oneclaimsolution.com/cr-report-carriers-and-cashflow-keep-restorers-up-at-night/
+  Payment delays: https://ribilling.com/why-restoration-claim-payments-stretch-beyond-60-90-days-and-what-you-can-do-about-it/
+  Supplement tool: https://www.restorationai.com/insurance-supplement-tool/
+
+
+========================================
+7. LEGAL / REGULATORY
+========================================
+
+KEY LAWSUITS:
+
+Allstate $335K Settlement
+  Paid $335K to settle dispute over $33K restoration invoice.
+  Had falsely claimed "does not cover OH&P for mitigation."
+  Source: https://www.candrmagazine.com/allstate-pays-contractor-335000-to-settle-dispute-over-33000-restoration-invoice/
+
+People's Trust (Florida)
+  Multiple lawsuits alleging faulty workmanship, corner-cutting.
+  In-house Rapid Response Team.
+  Source: https://caselaw.findlaw.com/court/fl-district-court-of-appeal/116289665.html
+
+FAPIA vs. Velocity Risk (Oct 2025)
+  Anti-competitive endorsements barring policyholders from hiring PAs.
+  Complaint PDF: https://www.insurancejournal.com/app/uploads/2025/10/FAPIA-complaint.pdf
+
+ASSIGNMENT OF BENEFITS (AOB):
+  Florida: 405 lawsuits (2006) -> 28,200 (2016). HB 7065 signed 2019.
+  Texas: AOBs illegal and unenforceable.
+  RIA FAQ: https://www.restorationindustry.org/restoration-blog/faq-assignment-benefits-aob-restoration-trade
+
+UNFAIR CLAIMS PRACTICE ACT:
+  Merlin Law argues depressed costs under preferred vendor programs
+  don't restore insureds to pre-loss condition.
+  Source: https://www.propertyinsurancecoveragelaw.com/2022/09/articles/insurance/do-managed-repair-programs-violate-the-unfair-claims-practice-act/
+
+KEY LEGAL ARTICLES (Merlin Law Group):
+  The TPA Problem: https://www.propertyinsurancecoveragelaw.com/blog/the-managed-repair-and-third-party-administrator-problem/
+  Policyholders Should Be Concerned: https://www.propertyinsurancecoveragelaw.com/blog/policyholders-restoration-contractors-and-public-adjusters-should-be-concerned-about-managed-repair-and-third-party-administrators-working-in-preferred-contractor-networks/
+  Will MRP Be in Most Policies: https://www.propertyinsurancecoveragelaw.com/blog/will-managed-repair-be-found-in-most-property-insurance-policies/
+  What's Bad About Preferred Providers: https://www.propertyinsurancecoveragelaw.com/blog/whats-so-bad-about-insurance-companies-use-of-preferred-service-providers/
+
+
+========================================
+8. PROPOSED RELIABLECLAIM SLA FRAMEWORK
+========================================
+
+TIER 1: RESPONSE TIMES
+-----------------------
+SLA                     | Floor   | Best     | OUR TARGET
+------------------------|---------|----------|---------------------------
+Emergency accept        | 1 hr    | 15 min   | 15 MINUTES
+Emergency customer call | 2 hr    | 15 min   | 30 MINUTES
+Emergency on-site       | 24 hr   | 2 hr     | 4 HOURS (2 hr primary mkts)
+Standard first contact  | 48 hr   | 4 hr     | 4 HRS biz / 12 HRS after
+Standard on-site        | 72 hr   | 24 hr    | 24 HOURS
+Preliminary estimate    | 7+ days | 24 hr    | 48 HOURS
+Final estimate          | 10+ days| 24 hr    | 24 HRS post-completion
+Photo documentation     | varies  | same day | SAME DAY as inspection
+Moisture readings       | daily   | real-time| EVERY 24 HOURS minimum
+Supplement submission   | 30+ days| 72 hrs   | 72 HOURS after identified
+
+TIER 2: QUALITY
+---------------
+Workmanship warranty:     5 YEARS
+Inspection pass rate:     95%
+Callback / redo rate:     <3%
+Customer satisfaction:    95%+
+Would-recommend rate:     97%+
+NPS score:                70+
+IICRC compliance:         100%
+Post-job survey rate:     80%+
+
+TIER 3: COMMUNICATION
+---------------------
+POLICYHOLDER:
+  Initial contact: 30 min (emergency) / 4 hrs (standard)
+  Status updates: Every 48 hours minimum
+  Returned calls: Within 2 hours (business hours)
+  Completion notification: Within 1 hour
+  Final walkthrough: Within 24 hours
+
+ADJUSTER/CARRIER:
+  Initial scope report: Within 24 hours (with photos)
+  Status updates: Every 48 hours or each milestone
+  Scope change notification: Within 4 hours
+  Supplement submission: Within 72 hours
+  Completion certificate: Within 24 hours
+  Invoice submission: Within 48 hours
+
+TIER 4: OPERATIONS / CYCLE TIMES
+---------------------------------
+Cat 1 water dry-out:    3-5 days
+Cat 2 water dry-out:    3-5 days
+Cat 3 water dry-out:    5-7 days
+Mold remediation (sm):  3-5 days
+Emergency board-up:     Same day
+Contents pack-out:      24-48 hours
+Rebuild <$10K:          2-3 weeks
+Rebuild $10K-$50K:      4-8 weeks
+
+DOCUMENTATION:
+  20+ photos per inspection (timestamped)
+  Moisture readings every 24 hours with location map
+  Equipment log with runtime hours and placement
+  Drying log: start MC, daily MC, target MC, final MC
+  Xactimate estimate per carrier guidelines via XactAnalysis
+  Comprehensive final report
+
+TIER 5: CREDENTIALING
+---------------------
+IICRC WRT:              Required on-site every water job
+IICRC AMRT:             Required all mold jobs
+IICRC FSRT:             Required all fire jobs
+Xactimate:              All estimators certified
+OSHA:                   10-hour minimum all field staff
+Background checks:      All field employees, annually
+Drug testing:           Pre-employment + random
+Continuing education:   16 hours/year per tech
+General Liability:      $1M occ / $2M aggregate
+Auto / HNOA:            $1M combined
+Workers' Comp:          Per state statutory
+Pollution Liability:    $1M
+Umbrella:               $2M recommended
+Addl Insured:           CG 2010 07 04 + CG 2037 07 04
+Waiver of Subrogation:  Available upon request
+
+TIER 6: PAYMENT (DIFFERENTIATOR)
+---------------------------------
+Payment to contractors:  NET 15 DAYS (industry: 30-90 days)
+Supplement decision:     5 BUSINESS DAYS (industry: 15-30+)
+Fee transparency:        PUBLISHED SCHEDULE (industry: opaque 5-20%)
+Invoice accuracy:        <2% REVISION RATE (industry: 10-15%)
+No balance billing:      GUARANTEED
+
+IMPLEMENTATION PHASES:
+  Phase 1 (Launch): Response times + Communication + Credentialing
+  Phase 2 (Month 2-3): Quality SLAs + Cycle times
+  Phase 3 (Month 4-6): Payment SLAs + Public dashboard + Carrier packages
+
+
+========================================
+9. ALL SOURCE DOCUMENT LINKS
+========================================
+
+--- PDFs (tap to open, then Save to Google Drive) ---
+
+Contractor Connection Brochure:
+https://assets.crawco.com/docs/us-contractorconnection-managed-repair-advantage-brochure.pdf
+
+Contractor Connection Service Sheet:
+https://assets.crawco.com/docs/CCC-SS-Generic.pdf
+
+Contractor Connection FAQ:
+https://cdn.bfldr.com/RY9Y61B5/at/482h48r96skbt9ft586zh3qh/ccc-us-website-faq.pdf
+
+Contractor Connection Canada Insurance Reqs:
+https://apps.contractorconnection.com/contrdocs/canada_insurance.pdf
+
+Citizens FL Managed Repair Brochure:
+https://www.citizensfla.com/documents/20702/7979944/Managed+Repair+Program+Brochure.pdf
+
+Citizens FL Contractor Agreement (FULL):
+https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2022/05/Citizens-Agreement-for-Contractor-Managed-Repair-Program-1.pdf
+
+Citizens FL Contractor Agreement (Redacted):
+https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2021/12/Redacted-contract-Citizens-Agreement-for-Contractor-Managed-Repair-Program-1.pdf
+
+Citizens FL OIR Market Conduct Exam 2025:
+https://floir.com/docs-sf/property-casualty-libraries/market-regulation/2025/citizens-property-insurance-corporation_final-exam-report.pdf
+
+Alacrity MASTER CONTRACT:
+https://em.alacrity.net/Download/Master_Contract.pdf
+
+Alacrity Insurance Requirements:
+https://em.alacrity.net/Download/Insurance%20Requirements.pdf
+
+CPG/Alacrity Claims Process Brochure:
+https://www.cpg.org/globalassets/documents/publications/cic-understanding-the-claims-process-using-alacrity-services-brochure.pdf
+
+Sedgwick Repair Solutions 2024:
+https://www.sedgwickrepair.com/wp-content/uploads/2024/11/SEDGWICK_REPAIR_SOLUTIONS.pdf
+
+Sedgwick Repair Solutions (Distinguished):
+https://distinguished.com/wp-content/uploads/2021/01/Sedgwick-Repair-Solutions.pdf
+
+BluSky Subcontractor Qualification Packet:
+https://www.goblusky.com/wp-content/uploads/2021/04/subcontractor-qualification-packet-rev.-3-22-21v6.pdf
+
+BluSky Trade Partner Instructions:
+https://www.goblusky.com/media/0_Instructions-How_to_complete_BluSky_Trade_Partner_Qualification_v62624.pdf
+
+MADSKY MRP vs Other TPAs:
+http://madskymrp.com/wp-content/uploads/2016/10/Executive-Summary-MRP-vs.-Other-TPAs.pdf
+
+RIA 2025 TPA Scorecard Report:
+https://cdn.ymaws.com/members.restorationindustry.org/resource/resmgr/RIA_2025_TPA_Scorecard_Repor.pdf
+
+FAPIA vs Velocity Risk Complaint 2025:
+https://www.insurancejournal.com/app/uploads/2025/10/FAPIA-complaint.pdf
+
+--- KEY WEB PAGES ---
+
+CC Performance Metrics: https://www.contractorconnection.com/insurance-programs/insurance-programsperformance-metrics/
+CC Quality Assurance: https://www.contractorconnection.com/insurance-programs/insurance-programsperformance-metrics/insurance-programsinsurance-programsperformance-metricsquality-assurance/
+CC Contractor Reqs: https://home.contractorconnection.com/potential-contractors/overview/potential-contractorsoverviewrequirements/
+Alacrity MRP FAQ: https://www.alacritysolutions.com/mrp-faqs/
+Hancock PRN: https://hancockclaims.com/preferred-repair-network/
+Hancock Vetting: https://hancockclaims.com/how-hcc-vets-contractors-in-the-preferred-repair-network/
+Accuserve Onboarding: https://help.sublynk.com/article/50-accuserve-onboarding-compliance-requirements
+Accuserve Insurance: https://help.sublynk.com/article/17-insurance-specifics
+PuroClean SPAR: https://www.puroclean.com/spar/
+CoreLogic KPIs: https://www.nextgearsolutions.com/blog/restoration-business-tips/restoration-kpis-for-quality-compliance/
+RIA TPA Scorecard: https://www.restorationindustry.org/ria-2025-tpa-scorecard-survey-report
+IICRC Standards: https://iicrc.org/iicrcstandards/
+BELFOR QA: https://www.belfor.com/us/en/resources/quality-assurance/
+
+--- INDUSTRY ARTICLES ---
+
+R&R: Apprehension is the A in TPA: https://www.randrmagonline.com/articles/90826-for-restoration-contractors-apprehension-is-the-a-in-tpa
+R&R: Working with a TPA: https://www.randrmagonline.com/articles/88659-working-with-a-tpa
+R&R: TPAs To Work or Not: https://www.randrmagonline.com/articles/86275-tpas-to-work-or-not-work-with-them
+R&R: What to Expect from TPAs: https://www.randrmagonline.com/articles/90852-what-can-restoration-business-owners-expect-from-tpas
+R&R: OH&P 10/10 Myth: https://www.randrmagonline.com/articles/89510-overhead-and-profit-the-10-and-10-myth-part-1
+C&R: State of Industry: https://www.candrmagazine.com/stateoftheindustry/
+C&R: Benefits of TPA Relationships: https://www.candrmagazine.com/benefits-of-tpa-relationships/
+C&R: OnCORE #1 RIA 3 Yrs: https://www.candrmagazine.com/oncore-repair-ranked-1-in-2025-ria-tpa-scorecard-for-third-consecutive-year/
+CLM: Growth of Contractor Networks: https://www.theclm.org/Magazine/articles/growth-of-contractor-networks-in-the-claims-management-process/687
+Insurance Journal: Networks Reduce Costs: https://www.insurancejournal.com/magazines/mag-features/2025/09/22/839634.htm
+Cleanfax: 2024 Benchmarking Survey: https://cleanfax.com/2024-restoration-survey/
+FAPIA: Managed Repair Crisis: https://www.fapia.net/managed-repair-crisis.html
+Allstate $335K Settlement: https://www.candrmagazine.com/allstate-pays-contractor-335000-to-settle-dispute-over-33000-restoration-invoice/
+
+--- CONTRACTOR FORUMS ---
+
+ContractorTalk - Contractor Connection: https://www.contractortalk.com/threads/anyone-use-contractor-connection.136454/
+ContractorTalk - Insurance Restoration: https://www.contractortalk.com/threads/insurance-restoration.89303/
+ContractorTalk - Getting Started: https://www.contractortalk.com/threads/getting-started-in-insurance-restoration.134765/
+ContractorTalk - Preferred Contractor: https://www.contractortalk.com/threads/how-to-become-a-preferred-contractor-for-homeowners-insurace-claims.55784/
+ContractorTalk - Warranty Length: https://www.contractortalk.com/threads/how-long-is-your-workmanship-warranty.212745/
+RoofingTalk - CC: https://www.roofingtalk.com/threads/contractor-connection.10643/
+
+--- LEGAL / REGULATORY RESOURCES ---
+
+FL OIR AOB Resources: https://floir.gov/consumers/assignment-of-benefits-resources
+FL DFS Consumer Complaints: https://myfloridacfo.com/division/consumers/needourhelp
+NAIC Complaint Filing: https://content.naic.org/article/how-file-complaint-and-research-complaints-against-insurance-carriers
+FAPIA Managed Repair Crisis: https://www.fapia.net/managed-repair-crisis.html
+Merlin Law - The TPA Problem: https://www.propertyinsurancecoveragelaw.com/blog/the-managed-repair-and-third-party-administrator-problem/
+Merlin Law - Unfair Claims Practice: https://www.propertyinsurancecoveragelaw.com/2022/09/articles/insurance/do-managed-repair-programs-violate-the-unfair-claims-practice-act/
+
+--- REVIEW / COMPLAINT SITES ---
+
+CC BBB: https://www.bbb.org/us/fl/jacksonville/profile/contractor-referral/contractor-connection-0403-5595/complaints
+CC Glassdoor: https://www.glassdoor.com/Reviews/Contractor-Connection-Reviews-E952692.htm
+CC Indeed: https://www.indeed.com/cmp/Crawford-Contractor-Connection/reviews
+Alacrity BBB: https://www.bbb.org/us/in/fishers/profile/insurance-agency/alacrity-solutions-0382-90034139/complaints
+Accuserve BBB: https://www.bbb.org/us/oh/springfield/profile/insurance-claims-processing/accuserve-solutions-inc-0322-20505/complaints
+Accuserve Indeed: https://www.indeed.com/cmp/Accuserve-3/reviews
+Accuserve Glassdoor: https://www.glassdoor.com/Reviews/Accuserve-Solutions-Reviews-E8785589.htm
+
+
+==================================================
+END OF RESEARCH - ReliableClaim.com
+February 2026
+==================================================

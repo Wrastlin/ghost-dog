@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReliableClaim - TPA SLA Research</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f5f5f5; color: #222; padding: 16px; max-width: 700px; margin: 0 auto; line-height: 1.5; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  h2 { font-size: 18px; background: #1a1a2e; color: #fff; padding: 12px 14px; border-radius: 8px 8px 0 0; margin-top: 28px; }
+  h3 { font-size: 15px; padding: 10px 14px; background: #e8e8e8; border-bottom: 1px solid #ddd; }
+  .subtitle { color: #666; font-size: 13px; margin-bottom: 16px; }
+  .card { background: #fff; border-radius: 0 0 8px 8px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; }
+  .card-flat { background: #fff; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); overflow: hidden; padding: 14px; }
+
+  /* Nav */
+  nav { background: #fff; border-radius: 8px; padding: 12px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  nav a { display: inline-block; font-size: 12px; color: #1a1a2e; text-decoration: none; padding: 4px 10px; margin: 2px; border: 1px solid #ddd; border-radius: 4px; }
+  nav a:active { background: #1a1a2e; color: #fff; }
+
+  /* Tables */
+  .tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .tbl th { background: #1a1a2e; color: #fff; padding: 8px 6px; text-align: left; font-weight: 600; position: sticky; top: 0; }
+  .tbl td { padding: 7px 6px; border-bottom: 1px solid #eee; }
+  .tbl tr:last-child td { border-bottom: none; }
+  .tbl tr:nth-child(even) { background: #fafafa; }
+  .scroll-x { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Doc links */
+  a.doc { display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; border-bottom: 1px solid #eee; text-decoration: none; color: #222; }
+  a.doc:last-child { border-bottom: none; }
+  a.doc:active { background: #f0f0ff; }
+  .doc-name { font-size: 13px; font-weight: 500; flex: 1; padding-right: 10px; }
+  .doc-type { font-size: 10px; background: #e74c3c; color: #fff; padding: 2px 8px; border-radius: 4px; font-weight: 700; flex-shrink: 0; }
+  .doc-type.web { background: #3498db; }
+  .doc-type.article { background: #27ae60; }
+  .doc-type.legal { background: #8e44ad; }
+
+  /* Highlight boxes */
+  .highlight { padding: 12px; border-radius: 8px; margin: 12px 0; font-size: 13px; }
+  .highlight.warn { background: #fff3cd; border-left: 4px solid #f0ad4e; }
+  .highlight.info { background: #d4edda; border-left: 4px solid #28a745; }
+  .highlight.blue { background: #d6eaf8; border-left: 4px solid #2980b9; }
+
+  /* Badges */
+  .badge { display: inline-block; font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 700; margin-right: 4px; }
+  .badge.red { background: #fce4ec; color: #c62828; }
+  .badge.green { background: #e8f5e9; color: #2e7d32; }
+  .badge.blue { background: #e3f2fd; color: #1565c0; }
+  .badge.purple { background: #f3e5f5; color: #6a1b9a; }
+  .badge.orange { background: #fff3e0; color: #e65100; }
+
+  /* Stats */
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 14px; }
+  .stat { text-align: center; padding: 12px 8px; background: #f8f9fa; border-radius: 8px; }
+  .stat-num { font-size: 24px; font-weight: 700; color: #1a1a2e; }
+  .stat-label { font-size: 11px; color: #666; margin-top: 2px; }
+
+  /* Collapsible */
+  details { margin-bottom: 2px; }
+  details summary { cursor: pointer; padding: 12px 14px; font-weight: 600; font-size: 14px; list-style: none; border-bottom: 1px solid #eee; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: '+ '; color: #999; }
+  details[open] summary::before { content: '- '; }
+  details .inner { padding: 12px 14px; font-size: 13px; }
+
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; font-size: 13px; }
+  strong { font-weight: 600; }
+  p { font-size: 13px; margin-bottom: 8px; }
+  .section-pad { padding: 14px; }
+</style>
+</head>
+<body>
+
+<h1>ReliableClaim.com</h1>
+<p class="subtitle">TPA SLA Competitive Research &mdash; February 2026</p>
+
+<nav>
+  <strong style="font-size:12px;">Jump to:</strong><br>
+  <a href="#exec">Executive Summary</a>
+  <a href="#landscape">Landscape</a>
+  <a href="#benchmarks">SLA Benchmarks</a>
+  <a href="#matrix">Comparison Matrix</a>
+  <a href="#framework">Our SLA Framework</a>
+  <a href="#profiles">TPA Profiles</a>
+  <a href="#pain">Pain Points</a>
+  <a href="#legal">Legal</a>
+  <a href="#docs">Source Documents</a>
+</nav>
+
+<!-- ============================================ -->
+<a id="exec"></a>
+<h2>Executive Summary</h2>
+<div class="card">
+  <div class="stat-grid">
+    <div class="stat"><div class="stat-num">15+</div><div class="stat-label">TPAs Researched</div></div>
+    <div class="stat"><div class="stat-num">80+</div><div class="stat-label">Source Documents</div></div>
+    <div class="stat"><div class="stat-num">6</div><div class="stat-label">SLA Tiers Proposed</div></div>
+    <div class="stat"><div class="stat-num">22+</div><div class="stat-label">Native PDFs Found</div></div>
+  </div>
+  <div class="section-pad">
+    <p><strong>Three Big Differentiators for ReliableClaim:</strong></p>
+    <div class="highlight info"><strong>1. Publish Your SLAs.</strong> No TPA does this publicly. It signals confidence and builds trust with carriers and contractors alike.</div>
+    <div class="highlight info"><strong>2. Pay Contractors Fast.</strong> Net 15 days vs. industry norm of 60-180 days. Attracts the best contractors who currently avoid TPA work.</div>
+    <div class="highlight info"><strong>3. Own the Communication Gap.</strong> 48-hour update cadence, 2-hour callbacks, milestone notifications. #1 unmet need in the industry.</div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<a id="landscape"></a>
+<h2>Market Landscape</h2>
+<div class="card">
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>TPA</th><th>Scale</th><th>Owner</th><th>Key Metric</th></tr>
+      <tr><td><strong>Contractor Connection</strong></td><td>6,000+ contractors, $3B/yr</td><td>Crawford & Co</td><td>99.1% reuse rate</td></tr>
+      <tr><td><strong>Sedgwick Repair</strong></td><td>2,000+ locations</td><td>Sedgwick</td><td>Iron Clad Warranty</td></tr>
+      <tr><td><strong>Alacrity Solutions</strong></td><td>National</td><td>Selling MRP (Jan 2026)</td><td>AlacNet platform</td></tr>
+      <tr><td><strong>Hancock Claims PRN</strong></td><td>National</td><td>Independent</td><td>#1 RIA credentialing (4.0)</td></tr>
+      <tr><td><strong>Accuserve</strong></td><td>National</td><td>Independent</td><td>1-day onboarding, no fees</td></tr>
+      <tr><td><strong>OnCORE Repair</strong></td><td>&mdash;</td><td>&mdash;</td><td>#1 RIA Scorecard 3 yrs</td></tr>
+      <tr><td><strong>CoreLogic/Cotality</strong></td><td>8,700+ companies</td><td>Cotality</td><td>VPASS (Six Sigma)</td></tr>
+    </table>
+  </div>
+  <div class="highlight warn" style="margin:14px;">
+    <strong>Market Opportunity:</strong> Alacrity selling its MRP division creates a gap. 45% of contractors would prefer no TPA work at all &mdash; meaning whoever treats contractors best wins the talent.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<a id="benchmarks"></a>
+<h2>Industry SLA Benchmarks</h2>
+<div class="card">
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>Metric</th><th>Floor (Worst)</th><th>Ceiling (Best)</th><th>Most Common</th></tr>
+      <tr><td>Emergency contact</td><td>2 hours</td><td><strong>15 minutes</strong></td><td>1 hour</td></tr>
+      <tr><td>Emergency on-site</td><td>24 hours</td><td><strong>2 hours</strong></td><td>4 hours</td></tr>
+      <tr><td>Non-emergency first contact</td><td>48 hours</td><td><strong>4 hours</strong></td><td>24 hours</td></tr>
+      <tr><td>Non-emergency inspection</td><td>72 hours</td><td><strong>24 hours</strong></td><td>48 hours</td></tr>
+      <tr><td>Estimate upload</td><td>7+ days</td><td><strong>24 hours</strong></td><td>5 days</td></tr>
+      <tr><td>Workmanship warranty</td><td>1 year</td><td><strong>5 years</strong></td><td>3-5 years</td></tr>
+      <tr><td>Customer reuse rate</td><td>85%</td><td><strong>99.1%</strong></td><td>95%+</td></tr>
+      <tr><td>Payment to contractors</td><td>90-180 days</td><td><strong>Net 15</strong></td><td>30-90 days</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<a id="matrix"></a>
+<h2>SLA Comparison Matrix</h2>
+<div class="card">
+  <h3>Response Times</h3>
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>SLA</th><th>Contractor Connection</th><th>Hancock</th><th>Accuserve</th><th>DKI</th></tr>
+      <tr><td>Emergency accept</td><td><strong>15 min</strong></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Emergency 3-way call</td><td><strong>1 hour</strong></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Emergency on-site</td><td><strong>4 hours</strong></td><td>&mdash;</td><td>&mdash;</td><td><strong>2 hours</strong></td></tr>
+      <tr><td>Inspection scheduling</td><td>&mdash;</td><td><strong>4-8 hours</strong></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Non-emergency contact</td><td><strong>24 hours</strong></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Non-emergency on-site</td><td><strong>48 hours</strong></td><td><strong>24-48 hrs</strong></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Report to adjuster</td><td>&mdash;</td><td><strong>24 hours</strong></td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Estimate upload</td><td>5-7 days</td><td>&mdash;</td><td><strong>24 hrs (prelim)</strong></td><td>&mdash;</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card-flat" style="margin-top:8px;">
+  <h3 style="margin:-14px -14px 12px;padding:10px 14px;">Warranty Comparison</h3>
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>Category</th><th>CC</th><th>Sedgwick</th><th>Alacrity</th><th>Hancock</th><th>Floor</th></tr>
+      <tr><td>General workmanship</td><td><strong>5 yr</strong></td><td>3 yr</td><td><strong>5 yr</strong></td><td><strong>5 yr</strong></td><td>1 yr</td></tr>
+      <tr><td>Roof/siding replace</td><td><strong>5 yr</strong></td><td><strong>5 yr</strong></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Roof/siding repair</td><td>&mdash;</td><td>1 yr</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Contractor goes out of business</td><td>&mdash;</td><td><strong>Sedgwick assumes</strong></td><td>&mdash;</td><td>&mdash;</td><td>Not covered</td></tr>
+      <tr><td>USAA (via CC)</td><td>3 yr</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card-flat" style="margin-top:8px;">
+  <h3 style="margin:-14px -14px 12px;padding:10px 14px;">Credentialing Requirements</h3>
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>Requirement</th><th>CC</th><th>Hancock</th><th>Accuserve</th><th>Alacrity</th><th>BrightServ</th></tr>
+      <tr><td>General Liability</td><td>$1M</td><td>&mdash;</td><td>$1M/$2M</td><td>CGL+CPL</td><td>Stringent</td></tr>
+      <tr><td>Workers' Comp</td><td>Req'd</td><td>&mdash;</td><td>Waivable</td><td>Req'd</td><td>Req'd</td></tr>
+      <tr><td>Pollution Liability</td><td>&mdash;</td><td>&mdash;</td><td><strong>Req'd</strong></td><td><strong>Req'd</strong></td><td>&mdash;</td></tr>
+      <tr><td>IICRC WRT</td><td>&mdash;</td><td>&mdash;</td><td><strong>Every visit</strong></td><td>&mdash;</td><td>Req'd</td></tr>
+      <tr><td>Haag Certified</td><td>&mdash;</td><td><strong>Req'd</strong></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Xactimate</td><td><strong>Req'd</strong></td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Background checks</td><td>All staff</td><td>All vendors</td><td>&mdash;</td><td>All staff</td><td>&mdash;</td></tr>
+      <tr><td>References</td><td>12</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>Compliance platform</td><td>Contractor Central</td><td>ProfileGorilla</td><td>Sublynk</td><td>AlacNet</td><td>ProfileGorilla</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card-flat" style="margin-top:8px;">
+  <h3 style="margin:-14px -14px 12px;padding:10px 14px;">Scoring Systems</h3>
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>System</th><th>TPA</th><th>What It Measures</th></tr>
+      <tr><td><strong>POMS</strong></td><td>Contractor Connection</td><td>Cycle time, CSAT, professionalism, estimate accuracy, quality</td></tr>
+      <tr><td><strong>Exemplar</strong></td><td>Hancock Claims</td><td>Required checkpoints, carrier metrics, capacity</td></tr>
+      <tr><td><strong>VPASS</strong></td><td>CoreLogic</td><td>Six Sigma real-time compliance scoring</td></tr>
+      <tr><td><strong>Iron Clad</strong></td><td>Sedgwick</td><td>File cycle time, NPS, estimate accuracy</td></tr>
+      <tr><td><strong>Performance</strong></td><td>Accuserve</td><td>Undisclosed; top performers get more work</td></tr>
+      <tr><td><strong>SPAR</strong></td><td>PuroClean</td><td>Strategic/Preferred/Approved/Restricted tiers</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card-flat" style="margin-top:8px;">
+  <h3 style="margin:-14px -14px 12px;padding:10px 14px;">RIA 2025 TPA Scorecard Rankings</h3>
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>#</th><th>TPA</th><th>Strength</th></tr>
+      <tr><td><strong>1</strong></td><td><strong>OnCORE Repair</strong></td><td>#1 for 3 consecutive years</td></tr>
+      <tr><td><strong>2</strong></td><td><strong>Hancock Claims PRN</strong></td><td>Highest credentialing (4.0)</td></tr>
+      <tr><td>&mdash;</td><td>Contractor Connection</td><td>Largest network, most public data</td></tr>
+      <tr><td>&mdash;</td><td>Accuserve</td><td>Fastest onboarding (1 day)</td></tr>
+      <tr><td>&mdash;</td><td>Sedgwick</td><td>Iron Clad Warranty differentiator</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<a id="framework"></a>
+<h2>Proposed ReliableClaim SLA Framework</h2>
+<div class="card">
+  <div class="section-pad">
+    <p><strong>6 tiers, built from competitive floor/ceiling analysis.</strong></p>
+  </div>
+
+  <details>
+    <summary><span class="badge blue">TIER 1</span> Response Times</summary>
+    <div class="inner">
+      <div class="scroll-x">
+        <table class="tbl">
+          <tr><th>SLA</th><th>Floor</th><th>Best</th><th>Our Target</th></tr>
+          <tr><td>Emergency accept</td><td>1 hr</td><td>15 min</td><td><strong>15 min</strong></td></tr>
+          <tr><td>Emergency customer call</td><td>2 hr</td><td>15 min</td><td><strong>30 min</strong></td></tr>
+          <tr><td>Emergency on-site</td><td>24 hr</td><td>2 hr</td><td><strong>4 hr</strong> (2 hr primary)</td></tr>
+          <tr><td>Standard first contact</td><td>48 hr</td><td>4 hr</td><td><strong>4 hr biz / 12 hr after</strong></td></tr>
+          <tr><td>Standard on-site</td><td>72 hr</td><td>24 hr</td><td><strong>24 hr</strong></td></tr>
+          <tr><td>Preliminary estimate</td><td>7+ days</td><td>24 hr</td><td><strong>48 hr</strong></td></tr>
+        </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="badge green">TIER 2</span> Quality</summary>
+    <div class="inner">
+      <div class="scroll-x">
+        <table class="tbl">
+          <tr><th>SLA</th><th>Floor</th><th>Best</th><th>Our Target</th></tr>
+          <tr><td>Workmanship warranty</td><td>1 yr</td><td>5 yr</td><td><strong>5 years</strong></td></tr>
+          <tr><td>Inspection pass rate</td><td>&mdash;</td><td>&mdash;</td><td><strong>95%</strong></td></tr>
+          <tr><td>Callback / redo rate</td><td>&mdash;</td><td>&mdash;</td><td><strong>&lt;3%</strong></td></tr>
+          <tr><td>Customer satisfaction</td><td>85%</td><td>97%</td><td><strong>95%+</strong></td></tr>
+          <tr><td>Would-recommend rate</td><td>&mdash;</td><td>99.1%</td><td><strong>97%+</strong></td></tr>
+          <tr><td>NPS score</td><td>35-36</td><td>&mdash;</td><td><strong>70+</strong></td></tr>
+          <tr><td>IICRC compliance</td><td>&mdash;</td><td>100%</td><td><strong>100%</strong></td></tr>
+        </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="badge purple">TIER 3</span> Communication</summary>
+    <div class="inner">
+      <div class="scroll-x">
+        <table class="tbl">
+          <tr><th>SLA</th><th>Our Target</th></tr>
+          <tr><td>Policyholder status updates</td><td><strong>Every 48 hours</strong></td></tr>
+          <tr><td>Returned calls/messages</td><td><strong>2 hours (biz hrs)</strong></td></tr>
+          <tr><td>Adjuster updates</td><td><strong>Every 48 hrs or each milestone</strong></td></tr>
+          <tr><td>Scope change notification</td><td><strong>Within 4 hours</strong></td></tr>
+          <tr><td>Supplement submission</td><td><strong>72 hours</strong></td></tr>
+          <tr><td>Completion certificate</td><td><strong>Within 24 hours</strong></td></tr>
+          <tr><td>Invoice submission</td><td><strong>Within 48 hours</strong></td></tr>
+        </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="badge orange">TIER 4</span> Operations / Cycle Times</summary>
+    <div class="inner">
+      <div class="scroll-x">
+        <table class="tbl">
+          <tr><th>Job Type</th><th>Target</th></tr>
+          <tr><td>Cat 1 water dry-out</td><td><strong>3-5 days</strong></td></tr>
+          <tr><td>Cat 2 water dry-out</td><td><strong>3-5 days</strong></td></tr>
+          <tr><td>Cat 3 water dry-out</td><td><strong>5-7 days</strong></td></tr>
+          <tr><td>Mold remediation (small)</td><td><strong>3-5 days</strong></td></tr>
+          <tr><td>Emergency board-up</td><td><strong>Same day</strong></td></tr>
+          <tr><td>Contents pack-out</td><td><strong>24-48 hours</strong></td></tr>
+          <tr><td>Rebuild &lt;$10K</td><td><strong>2-3 weeks</strong></td></tr>
+          <tr><td>Rebuild $10K-$50K</td><td><strong>4-8 weeks</strong></td></tr>
+        </table>
+      </div>
+      <p style="margin-top:10px;"><strong>Documentation:</strong> 20+ photos/inspection (timestamped), moisture readings every 24 hrs, equipment logs with runtime hours, drying logs per material/location.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="badge red">TIER 5</span> Credentialing</summary>
+    <div class="inner">
+      <div class="scroll-x">
+        <table class="tbl">
+          <tr><th>Requirement</th><th>Standard</th></tr>
+          <tr><td>IICRC WRT</td><td><strong>Required on-site every water job</strong></td></tr>
+          <tr><td>IICRC AMRT</td><td><strong>Required all mold jobs</strong></td></tr>
+          <tr><td>IICRC FSRT</td><td><strong>Required all fire jobs</strong></td></tr>
+          <tr><td>Xactimate</td><td><strong>All estimators certified</strong></td></tr>
+          <tr><td>OSHA</td><td><strong>10-hour minimum all field staff</strong></td></tr>
+          <tr><td>Background checks</td><td><strong>All field employees, annually</strong></td></tr>
+          <tr><td>Continuing education</td><td><strong>16 hours/year per tech</strong></td></tr>
+          <tr><td>General Liability</td><td><strong>$1M occ / $2M aggregate</strong></td></tr>
+          <tr><td>Auto / HNOA</td><td><strong>$1M combined</strong></td></tr>
+          <tr><td>Workers' Comp</td><td><strong>Per state statutory</strong></td></tr>
+          <tr><td>Pollution Liability</td><td><strong>$1M</strong></td></tr>
+        </table>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary><span class="badge green">TIER 6</span> Payment (Differentiator)</summary>
+    <div class="inner">
+      <div class="scroll-x">
+        <table class="tbl">
+          <tr><th>SLA</th><th>Our Target</th><th>Industry Norm</th></tr>
+          <tr><td>Payment to contractors</td><td><strong>Net 15 days</strong></td><td>30-90 days</td></tr>
+          <tr><td>Supplement decision</td><td><strong>5 business days</strong></td><td>15-30+ days</td></tr>
+          <tr><td>Fee transparency</td><td><strong>Published schedule</strong></td><td>Opaque 5-20%</td></tr>
+          <tr><td>Invoice accuracy</td><td><strong>&lt;2% revision rate</strong></td><td>10-15%</td></tr>
+        </table>
+      </div>
+    </div>
+  </details>
+</div>
+
+<div class="card-flat" style="margin-top:8px;">
+  <h3 style="margin:-14px -14px 12px;padding:10px 14px;">Implementation Phases</h3>
+  <p><span class="badge blue">Phase 1</span> <strong>Launch:</strong> Response times + Communication + Credentialing</p>
+  <p><span class="badge green">Phase 2</span> <strong>Month 2-3:</strong> Quality SLAs with measurement + Cycle times</p>
+  <p><span class="badge purple">Phase 3</span> <strong>Month 4-6:</strong> Payment SLAs + Public dashboard + Carrier-customized packages</p>
+</div>
+
+<!-- ============================================ -->
+<a id="profiles"></a>
+<h2>TPA Profiles</h2>
+<div class="card">
+
+  <details>
+    <summary>Contractor Connection (Crawford)</summary>
+    <div class="inner">
+      <p><strong>Largest independently-managed network.</strong> 6,000+ contractors, $3B/yr, 500K assignments. 7 of top 10 US carriers.</p>
+      <ul>
+        <li><strong>POMS scoring:</strong> TIP (cycle time), CSAT, professionalism, estimate accuracy, quality</li>
+        <li><strong>5-point QA:</strong> Electronic audit → Scope audit (100% line items) → Re-inspection → CSAT monitoring → Performance monitoring</li>
+        <li><strong>J.D. Power:</strong> Certified 5 consecutive years (2017-2021)</li>
+        <li><strong>Golden Hammer Award:</strong> Top 100 contractors recognized annually</li>
+        <li><strong>Removal:</strong> Must maintain "satisfactory rating" or face reduced assignments / removal</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Hancock Claims (#1 RIA Credentialing)</summary>
+    <div class="inner">
+      <ul>
+        <li>Inspection scheduling: <strong>4-8 hours</strong></li>
+        <li>Deploy to any area: <strong>24-48 hours</strong></li>
+        <li>Report to adjuster: <strong>24 hours</strong></li>
+        <li>Cycle time: <strong>7+ days faster</strong> than traditional</li>
+        <li>LAE reduction: <strong>50%</strong></li>
+        <li>CSAT improvement: <strong>10-15%</strong> over baseline</li>
+        <li><strong>Exemplar platform</strong> with required fields/checkpoints</li>
+        <li><strong>Haag certification</strong> required for technicians</li>
+        <li>Payment via escrow until job approval</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Accuserve</summary>
+    <div class="inner">
+      <ul>
+        <li><strong>No signup/membership fees</strong></li>
+        <li><strong>1-day onboarding</strong> via Sublynk partnership</li>
+        <li><strong>IICRC WRT required on every water visit</strong></li>
+        <li>IICRC AMRT required for mold</li>
+        <li>$1M GL / $2M agg, pollution liability required</li>
+        <li>Performance-based: top performers get more work</li>
+        <li>Quarterly Premier bonus: $1,000 for top performers</li>
+        <li>84% resolution rate</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Sedgwick</summary>
+    <div class="inner">
+      <ul>
+        <li>2,000+ contractor locations</li>
+        <li><strong>Iron Clad Warranty:</strong> 5 yr (replace), 3 yr (GC), 1 yr (repair)</li>
+        <li><strong>If contractor fails, Sedgwick assumes warranty</strong></li>
+        <li>Annual recertification required</li>
+        <li>File audits, re-inspections, NPS surveys</li>
+        <li>Monthly/quarterly/annual performance reports</li>
+        <li>Non-performers removed from network</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Alacrity Solutions</summary>
+    <div class="inner">
+      <ul>
+        <li><strong>Selling MRP division (Jan 2026)</strong> = market opportunity</li>
+        <li>24/7/365 FNOL intake operations center</li>
+        <li>AlacNet platform for timelines, assignments, payment</li>
+        <li>5-year workmanship warranty</li>
+        <li>Nationwide Insurance partner (ala-nw.com)</li>
+        <li>CGL + CPL + Pollution Liability required</li>
+        <li>Annual review: CSAT surveys, on-site visits, credentialing</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>National Networks (DKI, Paul Davis, BELFOR, PuroClean)</summary>
+    <div class="inner">
+      <p><strong>DKI:</strong> On-site within 2 hours. Min $500K revenue. Full-service required.</p>
+      <p><strong>Paul Davis:</strong> IICRC-approved training center with flood house. QA dept for estimate review. Pioneered 3-day drying.</p>
+      <p><strong>BELFOR:</strong> #1 Contractor on Top 500 Remodelers since 2001. Contributed to IICRC S500/S520 standards.</p>
+      <p><strong>PuroClean:</strong> SPAR tiers (Strategic/Preferred/Approved/Restricted). SOC2 Type 2 for preferred. $80M national accounts in 2025. 500+ locations.</p>
+    </div>
+  </details>
+</div>
+
+<!-- ============================================ -->
+<a id="pain"></a>
+<h2>Contractor Pain Points</h2>
+<div class="card">
+  <div class="section-pad">
+    <div class="highlight warn"><strong>45% of contractors</strong> would prefer no TPA work at all.</div>
+  </div>
+
+  <div class="scroll-x">
+    <table class="tbl">
+      <tr><th>Pain Point</th><th>Details</th></tr>
+      <tr><td><strong>Payment delays</strong></td><td>30-90 days standard. Disputed adds 30-90 more. Contractors front all costs.</td></tr>
+      <tr><td><strong>Scope shortfall</strong></td><td>Initial estimates cover only 50-65% of actual cost. 35-50% supplement gap.</td></tr>
+      <tr><td><strong>TPA fees</strong></td><td>5-20% of gross claim revenue, often opaque</td></tr>
+      <tr><td><strong>Admin burden</strong></td><td>Requires dedicated FTE for portal management</td></tr>
+      <tr><td><strong>Unrealistic response times</strong></td><td>"Feel compressed" and "interfere with ability to execute the work"</td></tr>
+      <tr><td><strong>Documentation overload</strong></td><td>Xactimate, ProfileGorilla, drying logs, OSHA, moisture reports</td></tr>
+      <tr><td><strong>SLA enforcement</strong></td><td>Reduced assignments, 30-day discipline, network removal</td></tr>
+      <tr><td><strong>Overhead gap</strong></td><td>Actual contractor overhead ~30% vs. 10% allowed by insurers</td></tr>
+    </table>
+  </div>
+
+  <div class="section-pad">
+    <p><strong>Industry recommendation:</strong> Keep TPA work &le;20% of total revenue.</p>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<a id="legal"></a>
+<h2>Legal / Regulatory Landscape</h2>
+<div class="card">
+  <details>
+    <summary>Key Lawsuits</summary>
+    <div class="inner">
+      <p><strong>Allstate $335K Settlement:</strong> Paid $335K to settle $33K restoration invoice. Falsely claimed OH&P not covered for mitigation.</p>
+      <p><strong>People's Trust (FL):</strong> Multiple lawsuits for faulty workmanship, corner-cutting via in-house Rapid Response Team.</p>
+      <p><strong>FAPIA vs. Velocity Risk (2025):</strong> Anti-competitive endorsements barring policyholders from hiring public adjusters.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Assignment of Benefits (AOB)</summary>
+    <div class="inner">
+      <p><strong>Florida:</strong> 405 AOB lawsuits (2006) → 28,200 (2016). HB 7065 signed 2019.</p>
+      <p><strong>Texas:</strong> AOBs illegal and unenforceable. Contractors using limited POA workaround risk criminal penalties.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Unfair Claims Practice Act</summary>
+    <div class="inner">
+      <p>Merlin Law Group argues depressed costs under preferred vendor programs don't restore insureds to pre-loss condition, potentially violating UCPA.</p>
+    </div>
+  </details>
+</div>
+
+<!-- ============================================ -->
+<a id="docs"></a>
+<h2>Source Documents</h2>
+<div class="card">
+  <div class="section-pad">
+    <div class="highlight blue"><strong>How to save:</strong> Tap any link below → PDF opens → Share (↑) → "Save to Files" or "Copy to Google Drive"</div>
+  </div>
+
+  <h3>Contractor Connection (Crawford)</h3>
+  <a class="doc" href="https://assets.crawco.com/docs/us-contractorconnection-managed-repair-advantage-brochure.pdf" target="_blank"><span class="doc-name">Managed Repair Advantage Brochure</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://assets.crawco.com/docs/CCC-SS-Generic.pdf" target="_blank"><span class="doc-name">Service Sheet (key stats)</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://cdn.bfldr.com/RY9Y61B5/at/482h48r96skbt9ft586zh3qh/ccc-us-website-faq.pdf" target="_blank"><span class="doc-name">FAQ Document</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://apps.contractorconnection.com/contrdocs/canada_insurance.pdf" target="_blank"><span class="doc-name">Canada Insurance Requirements</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.contractorconnection.com/insurance-programs/insurance-programsperformance-metrics/" target="_blank"><span class="doc-name">Performance Metrics (SLA data)</span><span class="doc-type web">WEB</span></a>
+  <a class="doc" href="https://www.contractorconnection.com/insurance-programs/insurance-programsperformance-metrics/insurance-programsinsurance-programsperformance-metricsquality-assurance/" target="_blank"><span class="doc-name">Quality Assurance Program</span><span class="doc-type web">WEB</span></a>
+  <a class="doc" href="https://home.contractorconnection.com/potential-contractors/overview/potential-contractorsoverviewrequirements/" target="_blank"><span class="doc-name">Contractor Requirements</span><span class="doc-type web">WEB</span></a>
+
+  <h3>Citizens Property Insurance (FL)</h3>
+  <a class="doc" href="https://www.citizensfla.com/documents/20702/7979944/Managed+Repair+Program+Brochure.pdf" target="_blank"><span class="doc-name">Managed Repair Brochure</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2022/05/Citizens-Agreement-for-Contractor-Managed-Repair-Program-1.pdf" target="_blank"><span class="doc-name">Contractor Agreement (Full Contract)</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2021/12/Redacted-contract-Citizens-Agreement-for-Contractor-Managed-Repair-Program-1.pdf" target="_blank"><span class="doc-name">Contractor Agreement (Redacted)</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://floir.com/docs-sf/property-casualty-libraries/market-regulation/2025/citizens-property-insurance-corporation_final-exam-report.pdf" target="_blank"><span class="doc-name">OIR Market Conduct Exam 2025</span><span class="doc-type">PDF</span></a>
+
+  <h3>Alacrity Solutions</h3>
+  <a class="doc" href="https://em.alacrity.net/Download/Master_Contract.pdf" target="_blank"><span class="doc-name">Master Contractor Agreement</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://em.alacrity.net/Download/Insurance%20Requirements.pdf" target="_blank"><span class="doc-name">Insurance Requirements</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.cpg.org/globalassets/documents/publications/cic-understanding-the-claims-process-using-alacrity-services-brochure.pdf" target="_blank"><span class="doc-name">CPG Claims Process Brochure</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.alacritysolutions.com/mrp-faqs/" target="_blank"><span class="doc-name">MRP FAQ</span><span class="doc-type web">WEB</span></a>
+
+  <h3>Sedgwick</h3>
+  <a class="doc" href="https://www.sedgwickrepair.com/wp-content/uploads/2024/11/SEDGWICK_REPAIR_SOLUTIONS.pdf" target="_blank"><span class="doc-name">Repair Solutions 2024</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://distinguished.com/wp-content/uploads/2021/01/Sedgwick-Repair-Solutions.pdf" target="_blank"><span class="doc-name">Repair Solutions (Distinguished)</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.sedgwick.com/repair-solutions/" target="_blank"><span class="doc-name">Repair Solutions Overview</span><span class="doc-type web">WEB</span></a>
+
+  <h3>BluSky Restoration</h3>
+  <a class="doc" href="https://www.goblusky.com/wp-content/uploads/2021/04/subcontractor-qualification-packet-rev.-3-22-21v6.pdf" target="_blank"><span class="doc-name">Subcontractor Qualification Packet</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.goblusky.com/media/0_Instructions-How_to_complete_BluSky_Trade_Partner_Qualification_v62624.pdf" target="_blank"><span class="doc-name">Trade Partner Instructions</span><span class="doc-type">PDF</span></a>
+
+  <h3>Hancock Claims</h3>
+  <a class="doc" href="https://hancockclaims.com/preferred-repair-network/" target="_blank"><span class="doc-name">Preferred Repair Network</span><span class="doc-type web">WEB</span></a>
+  <a class="doc" href="https://hancockclaims.com/how-hcc-vets-contractors-in-the-preferred-repair-network/" target="_blank"><span class="doc-name">How HCC Vets Contractors</span><span class="doc-type web">WEB</span></a>
+
+  <h3>Accuserve</h3>
+  <a class="doc" href="https://help.sublynk.com/article/50-accuserve-onboarding-compliance-requirements" target="_blank"><span class="doc-name">Onboarding & Compliance Requirements</span><span class="doc-type web">WEB</span></a>
+  <a class="doc" href="https://help.sublynk.com/article/17-insurance-specifics" target="_blank"><span class="doc-name">Insurance Specifics</span><span class="doc-type web">WEB</span></a>
+
+  <h3>Other TPAs</h3>
+  <a class="doc" href="http://madskymrp.com/wp-content/uploads/2016/10/Executive-Summary-MRP-vs.-Other-TPAs.pdf" target="_blank"><span class="doc-name">MADSKY: MRP vs Other TPAs</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.puroclean.com/spar/" target="_blank"><span class="doc-name">PuroClean SPAR Program</span><span class="doc-type web">WEB</span></a>
+  <a class="doc" href="https://www.nextgearsolutions.com/blog/restoration-business-tips/restoration-kpis-for-quality-compliance/" target="_blank"><span class="doc-name">CoreLogic: Restoration KPIs</span><span class="doc-type web">WEB</span></a>
+
+  <h3>RIA / Industry</h3>
+  <a class="doc" href="https://cdn.ymaws.com/members.restorationindustry.org/resource/resmgr/RIA_2025_TPA_Scorecard_Repor.pdf" target="_blank"><span class="doc-name">RIA 2025 TPA Scorecard Report</span><span class="doc-type">PDF</span></a>
+  <a class="doc" href="https://www.restorationindustry.org/ria-2025-tpa-scorecard-survey-report" target="_blank"><span class="doc-name">RIA Scorecard Survey Page</span><span class="doc-type web">WEB</span></a>
+  <a class="doc" href="https://iicrc.org/iicrcstandards/" target="_blank"><span class="doc-name">IICRC Standards & Field Guides</span><span class="doc-type web">WEB</span></a>
+
+  <h3>Legal / Regulatory</h3>
+  <a class="doc" href="https://www.insurancejournal.com/app/uploads/2025/10/FAPIA-complaint.pdf" target="_blank"><span class="doc-name">FAPIA vs. Velocity Risk (2025)</span><span class="doc-type legal">LEGAL</span></a>
+  <a class="doc" href="https://www.candrmagazine.com/allstate-pays-contractor-335000-to-settle-dispute-over-33000-restoration-invoice/" target="_blank"><span class="doc-name">Allstate $335K Settlement</span><span class="doc-type legal">LEGAL</span></a>
+  <a class="doc" href="https://www.propertyinsurancecoveragelaw.com/blog/the-managed-repair-and-third-party-administrator-problem/" target="_blank"><span class="doc-name">The TPA Problem (Merlin Law)</span><span class="doc-type legal">LEGAL</span></a>
+  <a class="doc" href="https://www.propertyinsurancecoveragelaw.com/2022/09/articles/insurance/do-managed-repair-programs-violate-the-unfair-claims-practice-act/" target="_blank"><span class="doc-name">Unfair Claims Practice Act & MRP</span><span class="doc-type legal">LEGAL</span></a>
+
+  <h3>Key Articles</h3>
+  <a class="doc" href="https://www.randrmagonline.com/articles/90826-for-restoration-contractors-apprehension-is-the-a-in-tpa" target="_blank"><span class="doc-name">R&R: Apprehension is the A in TPA</span><span class="doc-type article">ARTICLE</span></a>
+  <a class="doc" href="https://www.randrmagonline.com/articles/88659-working-with-a-tpa" target="_blank"><span class="doc-name">R&R: Working with a TPA</span><span class="doc-type article">ARTICLE</span></a>
+  <a class="doc" href="https://www.candrmagazine.com/stateoftheindustry/" target="_blank"><span class="doc-name">C&R: State of the Industry</span><span class="doc-type article">ARTICLE</span></a>
+  <a class="doc" href="https://www.candrmagazine.com/oncore-repair-ranked-1-in-2025-ria-tpa-scorecard-for-third-consecutive-year/" target="_blank"><span class="doc-name">OnCORE #1 RIA Scorecard 3 Years</span><span class="doc-type article">ARTICLE</span></a>
+  <a class="doc" href="https://cleanfax.com/2024-restoration-survey/" target="_blank"><span class="doc-name">Cleanfax 2024 Benchmarking Survey</span><span class="doc-type article">ARTICLE</span></a>
+  <a class="doc" href="https://www.fapia.net/managed-repair-crisis.html" target="_blank"><span class="doc-name">FAPIA: Managed Repair Crisis</span><span class="doc-type article">ARTICLE</span></a>
+</div>
+
+<p style="text-align:center;color:#999;font-size:11px;padding:20px 0;">ReliableClaim.com &mdash; TPA SLA Research &mdash; February 2026</p>
+
+</body>
+</html>
