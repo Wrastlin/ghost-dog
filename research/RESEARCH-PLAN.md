@@ -1,7 +1,7 @@
 # ReliableClaim.com - TPA SLA Research Plan
 
 > **Living document** - Updated as research progresses across sessions.
-> Last updated: 2026-02-07
+> Last updated: 2026-02-08
 
 ---
 
@@ -13,6 +13,7 @@ Build competitive SLAs for [reliableclaim.com](https://reliableclaim.com) by res
 /
 ├── README.md                                 ← Repo overview and quick reference
 ├── contractor-sla.md                         ← Primary deliverable: Contractor SLA
+├── sla-booklet.md                            ← Catalogue of 35 TPA SLA docs and guidelines
 ├── executive-summary.md                      ← One-page landscape overview
 ├── research/
 │   ├── RESEARCH-PLAN.md                      ← This file (living plan)
@@ -60,6 +61,7 @@ Build competitive SLAs for [reliableclaim.com](https://reliableclaim.com) by res
 - [x] Industry publication articles indexed
 - [x] Legal/regulatory documents linked
 - [x] Review/complaint sources indexed
+- [x] **SLA Booklet created** -- 35 curated SLA documents, contractor guidelines, and industry booklets (see `/sla-booklet.md`)
 
 ### Phase 3: Company Research 🔄 IN PROGRESS
 - [x] Research reliableclaim.com / Reliable Claim Solutions
@@ -112,6 +114,7 @@ Build competitive SLAs for [reliableclaim.com](https://reliableclaim.com) by res
 | Date | Session | Work Completed |
 |------|---------|---------------|
 | 2026-02-07 | Initial | Full data collection, TPA profiles, resource index, industry standards, contractor real-world research. Files committed to branch. |
+| 2026-02-08 | SLA Booklet | Created SLA Booklet cataloguing 35 TPA SLA documents, contractor guidelines, IICRC standards, RIA position statements, SLA templates, academic papers, and regulatory frameworks. Updated RESOURCE-INDEX.md with all new sources. |
 
 ---
 
