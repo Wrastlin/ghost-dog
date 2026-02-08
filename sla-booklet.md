@@ -3,7 +3,7 @@
 > **Curated catalogue of TPA Service Level Agreements, contractor guidelines, and industry booklets.**
 > For use by [ReliableClaim.com](https://reliableclaim.com) in building competitive SLA frameworks.
 >
-> Last updated: 2026-02-08
+> Last updated: 2026-02-08 (v2 -- expanded to 90+ documents)
 
 ---
 
@@ -11,16 +11,20 @@
 
 1. [Primary TPA/Restoration Contractor SLA Documents](#1-primary-tparestoration-contractor-sla-documents)
 2. [Insurance TPA Service Level Agreements](#2-insurance-tpa-service-level-agreements)
-3. [Industry Standards & Guidelines (IICRC)](#3-industry-standards--guidelines-iicrc)
-4. [RIA Position Statements](#4-ria-position-statements)
-5. [General SLA Templates & Examples](#5-general-sla-templates--examples)
-6. [Contractor/Vendor Specific Agreements](#6-contractorvendor-specific-agreements)
-7. [Academic & Research Papers](#7-academic--research-papers)
-8. [Government/Public Sector SLA Examples](#8-governmentpublic-sector-sla-examples)
-9. [Broader TPA Industry SLA Benchmarks](#9-broader-tpa-industry-sla-benchmarks)
-10. [NAIC & Regulatory Frameworks](#10-naic--regulatory-frameworks)
-11. [Priority Review Order](#11-priority-review-order)
-12. [Access Notes](#12-access-notes)
+3. [Major TPA Provider Documents](#3-major-tpa-provider-documents)
+4. [Industry Standards & Guidelines (IICRC)](#4-industry-standards--guidelines-iicrc)
+5. [RIA Position Statements](#5-ria-position-statements)
+6. [General SLA Templates & Examples](#6-general-sla-templates--examples)
+7. [Contractor/Vendor Specific Agreements](#7-contractorvendor-specific-agreements)
+8. [Academic & Research Papers](#8-academic--research-papers)
+9. [Government/Public Sector TPA RFPs & Contracts](#9-governmentpublic-sector-tpa-rfps--contracts)
+10. [Insurance Industry TPA Documents](#10-insurance-industry-tpa-documents)
+11. [Industry Resources & Guides](#11-industry-resources--guides)
+12. [Broader TPA Industry SLA Benchmarks](#12-broader-tpa-industry-sla-benchmarks)
+13. [NAIC & Regulatory Frameworks](#13-naic--regulatory-frameworks)
+14. [Summary by TPA Provider](#14-summary-by-tpa-provider)
+15. [Priority Review Order](#15-priority-review-order)
+16. [Access Notes](#16-access-notes)
 
 ---
 
@@ -53,7 +57,71 @@ These are real, unredacted TPA contracts -- the most valuable primary sources av
 
 ---
 
-## 3. Industry Standards & Guidelines (IICRC)
+## 3. Major TPA Provider Documents
+
+Contracts, agreements, practice overviews, and performance audits from the largest national TPA providers.
+
+### Sedgwick Claims Management Services (5 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 36 | **Sedgwick NFIB Select Program Participation Agreement (2023)** | [PDF](https://tpa.sedgwick.com/wp-content/uploads/2024/02/2023-NFIB-Select-Program-Plus-Participation-Agreement-Starting-1-1.pdf) |
+| 37 | **Sedgwick NFIB Group Participation Agreement (2024)** | [PDF](https://tpa.sedgwick.com/wp-content/uploads/2024/02/2024-NFIB-Group-Participation-Agreement-Starting-1-1.pdf) |
+| 38 | **Brevard County Schools Service Agreement with Sedgwick** | [PDF](https://agenda.brevardschools.org/publishing/eAgendaTOC/06-12-2012%20Regular%20School%20Board%20Meeting%20on%20Tuesday,%20June%2012,%202012%20-%20Documents%20Backup.pdf) |
+| 39 | **Orange County Sedgwick WC TPA Contract (MA-017-24010669)** | [PDF](http://cams.ocgov.com/Web_Publisher_sam/Agenda01_09_2024_files/images/O01123-000974A.PDF) |
+| 40 | **Royal Oak Michigan Sedgwick WC Extension Agreement (2023)** -- Notes service level concerns requiring one-year renewal | [PDF](https://www.romi.gov/DocumentCenter/View/36085/Workers-Comp-Sedgwick-Claims-Management-Extension-June-12-2023) |
+
+### Gallagher Bassett (5 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 41 | **GB Carrier Practice Overview (2023)** -- Comprehensive service standards | [PDF](https://insurers.gallagherbassett.com/wp-content/uploads/2023/06/US_GB-Carrier-Practice-Overview-2023.pdf) |
+| 42 | **GB Carrier Practice Overview (2024)** -- Updated service delivery framework | [PDF](https://insurers.gallagherbassett.com/wp-content/uploads/2024/05/US_GB-Carrier-Practice-Overview_Final-Low-Res-3.pdf) |
+| 43 | **GB TPA Claims System Comparison (RMIS Report)** | [PDF](https://insurers.gallagherbassett.co.nz/wp-content/uploads/2020/09/TPA-Claims-System-Comparison.pdf) |
+| 44 | **GB 3 Keys to Delivering Exceptional Service for Carriers** | [Web](https://insurers.gallagherbassett.com/insights/3-keys-to-delivering-exceptional-service-for-carriers/) |
+| 45 | **Gallagher Bassett Claims Management Overview** | [Web](https://www.ajg.com/insurance/insurance-claims-contacts/claims-management-third-party-administration/) |
+
+### CorVel Corporation (4 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 46 | **CorVel Healthcare Provider Agreement (Contract Terms)** | [PDF](https://coloradophysicaltherapynetwork.com/wp-content/uploads/CorVelContractTerms.pdf) |
+| 47 | **CorVel vs CCMSI North Carolina Procurement Case (2021)** -- Competitive TPA procurement dispute | [PDF](https://www.encoah.oah.state.nc.us/publicsite/SearchDocDisplay?Type=P&ID=1981692&CaseID=168944&CodeID=525&PersonID=0&File=2019%5C09%5CCCMSI%20v.%20CorVel%20Final%20Decision.pdf) |
+| 48 | **Everett WA CorVel Amendment No. 3 (2022)** | [PDF](https://www.everettwa.gov/AgendaCenter/ViewFile/Item/14389?fileID=82277) |
+| 49 | **Loudoun County VA CorVel Award (RFQ 137782)** | [Web](https://www.loudoun.gov/bids.aspx?bidID=636) |
+
+### Broadspire / Crawford & Company (4 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 50 | **Broadspire Global TPA Expansion Press Release (2014)** | [PDF](https://assets.crawfordandcompany.com/media/1580061/2014-4-28-crawfordpresrel-globaltpa-rims--final.pdf) |
+| 51 | **Broadspire Service Overview** | [Web](https://www.choosebroadspire.com) |
+| 52 | **Arch Insurance Broadspire WC/Auto Transition FAQ (2025)** | [PDF](https://www.archgroup.com/wp-content/uploads/Arch_WC-and-Auto-External-FAQ-2025.pdf) |
+| 53 | **Broadspire TPA Service Agreement Details (Blog Analysis)** | [Web](https://blog.reduceyourworkerscomp.com/2021/10/details-of-the-third-party-administrator-service-agreement/) |
+
+### ESIS / Chubb (4 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 54 | **ESIS Seamless TPA Transitions White Paper** | [PDF](https://www.esis.com/content/dam/chubb-sites/esis/esis-en/esis-updates/thought-leadership-articles-information/pdfs/esis-seamless-tpa-transitions.pdf) |
+| 55 | **ESIS Overview (Technology & Analytics)** | [PDF](https://www.esis.com/content/dam/chubb-sites/esis/esis-en/documents/esis_overview.pdf) |
+| 56 | **ESIS ProClaim Overview** | [PDF](https://www.esis.com/content/dam/chubb-sites/esis/esis-en/pdf/esis-proclaim-overview.pdf) |
+| 57 | **ESIS ProClaim Services Page** | [Web](https://www.esis.com/esis-en/products-services/professional-liability-esis-proclaim.html) |
+
+### York Risk Services Group (4 documents)
+
+| # | Document | Link |
+|---|----------|------|
+| 58 | **Orange County Performance Audit of York Risk (2012)** -- Found "service level expectations not closely tracked" and "no financial penalties for missing SLAs" | [PDF](https://www.ocgov.com/sites/default/files/import/data/files/10718.pdf) |
+| 59 | **York Risk City of York RFP Response (2018)** | [PDF](http://www.yorkcity.org/wp-content/uploads/2018/06/INSURANCE-BROKER-Proposal1.pdf) |
+| 60 | **California DIR Audit Report -- York Risk Performance (2019)** | [PDF](https://www.dir.ca.gov/dwc/AuditReport2019/AuditReport.pdf) |
+| 61 | **York Risk Services Overview** | [PDF](https://spruceblob01.blob.core.windows.net/stwpnjeda/pdfs/mods/York-Risk.pdf) |
+
+**Key finding from performance audits:** The Orange County audit of York Risk documented that "service level expectations were not closely tracked" and there were "no financial penalties for missing SLAs" -- a cautionary tale for any TPA relationship.
+
+---
+
+## 4. Industry Standards & Guidelines (IICRC)
 
 These standards define the technical requirements that underpin restoration SLAs. Response times, documentation requirements, and quality metrics all trace back to IICRC standards.
 
@@ -67,7 +135,7 @@ These standards define the technical requirements that underpin restoration SLAs
 
 ---
 
-## 4. RIA Position Statements
+## 5. RIA Position Statements
 
 The Restoration Industry Association publishes position statements that define fair contractor-TPA relationships. These are critical for understanding industry-accepted norms vs. exploitative practices.
 
@@ -83,7 +151,7 @@ The Restoration Industry Association publishes position statements that define f
 
 ---
 
-## 5. General SLA Templates & Examples
+## 6. General SLA Templates & Examples
 
 Useful for structuring ReliableClaim's own SLA documents. These provide formatting, clause language, and KPI definition patterns applicable across industries.
 
@@ -99,7 +167,7 @@ Useful for structuring ReliableClaim's own SLA documents. These provide formatti
 
 ---
 
-## 6. Contractor/Vendor Specific Agreements
+## 7. Contractor/Vendor Specific Agreements
 
 Real contractor and subcontractor agreements from the restoration industry.
 
@@ -111,7 +179,7 @@ Real contractor and subcontractor agreements from the restoration industry.
 
 ---
 
-## 7. Academic & Research Papers
+## 8. Academic & Research Papers
 
 Actuarial and academic research on TPA pricing, incentive structures, and service level economics.
 
@@ -119,12 +187,18 @@ Actuarial and academic research on TPA pricing, incentive structures, and servic
 |---|----------|------|
 | 30 | **TPA Service Pricing and Incentive Contracts (CAS Actuarial Paper)** -- Casualty Actuarial Society paper on TPA fee structures and incentive alignment | [PDF](https://www.casact.org/sites/default/files/database/dpp_dpp96_96dpp137.pdf) |
 | 31 | **Third Party Administrator Service Pricing Research** -- University of Nebraska academic research on TPA pricing models | [PDF](https://digitalcommons.unl.edu/context/joap/article/1111/viewcontent/Jeng.pdf) |
+| 84 | **User-Centered Security Service Level Agreement (Dissertation)** | [PDF](https://ninercommons.charlotte.edu/record/1849/files/Alasmari_uncc_0694D_13045.pdf) |
+| 85 | **Verifying Cloud Service-Level Agreement by Third-Party Auditor** | [Web](https://researchwith.stevens.edu/en/publications/verifying-cloud-service-level-agreement-by-a-third-party-auditor/) |
+| 86 | **SLA Management Techniques in Cloud (Academia)** | [Web](https://www.academia.edu/35039098/A_Study_on_Service_Level_Agreement_Management_Techniques_in_Cloud) |
+| 87 | **Auditing Cloud Service Level Agreement on VM CPU (Temple University)** | [PDF](https://cis.temple.edu/~wu/research/publications/Publication_files/ICC2014a.pdf) |
 
 ---
 
-## 8. Government/Public Sector SLA Examples
+## 9. Government/Public Sector TPA RFPs & Contracts
 
-Public sector SLAs provide useful structure and language patterns, even when the specific industry differs.
+Public sector TPA contracts are gold -- they're fully transparent, include explicit SLA terms, and show how governments structure performance requirements. These span state, county, local, and transit agencies.
+
+### General SLA Templates
 
 | # | Document | Link |
 |---|----------|------|
@@ -133,9 +207,71 @@ Public sector SLAs provide useful structure and language patterns, even when the
 | 34 | **Secured Data Technologies Managed Services Agreement (2025)** -- Current managed services agreement with SLA tiers | [PDF](https://www.securedatatech.com/wp-content/uploads/2025/06/Managed-Services-Agreement.pdf) |
 | 35 | **Mazagon Dock Service Level Agreement** -- Detailed SLA from Indian government shipbuilder, useful for penalty/remedy clause language | [PDF](https://mazagondock.in/app/writereaddata/tenders/800263424202323950PMSLA-3208053.pdf) |
 
+### State Government TPA RFPs & Contracts
+
+| # | Document | Link |
+|---|----------|------|
+| 62 | **Mississippi Third Party Administration Services Contract** | [PDF](https://srm.magic.ms.gov/SAP/EBP/DOCSERVER/?ATTKGET&KPID=8B4E7B085F0B1EEC92977028D2F619F1&KPCLASS=BBP_L_DOC&SAP-CLIENT=100) |
+| 63 | **Delaware Medical TPA RFP Scope of Services (2025)** | [PDF](https://dhr.delaware.gov/benefits/sebc/documents/2025/1216-medical-tpa-rfp-scope-of-services.pdf) |
+| 64 | **New Mexico Workers Comp TPA RFP (24-350-4520)** | [PDF](https://www.generalservices.state.nm.us/wp-content/uploads/Workers-compensation-third-party-administrator-rfp-24-350-4520-00001.pdf) |
+| 65 | **New Mexico Public Schools Insurance Authority WC TPA RFP (342-2023-06)** | [PDF](https://nmpsia.com/docs/NMPSIA_Workers_Comp_Third_Party_Claims_Adminstration_Serv_RFP_342-2023-06_12323.pdf) |
+| 66 | **New Mexico Property and Liability Claims TPA RFP** | [PDF](https://nmpsia.com/docs/NMPSIA%20Property%20and%20Liability%20RFP%20Final.pdf) |
+| 67 | **Maryland UEF Workers Compensation TPA RFP (2018)** | [PDF](https://dbm.maryland.gov/contracts/Documents/ContractLibrary/MUEF/UEFC96102018001-UEF-WorkersCompRFP.pdf) |
+
+### County/Local Government TPA RFPs & Contracts
+
+| # | Document | Link |
+|---|----------|------|
+| 68 | **Pennsylvania Turnpike Commission Auto/GL TPA RFP (19-10260-8788)** | [PDF](https://www.emarketplace.state.pa.us/FileDownload.aspx?file=19-10260-8788%2FSolicitation_0.pdf&OriginalFileName=RFP+8788+AL++GL+CLAIMS+ADMIN.pdf) |
+| 69 | **Fort Bend County TX Property/Casualty TPA RFP (24-005)** | [PDF](https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/purchasing-documents/current-bids-rfps-rfqs/rfp-24-005-addendum-1.pdf) |
+| 70 | **Savannah GA TPA Scope RFP Template** | [PDF](https://agenda.savannahga.gov/content/files/tpa-scope.pdf) |
+| 71 | **Clark County WA Insurance Brokerage & TPA RFP (932)** | [PDF](https://clark.wa.gov/sites/default/files/2025-08/rfp-932-insurance-brokerage-and-third-party-administrator-services.pdf) |
+| 72 | **Pierce County WA Self Insurance TPA RFP** | [PDF](https://www.piercecountywa.gov/DocumentCenter/View/36502/RFP-1520-3rd-Party-Admin-for-Self-Insurance-Med-Plan-and-Stop-Loss-Insurance) |
+| 73 | **Los Gatos CA Third Party Administrator Agreement** | [PDF](https://weblink.losgatosca.gov/WebLink/0/edoc/1719050/Attachment%201%20-%20TAG%20Agreement.pdf) |
+| 74 | **Lake Worth FL Professional Services Agreement (Property/Casualty)** | [PDF](https://mccmeetingspublic.blob.core.usgovcloudapi.net/lakewthfl-meet-59ef2fa6ab07409ba02860fb8b7fcb28/ITEM-Attachment-002-fe677d59656c4dd7ac35ad7ca30be7c2.pdf) |
+
+### Transit/Transportation Agencies
+
+| # | Document | Link |
+|---|----------|------|
+| 75 | **MTA-DTO Joint TPA Services RFP (2023109)** | [PDF](https://www.wegotransit.com/assets/bidpostingdocuments/RFP%202023109%20Third%20Party%20Administrator%20Services1.pdf) |
+
+### Regulatory/Oversight
+
+| # | Document | Link |
+|---|----------|------|
+| 76 | **California CPUC Lifeline TPA Contract Management Audit (2020)** | [PDF](https://www.cpuc.ca.gov/-/media/cpuc-website/transparency/commissioner-committees/finance-and-administration/2020/sept-2-2020-commission-meeting-items/cpuc-lifeline-tpa-contract-management-audit-presentation-9-2-2020.pdf) |
+| 77 | **PRISM Risk Management TPA Comparison Guide** | [Web](https://www.prismrisk.gov/member-services/services/vendor-services/third-party-administrators-tpas/) |
+| 78 | **ICRMA Workers Compensation TPA Performance Standards (2023)** | [PDF](https://www.icrma.org/assets/private/files/Policy_WC_TPA_PerformanceStandards_20230810.pdf) |
+
 ---
 
-## 9. Broader TPA Industry SLA Benchmarks
+## 10. Insurance Industry TPA Documents
+
+SLAs and service agreements from insurance carriers and specialty TPA providers.
+
+| # | Document | Link |
+|---|----------|------|
+| 79 | **Florida FIGA TPA Services Invitation to Negotiate (2022)** | [PDF](https://figafacts.com/wp-content/uploads/2022/06/2022-FIGA-Invitation-to-Negotiate-TPA-Services-6-1-22.pdf) |
+| 80 | **Aon Service Level Agreement Template** | [PDF](https://www.aon.com/getmedia/32f8042a-0c8e-4201-9c9c-f3a2575adcf1/service_level_agreement.pdf.aspx) |
+| 81 | **LSG Client Group Claims Service Level Agreement** | [PDF](https://www.lsg.com/Content/img/blogs/images-new/Generic_OCGs_-_LSG.pdf) |
+| 82 | **Safire Insurance Service Level Agreement** | [PDF](https://www.safireinsurance.com/downloads/safire_sla.pdf) |
+| 83 | **AdvantageRCM Service Level Agreement (Medical Billing TPA)** | [PDF](https://client.compulinkadvantage.com/wp-content/uploads/AdvantageRCM-Service-Level-Agreement.pdf) |
+| 88 | **ESIS ProClaim Playbook** | [PDF](https://www.esis.com/content/dam/chubb-sites/esis/esis-en/products-services/professional-liability-esis-proclaim/documents/pdf/proclaim_playbook_online.pdf) |
+| 89 | **Broadspire MyClaim User Agreements** | [Web](https://myclaim.choosebroadspire.com/useragreements/0) |
+| 90 | **SLACAL Introductory Guide to SLIP Enhanced** | [PDF](https://www.slacal.com/docs/default-source/general-content-documents/Resources/introductory-guide-to-slip-enhanced-rev-2018.pdf?sfvrsn=50f3607c_2) |
+
+---
+
+## 11. Industry Resources & Guides
+
+| # | Document | Link |
+|---|----------|------|
+| 91 | **YCPARMIA "What is a TPA?" Guide** | [PDF](http://www.ycparmia.org/risk/20.pdf) |
+
+---
+
+## 12. Broader TPA Industry SLA Benchmarks
 
 Compiled from web research across health, workers' compensation, and property/casualty TPA sectors. These provide context for how SLAs are structured beyond the restoration niche.
 
@@ -201,7 +337,7 @@ Standard non-compliance remedies found across TPA agreements:
 
 ---
 
-## 10. NAIC & Regulatory Frameworks
+## 13. NAIC & Regulatory Frameworks
 
 ### NAIC Model Guidelines (GDL-1090)
 
@@ -240,7 +376,30 @@ For TPAs using independent adjusters as contractors:
 
 ---
 
-## 11. Priority Review Order
+## 14. Summary by TPA Provider
+
+| TPA | # Docs | Key Findings |
+|-----|--------|--------------|
+| **Sedgwick** | 5 | NFIB programs (2023-2024), school district agreements, county/municipal contracts. Royal Oak MI had service level concerns. |
+| **Gallagher Bassett** | 5 | Carrier practice overviews, RMIS comparison reports, best-in-class TPA ratings, service delivery framework. |
+| **CorVel** | 4 | Healthcare provider agreements, municipal contracts, competitive procurement case study. |
+| **Broadspire/Crawford** | 4 | Global TPA expansion, transition FAQ, service agreement analysis, MyClaim platform. |
+| **ESIS (Chubb)** | 4 | Seamless transition methodology, technology/analytics overview, ProClaim playbook. |
+| **York Risk Services** | 4 | Performance audit found SLA tracking gaps and no financial penalties. California regulatory audit results. |
+
+### TPA Fee Structures (from academic research)
+
+| Model | Description |
+|-------|-------------|
+| **Per claim** | 12-month, 24-month, or life-of-claim service lengths |
+| **Dedicated office/unit** | Fixed cost for dedicated TPA team |
+| **% of incurred/paid loss** | Fee scales with claim costs |
+| **% of premium** | Fee tied to premium volume |
+| **% of employees** | Fee based on covered population |
+
+---
+
+## 15. Priority Review Order
 
 For ReliableClaim.com SLA development, review in this order:
 
@@ -249,24 +408,41 @@ For ReliableClaim.com SLA development, review in this order:
 1. **Citizens-Crawford Agreement (#1 or #2)** -- 67-page real contract with all SLA details
 2. **Lloyd's TPA Agreement (#6)** -- International standard
 3. **Mississippi TPA Contract (#8)** -- Public sector requirements
+4. **Orange County Sedgwick WC Contract (#39)** -- County-level TPA contract
+5. **Aon SLA Template (#80)** -- Major broker's standard SLA structure
 
 ### Phase 2 -- Industry Standards
 
-4. **RIA Position Statements Portal (#15, #16)** -- Member access required but critical
-5. **IICRC S500 Overview (#10, #11)** -- Response time standards that drive SLAs
+6. **RIA Position Statements Portal (#15, #16)** -- Member access required but critical
+7. **IICRC S500 Overview (#10, #11)** -- Response time standards that drive SLAs
+8. **ICRMA WC TPA Performance Standards (#78)** -- JPA performance standard framework
 
-### Phase 3 -- Template Reference
+### Phase 3 -- TPA Provider Benchmarks
 
-6. **BrightGauge MSA Template (#22)** -- Well-structured SLA sections
-7. **ScopeStack MSA Template (#24)** -- Modern format with KPIs
+9. **GB Carrier Practice Overviews (#41, #42)** -- How the best TPAs market their SLAs
+10. **ESIS Seamless Transitions (#54)** -- TPA transition methodology
+11. **Orange County York Risk Audit (#58)** -- What SLA failure looks like
+12. **California DIR Audit (#60)** -- Regulatory view of TPA performance
 
-### Phase 4 -- Academic/Pricing
+### Phase 4 -- Government RFPs (SLA Language)
 
-8. **TPA Pricing Research (#30, #31)** -- Understanding fee structures and incentive alignment
+13. **Delaware Medical TPA RFP (#63)** -- Latest (2025) state RFP with full scope
+14. **New Mexico WC TPA RFP (#64)** -- Detailed WC-specific requirements
+15. **Savannah GA TPA Scope (#70)** -- Clean, concise local government RFP template
+16. **Florida FIGA ITN (#79)** -- Insurance guaranty association TPA requirements
+
+### Phase 5 -- Template Reference
+
+17. **BrightGauge MSA Template (#22)** -- Well-structured SLA sections
+18. **ScopeStack MSA Template (#24)** -- Modern format with KPIs
+
+### Phase 6 -- Academic/Pricing
+
+19. **TPA Pricing Research (#30, #31)** -- Understanding fee structures and incentive alignment
 
 ---
 
-## 12. Access Notes
+## 16. Access Notes
 
 ### Requires RIA Membership
 
@@ -283,11 +459,21 @@ For ReliableClaim.com SLA development, review in this order:
 - **Citizens Florida contracts (#1-5)** -- The goldmine. Actual 67-page contracts with specific SLA terms, payment structures, warranty requirements, and performance metrics
 - **Lloyd's agreement (#6)** -- International perspective on TPA governance
 - **Sweetwater subcontractor agreement (#28)** -- Real restoration industry subcontractor terms
+- **All government RFPs (#62-78)** -- Public records, fully transparent SLA requirements
+- **GB Carrier Practice Overviews (#41-42)** -- How a top TPA presents its service standards
+- **ESIS white papers (#54-56)** -- Chubb's TPA methodology documents
+- **York Risk audit (#58)** -- Critical lessons on SLA enforcement failures
 
 ### Scribd (Free with Account)
 
 - IICRC S500 document (#13) -- May require Scribd subscription
 - Repair Shop Agreement (#27) -- Managed repair contractor agreement
+
+### May Require Registration/Access
+
+- **ICRMA WC TPA Performance Standards (#78)** -- May require member access
+- **PRISM TPA Comparison Guide (#77)** -- Public entity risk management resource
+- **Broadspire MyClaim (#89)** -- User agreement portal
 
 ---
 

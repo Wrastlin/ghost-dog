@@ -284,6 +284,71 @@ These sources were added as part of the [SLA Booklet](/sla-booklet.md) catalogui
 | NAIC State Licensing Handbook Ch. 28 (TPAs) | State-by-state TPA licensing requirements | https://content.naic.org/sites/default/files/inline-files/Chapter%2028.pdf |
 | Sedgwick JBWCP Service Guidelines | Public sector TPA service guidelines | https://courts.ca.gov/system/files/file/jbwcp_sedgwick_service_guidelines.pdf |
 
+### Major TPA Provider Documents (v2 expansion)
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| Sedgwick NFIB Select Program (2023) | Participation agreement | https://tpa.sedgwick.com/wp-content/uploads/2024/02/2023-NFIB-Select-Program-Plus-Participation-Agreement-Starting-1-1.pdf |
+| Sedgwick NFIB Group (2024) | Group participation agreement | https://tpa.sedgwick.com/wp-content/uploads/2024/02/2024-NFIB-Group-Participation-Agreement-Starting-1-1.pdf |
+| Brevard County Schools / Sedgwick | Service agreement | https://agenda.brevardschools.org/publishing/eAgendaTOC/06-12-2012%20Regular%20School%20Board%20Meeting%20on%20Tuesday,%20June%2012,%202012%20-%20Documents%20Backup.pdf |
+| Orange County Sedgwick WC Contract | MA-017-24010669 | http://cams.ocgov.com/Web_Publisher_sam/Agenda01_09_2024_files/images/O01123-000974A.PDF |
+| Royal Oak MI Sedgwick Extension (2023) | WC extension with service concerns | https://www.romi.gov/DocumentCenter/View/36085/Workers-Comp-Sedgwick-Claims-Management-Extension-June-12-2023 |
+| GB Carrier Practice Overview (2023) | Service standards | https://insurers.gallagherbassett.com/wp-content/uploads/2023/06/US_GB-Carrier-Practice-Overview-2023.pdf |
+| GB Carrier Practice Overview (2024) | Updated service framework | https://insurers.gallagherbassett.com/wp-content/uploads/2024/05/US_GB-Carrier-Practice-Overview_Final-Low-Res-3.pdf |
+| GB TPA Claims System Comparison | RMIS report | https://insurers.gallagherbassett.co.nz/wp-content/uploads/2020/09/TPA-Claims-System-Comparison.pdf |
+| CorVel Healthcare Provider Agreement | Contract terms | https://coloradophysicaltherapynetwork.com/wp-content/uploads/CorVelContractTerms.pdf |
+| CorVel vs CCMSI NC Procurement (2021) | Competitive dispute | https://www.encoah.oah.state.nc.us/publicsite/SearchDocDisplay?Type=P&ID=1981692&CaseID=168944&CodeID=525&PersonID=0&File=2019%5C09%5CCCMSI%20v.%20CorVel%20Final%20Decision.pdf |
+| Everett WA CorVel Amendment (2022) | Municipal TPA amendment | https://www.everettwa.gov/AgendaCenter/ViewFile/Item/14389?fileID=82277 |
+| Broadspire Global TPA Expansion (2014) | Press release | https://assets.crawfordandcompany.com/media/1580061/2014-4-28-crawfordpresrel-globaltpa-rims--final.pdf |
+| Arch Insurance Broadspire WC/Auto FAQ (2025) | Transition FAQ | https://www.archgroup.com/wp-content/uploads/Arch_WC-and-Auto-External-FAQ-2025.pdf |
+| ESIS Seamless TPA Transitions | White paper | https://www.esis.com/content/dam/chubb-sites/esis/esis-en/esis-updates/thought-leadership-articles-information/pdfs/esis-seamless-tpa-transitions.pdf |
+| ESIS Overview | Technology & analytics | https://www.esis.com/content/dam/chubb-sites/esis/esis-en/documents/esis_overview.pdf |
+| ESIS ProClaim Overview | Professional liability TPA | https://www.esis.com/content/dam/chubb-sites/esis/esis-en/pdf/esis-proclaim-overview.pdf |
+| ESIS ProClaim Playbook | Detailed playbook | https://www.esis.com/content/dam/chubb-sites/esis/esis-en/products-services/professional-liability-esis-proclaim/documents/pdf/proclaim_playbook_online.pdf |
+| OC Performance Audit of York Risk (2012) | SLA tracking gaps found | https://www.ocgov.com/sites/default/files/import/data/files/10718.pdf |
+| California DIR Audit - York Risk (2019) | Regulatory audit results | https://www.dir.ca.gov/dwc/AuditReport2019/AuditReport.pdf |
+| York Risk Services Overview | Service overview | https://spruceblob01.blob.core.windows.net/stwpnjeda/pdfs/mods/York-Risk.pdf |
+
+### Government TPA RFPs & Contracts (v2 expansion)
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| Delaware Medical TPA RFP (2025) | State medical TPA scope of services | https://dhr.delaware.gov/benefits/sebc/documents/2025/1216-medical-tpa-rfp-scope-of-services.pdf |
+| New Mexico WC TPA RFP (24-350-4520) | State workers comp TPA RFP | https://www.generalservices.state.nm.us/wp-content/uploads/Workers-compensation-third-party-administrator-rfp-24-350-4520-00001.pdf |
+| NM Public Schools WC TPA RFP (342-2023-06) | Education sector WC TPA | https://nmpsia.com/docs/NMPSIA_Workers_Comp_Third_Party_Claims_Adminstration_Serv_RFP_342-2023-06_12323.pdf |
+| NM Property and Liability Claims TPA RFP | State P&L claims admin | https://nmpsia.com/docs/NMPSIA%20Property%20and%20Liability%20RFP%20Final.pdf |
+| Maryland UEF WC TPA RFP (2018) | State uninsured employer fund | https://dbm.maryland.gov/contracts/Documents/ContractLibrary/MUEF/UEFC96102018001-UEF-WorkersCompRFP.pdf |
+| PA Turnpike Auto/GL TPA RFP (19-10260-8788) | Transportation authority | https://www.emarketplace.state.pa.us/FileDownload.aspx?file=19-10260-8788%2FSolicitation_0.pdf&OriginalFileName=RFP+8788+AL++GL+CLAIMS+ADMIN.pdf |
+| Fort Bend County TX P&C TPA RFP (24-005) | County level P&C | https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/purchasing-documents/current-bids-rfps-rfqs/rfp-24-005-addendum-1.pdf |
+| Savannah GA TPA Scope RFP | Clean local gov template | https://agenda.savannahga.gov/content/files/tpa-scope.pdf |
+| Clark County WA TPA RFP (932) | Insurance brokerage & TPA | https://clark.wa.gov/sites/default/files/2025-08/rfp-932-insurance-brokerage-and-third-party-administrator-services.pdf |
+| Pierce County WA Self Insurance TPA RFP | Self-insurance medical plan | https://www.piercecountywa.gov/DocumentCenter/View/36502/RFP-1520-3rd-Party-Admin-for-Self-Insurance-Med-Plan-and-Stop-Loss-Insurance |
+| Los Gatos CA TPA Agreement | Municipal TPA agreement | https://weblink.losgatosca.gov/WebLink/0/edoc/1719050/Attachment%201%20-%20TAG%20Agreement.pdf |
+| Lake Worth FL P&C Services Agreement | Local gov P&C TPA | https://mccmeetingspublic.blob.core.usgovcloudapi.net/lakewthfl-meet-59ef2fa6ab07409ba02860fb8b7fcb28/ITEM-Attachment-002-fe677d59656c4dd7ac35ad7ca30be7c2.pdf |
+| MTA-DTO Joint TPA RFP (2023109) | Transit agency TPA | https://www.wegotransit.com/assets/bidpostingdocuments/RFP%202023109%20Third%20Party%20Administrator%20Services1.pdf |
+| CA CPUC Lifeline TPA Audit (2020) | Contract management audit | https://www.cpuc.ca.gov/-/media/cpuc-website/transparency/commissioner-committees/finance-and-administration/2020/sept-2-2020-commission-meeting-items/cpuc-lifeline-tpa-contract-management-audit-presentation-9-2-2020.pdf |
+| ICRMA WC TPA Performance Standards (2023) | JPA performance standards | https://www.icrma.org/assets/private/files/Policy_WC_TPA_PerformanceStandards_20230810.pdf |
+
+### Insurance Industry TPA Documents (v2 expansion)
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| Florida FIGA TPA ITN (2022) | Insurance guaranty association | https://figafacts.com/wp-content/uploads/2022/06/2022-FIGA-Invitation-to-Negotiate-TPA-Services-6-1-22.pdf |
+| Aon SLA Template | Major broker standard SLA | https://www.aon.com/getmedia/32f8042a-0c8e-4201-9c9c-f3a2575adcf1/service_level_agreement.pdf.aspx |
+| LSG Client Group Claims SLA | Claims service level agreement | https://www.lsg.com/Content/img/blogs/images-new/Generic_OCGs_-_LSG.pdf |
+| Safire Insurance SLA | Insurance SLA template | https://www.safireinsurance.com/downloads/safire_sla.pdf |
+| AdvantageRCM SLA | Medical billing TPA SLA | https://client.compulinkadvantage.com/wp-content/uploads/AdvantageRCM-Service-Level-Agreement.pdf |
+| SLACAL SLIP Enhanced Guide | Self-insured program guide | https://www.slacal.com/docs/default-source/general-content-documents/Resources/introductory-guide-to-slip-enhanced-rev-2018.pdf?sfvrsn=50f3607c_2 |
+
+### Additional Academic Research (v2 expansion)
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| User-Centered Security SLA (Dissertation) | UNC Charlotte dissertation | https://ninercommons.charlotte.edu/record/1849/files/Alasmari_uncc_0694D_13045.pdf |
+| Auditing Cloud SLA on VM CPU (Temple) | SLA verification research | https://cis.temple.edu/~wu/research/publications/Publication_files/ICC2014a.pdf |
+
+### Industry Guides (v2 expansion)
+| Document | Description | Source URL |
+|----------|-------------|-----------|
+| YCPARMIA "What is a TPA?" Guide | TPA overview for public entities | http://www.ycparmia.org/risk/20.pdf |
+| PRISM TPA Comparison Guide | Public entity risk management | https://www.prismrisk.gov/member-services/services/vendor-services/third-party-administrators-tpas/ |
+
 ---
 
 ## Review & Complaint Sources

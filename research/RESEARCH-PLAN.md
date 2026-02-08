@@ -114,7 +114,8 @@ Build competitive SLAs for [reliableclaim.com](https://reliableclaim.com) by res
 | Date | Session | Work Completed |
 |------|---------|---------------|
 | 2026-02-07 | Initial | Full data collection, TPA profiles, resource index, industry standards, contractor real-world research. Files committed to branch. |
-| 2026-02-08 | SLA Booklet | Created SLA Booklet cataloguing 35 TPA SLA documents, contractor guidelines, IICRC standards, RIA position statements, SLA templates, academic papers, and regulatory frameworks. Updated RESOURCE-INDEX.md with all new sources. |
+| 2026-02-08 | SLA Booklet v1 | Created SLA Booklet cataloguing 35 TPA SLA documents, contractor guidelines, IICRC standards, RIA position statements, SLA templates, academic papers, and regulatory frameworks. Updated RESOURCE-INDEX.md with all new sources. |
+| 2026-02-08 | SLA Booklet v2 | Expanded booklet to 91 documents. Added 6 major TPA providers (Sedgwick, GB, CorVel, Broadspire, ESIS, York Risk) with 26 contracts/overviews/audits. Added 17 government RFPs (state, county, transit). Added 8 insurance industry SLAs (Aon, FIGA, LSG, Safire, AdvantageRCM). Added performance audit findings and TPA fee structure analysis. Updated RESOURCE-INDEX.md. |
 
 ---
 
