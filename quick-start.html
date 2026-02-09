@@ -3,115 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TPA SLA Research — Quick Start</title>
+<title>TPA SLA Research — Reli-Able Claim Solutions</title>
 <style>
   :root {
-    --bg: #0f1117;
-    --card: #1a1d27;
-    --border: #2a2d3a;
-    --accent: #4f8cff;
-    --accent2: #22c55e;
-    --accent3: #f59e0b;
-    --accent4: #ef4444;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --highlight: #fbbf24;
+    --bg: #111111;
+    --bg-alt: #1a1a1a;
+    --card: #1f1f1f;
+    --border: #2d2d2d;
+    --orange: #e8600a;
+    --orange-light: #f27218;
+    --orange-glow: rgba(232,96,10,.15);
+    --green: #34c759;
+    --red: #ff453a;
+    --yellow: #f5a623;
+    --text: #f0f0f0;
+    --muted: #999;
+    --light-muted: #bbb;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  a { color: var(--orange-light); text-decoration: none; }
+  a:hover { color: #fff; text-decoration: underline; }
 
-  /* Header */
-  .header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-bottom: 1px solid var(--border); padding: 2rem; text-align: center; }
-  .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: .25rem; }
-  .header h1 span { color: var(--accent); }
-  .header p { color: var(--muted); font-size: 1rem; }
-  .header .stat-row { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; }
-  .header .stat { text-align: center; }
-  .header .stat .num { font-size: 1.75rem; font-weight: 800; color: var(--accent); }
-  .header .stat .label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  /* ---- HEADER ---- */
+  .header { background: var(--bg); border-bottom: 3px solid var(--orange); padding: 2.5rem 2rem 2rem; text-align: center; }
+  .logo { font-size: 1.1rem; font-weight: 700; letter-spacing: .02em; color: var(--orange); margin-bottom: .25rem; }
+  .logo span { color: #fff; }
+  .header h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: .25rem; color: #fff; }
+  .header .sub { color: var(--muted); font-size: 1rem; max-width: 600px; margin: 0 auto; }
+  .stat-row { display: flex; justify-content: center; gap: 2.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 2rem; font-weight: 800; color: var(--orange); }
+  .stat .label { font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
 
-  /* Nav pills */
-  .nav { display: flex; justify-content: center; gap: .5rem; padding: 1rem 2rem; flex-wrap: wrap; position: sticky; top: 0; background: var(--bg); z-index: 10; border-bottom: 1px solid var(--border); }
-  .nav a { padding: .4rem .8rem; border-radius: 6px; font-size: .8rem; color: var(--muted); text-decoration: none; border: 1px solid var(--border); transition: all .15s; }
-  .nav a:hover, .nav a.active { color: var(--accent); border-color: var(--accent); background: rgba(79,140,255,.1); }
+  /* ---- NAV ---- */
+  .nav { display: flex; justify-content: center; gap: .5rem; padding: .75rem 1.5rem; flex-wrap: wrap; position: sticky; top: 0; background: rgba(17,17,17,.95); backdrop-filter: blur(10px); z-index: 10; border-bottom: 1px solid var(--border); }
+  .nav a { padding: .4rem .75rem; border-radius: 6px; font-size: .78rem; color: var(--muted); border: 1px solid var(--border); transition: all .15s; font-weight: 500; }
+  .nav a:hover, .nav a.active { color: var(--orange); border-color: var(--orange); background: var(--orange-glow); text-decoration: none; }
 
-  /* Container */
+  /* ---- CONTAINER ---- */
   .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
 
-  /* Section headers */
-  .section-title { font-size: 1.4rem; font-weight: 700; margin: 2.5rem 0 .5rem; padding-bottom: .5rem; border-bottom: 2px solid var(--border); display: flex; align-items: center; gap: .5rem; }
-  .section-title .badge { font-size: .7rem; background: var(--accent); color: #fff; padding: .15rem .5rem; border-radius: 4px; font-weight: 600; }
-  .section-subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 1.25rem; }
+  /* ---- SECTION HEADERS ---- */
+  .section-title { font-size: 1.5rem; font-weight: 800; margin: 3rem 0 .4rem; padding-bottom: .5rem; border-bottom: 2px solid var(--orange); display: flex; align-items: center; gap: .5rem; color: #fff; }
+  .section-title .badge { font-size: .65rem; background: var(--orange); color: #fff; padding: .15rem .5rem; border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+  .section-subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 1.5rem; }
 
-  /* Must-Read cards */
+  /* ---- MUST-READ CARDS ---- */
   .must-read-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
-  .must-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; transition: border-color .15s, transform .15s; position: relative; }
-  .must-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-  .must-card .rank { position: absolute; top: -8px; left: 12px; background: var(--accent); color: #fff; font-size: .65rem; font-weight: 700; padding: .1rem .45rem; border-radius: 4px; }
-  .must-card.gold .rank { background: var(--highlight); color: #000; }
-  .must-card .source { font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .25rem; }
-  .must-card h3 { font-size: .95rem; margin-bottom: .4rem; }
-  .must-card h3 a { color: var(--text); text-decoration: none; }
-  .must-card h3 a:hover { color: var(--accent); }
-  .must-card .desc { font-size: .8rem; color: var(--muted); margin-bottom: .6rem; }
+  .must-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; transition: border-color .2s, transform .2s; position: relative; }
+  .must-card:hover { border-color: var(--orange); transform: translateY(-2px); }
+  .must-card .rank { position: absolute; top: -8px; left: 12px; background: var(--orange); color: #fff; font-size: .65rem; font-weight: 700; padding: .15rem .5rem; border-radius: 4px; }
+  .must-card.gold { border-color: var(--orange); box-shadow: 0 0 20px var(--orange-glow); }
+  .must-card.gold .rank { background: var(--orange); }
+  .must-card .source { font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: .3rem; }
+  .must-card h3 { font-size: .95rem; margin-bottom: .4rem; font-weight: 700; }
+  .must-card h3 a { color: #fff; }
+  .must-card h3 a:hover { color: var(--orange-light); }
+  .must-card .desc { font-size: .8rem; color: var(--light-muted); margin-bottom: .6rem; line-height: 1.5; }
   .must-card .tags { display: flex; gap: .3rem; flex-wrap: wrap; }
-  .must-card .tag { font-size: .65rem; padding: .1rem .4rem; border-radius: 3px; border: 1px solid var(--border); color: var(--muted); }
-  .must-card .tag.fee { border-color: var(--accent3); color: var(--accent3); }
-  .must-card .tag.contract { border-color: var(--accent2); color: var(--accent2); }
-  .must-card .tag.audit { border-color: var(--accent4); color: var(--accent4); }
-  .must-card .tag.sla { border-color: var(--accent); color: var(--accent); }
+  .tag { font-size: .6rem; padding: .15rem .4rem; border-radius: 3px; border: 1px solid var(--border); color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+  .tag.fee { border-color: var(--orange); color: var(--orange); }
+  .tag.contract { border-color: var(--green); color: var(--green); }
+  .tag.audit { border-color: var(--red); color: var(--red); }
+  .tag.sla { border-color: var(--yellow); color: var(--yellow); }
 
-  /* Key Findings callout */
-  .callout { background: var(--card); border-left: 4px solid var(--accent3); border-radius: 0 8px 8px 0; padding: 1.25rem; margin: 1.5rem 0; }
-  .callout h3 { font-size: 1rem; color: var(--accent3); margin-bottom: .5rem; }
+  /* ---- CALLOUTS ---- */
+  .callout { background: var(--card); border-left: 4px solid var(--orange); border-radius: 0 10px 10px 0; padding: 1.25rem 1.5rem; margin: 1.25rem 0; }
+  .callout h3 { font-size: 1rem; color: var(--orange); margin-bottom: .5rem; font-weight: 700; }
+  .callout.red { border-left-color: var(--red); }
+  .callout.red h3 { color: var(--red); }
+  .callout.green { border-left-color: var(--green); }
+  .callout.green h3 { color: var(--green); }
   .callout ul { padding-left: 1.2rem; }
-  .callout li { font-size: .85rem; color: var(--muted); margin-bottom: .3rem; }
-  .callout li strong { color: var(--text); }
+  .callout li { font-size: .85rem; color: var(--light-muted); margin-bottom: .35rem; }
+  .callout li strong { color: #fff; }
 
-  /* Collapsible sections */
-  details { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: .75rem; }
-  details[open] { border-color: var(--accent); }
-  summary { cursor: pointer; padding: 1rem 1.25rem; font-weight: 600; font-size: .9rem; list-style: none; display: flex; align-items: center; justify-content: space-between; }
+  /* ---- BENCHMARK CARDS ---- */
+  .bench-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .bench-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem; }
+  .bench-card h4 { font-size: .85rem; margin-bottom: .6rem; color: var(--orange); font-weight: 700; }
+  .bench-card .row { display: flex; justify-content: space-between; font-size: .8rem; padding: .3rem 0; border-bottom: 1px solid rgba(45,45,45,.7); }
+  .bench-card .row:last-child { border: none; }
+  .bench-card .row span:first-child { color: var(--light-muted); }
+  .bench-card .row .val { font-weight: 700; color: #fff; }
+
+  /* ---- INSURANCE GRID ---- */
+  .ins-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .75rem; margin: 1rem 0; }
+  .ins-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: .85rem 1rem; text-align: center; transition: border-color .15s; }
+  .ins-card:hover { border-color: var(--orange); }
+  .ins-card .name { font-weight: 700; font-size: .95rem; margin-bottom: .2rem; }
+  .ins-card .vals { font-size: .75rem; color: var(--muted); }
+  .ins-card .vals strong { color: var(--orange); }
+
+  /* ---- COLLAPSIBLE SECTIONS ---- */
+  details { background: var(--card); border: 1px solid var(--border); border-radius: 10px; margin-bottom: .75rem; }
+  details[open] { border-color: var(--orange); }
+  summary { cursor: pointer; padding: 1rem 1.25rem; font-weight: 700; font-size: .9rem; list-style: none; display: flex; align-items: center; justify-content: space-between; color: #fff; }
   summary::-webkit-details-marker { display: none; }
-  summary::after { content: '+'; font-size: 1.2rem; color: var(--muted); transition: transform .2s; }
-  details[open] summary::after { content: '−'; color: var(--accent); }
-  summary .count { font-size: .7rem; background: var(--border); color: var(--muted); padding: .1rem .4rem; border-radius: 4px; margin-left: auto; margin-right: .75rem; }
+  summary::after { content: '+'; font-size: 1.3rem; color: var(--muted); transition: color .2s; font-weight: 400; }
+  details[open] summary::after { content: '−'; color: var(--orange); }
+  summary .count { font-size: .65rem; background: var(--border); color: var(--muted); padding: .12rem .45rem; border-radius: 4px; margin-left: auto; margin-right: .75rem; font-weight: 600; }
   .detail-body { padding: 0 1.25rem 1.25rem; }
 
-  /* Tables inside details */
+  /* ---- TABLES ---- */
   table { width: 100%; border-collapse: collapse; font-size: .8rem; }
-  th { text-align: left; color: var(--muted); font-size: .7rem; text-transform: uppercase; letter-spacing: .05em; padding: .5rem .75rem; border-bottom: 1px solid var(--border); }
-  td { padding: .5rem .75rem; border-bottom: 1px solid rgba(42,45,58,.5); vertical-align: top; }
-  td a { color: var(--accent); text-decoration: none; }
-  td a:hover { text-decoration: underline; }
-  td .sub { font-size: .7rem; color: var(--muted); display: block; }
+  th { text-align: left; color: var(--muted); font-size: .65rem; text-transform: uppercase; letter-spacing: .06em; padding: .5rem .75rem; border-bottom: 1px solid var(--border); font-weight: 600; }
+  td { padding: .55rem .75rem; border-bottom: 1px solid rgba(45,45,45,.5); vertical-align: top; color: var(--light-muted); }
+  td a { color: var(--orange-light); font-weight: 500; }
+  td a:hover { color: #fff; }
+  td .sub { font-size: .7rem; color: var(--muted); display: block; margin-top: .1rem; }
+  .group-label { color: var(--orange) !important; font-weight: 700 !important; font-size: .7rem !important; letter-spacing: .04em; }
 
-  /* Benchmark table */
-  .bench-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin: 1rem 0; }
-  .bench-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
-  .bench-card h4 { font-size: .85rem; margin-bottom: .5rem; color: var(--accent); }
-  .bench-card .row { display: flex; justify-content: space-between; font-size: .8rem; padding: .25rem 0; border-bottom: 1px solid rgba(42,45,58,.4); }
-  .bench-card .row:last-child { border: none; }
-  .bench-card .row .val { font-weight: 600; color: var(--text); }
+  /* ---- CTA BUTTON ---- */
+  .cta { display: inline-block; background: var(--orange); color: #fff; padding: .6rem 1.5rem; border-radius: 8px; font-weight: 700; font-size: .85rem; transition: background .15s, transform .1s; margin-top: .5rem; }
+  .cta:hover { background: var(--orange-light); transform: translateY(-1px); text-decoration: none; color: #fff; }
 
-  /* Insurance comparison */
-  .ins-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .75rem; margin: 1rem 0; }
-  .ins-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: .75rem 1rem; text-align: center; }
-  .ins-card .name { font-weight: 700; font-size: .9rem; margin-bottom: .25rem; }
-  .ins-card .vals { font-size: .75rem; color: var(--muted); }
-  .ins-card .vals strong { color: var(--accent2); }
-
-  /* Footer */
-  .footer { text-align: center; padding: 2rem; color: var(--muted); font-size: .75rem; border-top: 1px solid var(--border); margin-top: 2rem; }
-  .footer a { color: var(--accent); text-decoration: none; }
+  /* ---- FOOTER ---- */
+  .footer { text-align: center; padding: 2.5rem 2rem; color: var(--muted); font-size: .75rem; border-top: 3px solid var(--orange); margin-top: 3rem; background: var(--bg-alt); }
+  .footer a { color: var(--orange-light); }
+  .footer .brand { font-weight: 700; color: var(--orange); font-size: .85rem; margin-bottom: .25rem; }
 </style>
 </head>
 <body>
 
 <!-- HEADER -->
 <div class="header">
-  <h1>TPA SLA <span>Quick Start</span></h1>
-  <p>ReliableClaim.com Research — Everything your team needs in 30 minutes</p>
+  <div class="logo">Reli-<span>Able</span> Claim Solutions</div>
+  <h1>TPA SLA Quick Start</h1>
+  <p class="sub">Everything your team needs to understand TPA contractor agreements, SLAs, and industry benchmarks — in 30 minutes.</p>
   <div class="stat-row">
     <div class="stat"><div class="num">112</div><div class="label">Documents</div></div>
     <div class="stat"><div class="num">6</div><div class="label">Actual Contracts</div></div>
@@ -123,11 +143,11 @@
 <!-- NAV -->
 <div class="nav">
   <a href="#must-read" class="active">Must Read</a>
+  <a href="#full-catalogue">All Documents</a>
   <a href="#findings">Key Findings</a>
   <a href="#insurance">Insurance Mins</a>
   <a href="#fees">Fee Structures</a>
   <a href="#benchmarks">Benchmarks</a>
-  <a href="#full-catalogue">Full Catalogue</a>
 </div>
 
 <div class="container">
@@ -135,7 +155,7 @@
 <!-- ============================================================ -->
 <!-- MUST READ -->
 <!-- ============================================================ -->
-<h2 class="section-title" id="must-read">Start Here <span class="badge">6 MUST-READ DOCS</span></h2>
+<h2 class="section-title" id="must-read">Start Here <span class="badge">6 Must-Read Docs</span></h2>
 <p class="section-subtitle">These are actual signed contractor agreements from restoration TPAs. Read these first — they contain the real SLA terms, fees, and obligations.</p>
 
 <div class="must-read-grid">
@@ -191,7 +211,265 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- KEY FINDINGS -->
+<!-- FULL CATALOGUE (moved up — links first) -->
+<!-- ============================================================ -->
+<h2 class="section-title" id="full-catalogue">All Documents <span class="badge">112 Docs</span></h2>
+<p class="section-subtitle">Click any section to expand. Every document links directly to its source.</p>
+
+<!-- 1. Contractor Agreements -->
+<details open>
+  <summary>Restoration Contractor Agreements <span class="count">21</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td colspan="3" class="group-label">ALACRITY SOLUTIONS (5)</td></tr>
+      <tr><td>91</td><td>Master Contract (20+ pages)<span class="sub">★ Most valuable find</span></td><td><a href="https://em.alacrity.net/Download/Master_Contract.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>92</td><td>Network Fee Addendum<span class="sub">7% GC · 11% svc · 4% other · 5.5% tree</span></td><td><a href="https://em.alacrity.net/Download/NetworkFeeAddendum.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>93</td><td>Insurance Requirements</td><td><a href="https://em.alacrity.net/Download/Insurance%20Requirements.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>94</td><td>Contractor Network Requirements</td><td><a href="https://www.alacritysolutions.com/solutions/network-solutions/join-our-contractor-network/" target="_blank">Web</a></td></tr>
+      <tr><td>95</td><td>MRP Pre-qualification Application</td><td><a href="https://www.alacritysolutions.com/contractor-prequal/" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">CONTRACTOR CONNECTION / CRAWFORD (3)</td></tr>
+      <tr><td>96</td><td>Background Screening Addendum</td><td><a href="https://apps.contractorconnection.com/contrDocs/BackGroundAddendum.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>97</td><td>Terms & Conditions<span class="sub">5-year workmanship warranty</span></td><td><a href="https://home.contractorconnection.com/terms/" target="_blank">Web</a></td></tr>
+      <tr><td>98</td><td>Resources Page</td><td><a href="https://home.contractorconnection.com/resources/" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">FIRSTONSITE (4)</td></tr>
+      <tr><td>99</td><td>Client Work Agreement (Oct 2025)</td><td><a href="https://firstonsite.com/es/wp-content/uploads/client-work-agreement-terms-conditions_effective-10.10.25.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>100</td><td>California Addendum</td><td><a href="https://firstonsite.com/wp-content/uploads/california-addendum_3.29.21.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>101</td><td>Homeowner's Guide to Disaster Recovery</td><td><a href="https://firstonsite.com/en-CA/wp-content/uploads/2020/07/homeowners-guide-to-disaster-recovery.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>102</td><td>FirstService Corp AIF (2024)</td><td><a href="https://www.firstservice.com/wp-content/uploads/2025/03/Q4-2024-AIF-FINAL-21Feb25.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td colspan="3" class="group-label">PAUL DAVIS (4)</td></tr>
+      <tr><td>103</td><td>Restoration Agreement (Court Filing, 2022)</td><td><a href="https://www.scribd.com/document/915206014/Paul-Davis-Restoration-Restoration-Agreement-case-number-2022cv000659-Dawn-R-Jackson-Racine-Couty-Court" target="_blank">Scribd</a></td></tr>
+      <tr><td>104</td><td>Preferred Vendor Programs</td><td><a href="https://pauldavis.com/insurance/preferred-vendors/" target="_blank">Web</a></td></tr>
+      <tr><td>105</td><td>Addressing Insurance Needs</td><td><a href="https://pauldavis.com/insurance/addressing-needs/" target="_blank">Web</a></td></tr>
+      <tr><td>106</td><td>Business / Franchise Portal</td><td><a href="https://www.pauldavisbusiness.com" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">BLUSKY (1) · SERVICECHANNEL (1) · OTHER (3)</td></tr>
+      <tr><td>107</td><td>BluSky Subcontractor Packet (14 pages)<span class="sub">$1M GL · $500K WC · 10% retainage</span></td><td><a href="https://goblusky.com/media/subcontractor-qualification-packet-rev.-12.14.2021.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>108</td><td>ServiceChannel Provider Agreement<span class="sub">$2M GL · $1M WC · Multi-TPA</span></td><td><a href="https://servicechannel.com/resources-download/customer_scmprovider_services_agreement.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>27</td><td>Repair Shop Agreement (Scribd)</td><td><a href="https://www.scribd.com/document/718925335/Repair-Shop-Agreement" target="_blank">Web</a></td></tr>
+      <tr><td>28</td><td>Sweetwater Subcontractor Agreement (2021)</td><td><a href="https://sweetwaterrestoration.com/wp-content/uploads/2022/12/1-Subcontractor-Agreement-5.2021.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>29</td><td>Home Repair Contract Template Guide</td><td><a href="https://signaturely.com/contracts/home-repair-contract-template/" target="_blank">Web</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 2. Citizens Florida -->
+<details>
+  <summary>Citizens Florida Managed Repair Program <span class="count">5</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>1</td><td>Citizens-Crawford Contractor Agreement (67-page)<span class="sub">Full unredacted TPA contract</span></td><td><a href="https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2021/12/Redacted-contract-Citizens-Agreement-for-Contractor-Managed-Repair-Program.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>2</td><td>Citizens-Crawford Agreement (Alt link)</td><td><a href="https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2022/05/Citizens-Agreement-for-Contractor-Managed-Repair-Program.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>3</td><td>Citizens MRP RFI (15-0015)</td><td><a href="https://www.citizensfla.com/documents/20702/15153077/RFI+15-0015+-+Contractor+Repair+Management+Program.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>4</td><td>Citizens MRP Addendum (ITN 25-0001)</td><td><a href="https://www.citizensfla.com/documents/20702/35120301/Addendum+No.+2.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>5</td><td>Citizens MRP Brochure</td><td><a href="https://www.citizensfla.com/documents/20702/7979944/Managed+Repair+Program+Brochure.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 3. Insurance TPA SLAs -->
+<details>
+  <summary>Insurance TPA Service Level Agreements <span class="count">4</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>6</td><td>Lloyd's TPA Agreement (LMA 9008)<span class="sub">International standard with service level schedules</span></td><td><a href="https://assets.lloyds.com/assets/pdf-premium-and-claims-handling-lma-9008-third-party-administrator-agreement-1/1/pdf-premium-and-claims-handling-LMA-9008-Third-Party-Administrator-Agreement.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>7</td><td>New India Assurance TPA SLA</td><td><a href="https://newindia.co.in/cms/66272c21-8900-4312-9220-3933bb3c23c3/SAMPLE%20OF%20SLA%20AS%20PER%20CIC%20ORDER.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>8</td><td>Mississippi TPA Services Contract</td><td><a href="https://srm.magic.ms.gov/SAP/EBP/DOCSERVER/?ATTKGET&KPID=8B4E7B085F0B1EEC92977028D2F619F1&KPCLASS=BBP_L_DOC&SAP-CLIENT=100" target="_blank">PDF</a></td></tr>
+      <tr><td>9</td><td>SEC.gov TPA Agreement Template</td><td><a href="https://www.sec.gov/Archives/edgar/data/1020523/000102052302000030/exi.htm" target="_blank">Web</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 4. Major TPA Providers -->
+<details>
+  <summary>Major TPA Providers — Sedgwick, GB, CorVel, Broadspire, ESIS, York <span class="count">26</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td colspan="3" class="group-label">SEDGWICK (5)</td></tr>
+      <tr><td>36</td><td>NFIB Select Program Agreement (2023)</td><td><a href="https://tpa.sedgwick.com/wp-content/uploads/2024/02/2023-NFIB-Select-Program-Plus-Participation-Agreement-Starting-1-1.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>37</td><td>NFIB Group Agreement (2024)</td><td><a href="https://tpa.sedgwick.com/wp-content/uploads/2024/02/2024-NFIB-Group-Participation-Agreement-Starting-1-1.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>38</td><td>Brevard County Schools Service Agreement</td><td><a href="https://agenda.brevardschools.org/publishing/eAgendaTOC/06-12-2012%20Regular%20School%20Board%20Meeting%20on%20Tuesday,%20June%2012,%202012%20-%20Documents%20Backup.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>39</td><td>Orange County WC Contract (MA-017-24010669)</td><td><a href="http://cams.ocgov.com/Web_Publisher_sam/Agenda01_09_2024_files/images/O01123-000974A.PDF" target="_blank">PDF</a></td></tr>
+      <tr><td>40</td><td>Royal Oak MI Extension (2023)<span class="sub">Service level concerns noted</span></td><td><a href="https://www.romi.gov/DocumentCenter/View/36085/Workers-Comp-Sedgwick-Claims-Management-Extension-June-12-2023" target="_blank">PDF</a></td></tr>
+      <tr><td colspan="3" class="group-label">GALLAGHER BASSETT (5)</td></tr>
+      <tr><td>41</td><td>Carrier Practice Overview (2023)</td><td><a href="https://insurers.gallagherbassett.com/wp-content/uploads/2023/06/US_GB-Carrier-Practice-Overview-2023.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>42</td><td>Carrier Practice Overview (2024)</td><td><a href="https://insurers.gallagherbassett.com/wp-content/uploads/2024/05/US_GB-Carrier-Practice-Overview_Final-Low-Res-3.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>43</td><td>TPA Claims System Comparison (RMIS)</td><td><a href="https://insurers.gallagherbassett.co.nz/wp-content/uploads/2020/09/TPA-Claims-System-Comparison.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>44</td><td>3 Keys to Exceptional Service for Carriers</td><td><a href="https://insurers.gallagherbassett.com/insights/3-keys-to-delivering-exceptional-service-for-carriers/" target="_blank">Web</a></td></tr>
+      <tr><td>45</td><td>Claims Management Overview</td><td><a href="https://www.ajg.com/insurance/insurance-claims-contacts/claims-management-third-party-administration/" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">CORVEL (4)</td></tr>
+      <tr><td>46</td><td>Healthcare Provider Agreement</td><td><a href="https://coloradophysicaltherapynetwork.com/wp-content/uploads/CorVelContractTerms.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>47</td><td>CorVel vs CCMSI NC Procurement (2021)</td><td><a href="https://www.encoah.oah.state.nc.us/publicsite/SearchDocDisplay?Type=P&ID=1981692&CaseID=168944&CodeID=525&PersonID=0&File=2019%5C09%5CCCMSI%20v.%20CorVel%20Final%20Decision.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>48</td><td>Everett WA Amendment No. 3 (2022)</td><td><a href="https://www.everettwa.gov/AgendaCenter/ViewFile/Item/14389?fileID=82277" target="_blank">PDF</a></td></tr>
+      <tr><td>49</td><td>Loudoun County VA Award (RFQ 137782)</td><td><a href="https://www.loudoun.gov/bids.aspx?bidID=636" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">BROADSPIRE / CRAWFORD (4)</td></tr>
+      <tr><td>50</td><td>Global TPA Expansion (2014)</td><td><a href="https://assets.crawfordandcompany.com/media/1580061/2014-4-28-crawfordpresrel-globaltpa-rims--final.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>51</td><td>Broadspire Service Overview</td><td><a href="https://www.choosebroadspire.com" target="_blank">Web</a></td></tr>
+      <tr><td>52</td><td>Arch Insurance WC/Auto Transition FAQ (2025)</td><td><a href="https://www.archgroup.com/wp-content/uploads/Arch_WC-and-Auto-External-FAQ-2025.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>53</td><td>TPA Service Agreement Details (Blog)</td><td><a href="https://blog.reduceyourworkerscomp.com/2021/10/details-of-the-third-party-administrator-service-agreement/" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">ESIS / CHUBB (4)</td></tr>
+      <tr><td>54</td><td>Seamless TPA Transitions White Paper</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/esis-updates/thought-leadership-articles-information/pdfs/esis-seamless-tpa-transitions.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>55</td><td>ESIS Overview (Technology & Analytics)</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/documents/esis_overview.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>56</td><td>ESIS ProClaim Overview</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/pdf/esis-proclaim-overview.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>57</td><td>ESIS ProClaim Services</td><td><a href="https://www.esis.com/esis-en/products-services/professional-liability-esis-proclaim.html" target="_blank">Web</a></td></tr>
+      <tr><td colspan="3" class="group-label">YORK RISK (4)</td></tr>
+      <tr><td>58</td><td>OC Performance Audit<span class="sub">SLAs not tracked, no penalties</span></td><td><a href="https://www.ocgov.com/sites/default/files/import/data/files/10718.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>59</td><td>City of York RFP Response (2018)</td><td><a href="http://www.yorkcity.org/wp-content/uploads/2018/06/INSURANCE-BROKER-Proposal1.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>60</td><td>California DIR Audit (2019)</td><td><a href="https://www.dir.ca.gov/dwc/AuditReport2019/AuditReport.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>61</td><td>York Risk Services Overview</td><td><a href="https://spruceblob01.blob.core.windows.net/stwpnjeda/pdfs/mods/York-Risk.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 5. IICRC -->
+<details>
+  <summary>IICRC Standards & Guidelines <span class="count">5</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>10</td><td>IICRC S500 Water Damage Standard<span class="sub">Defines 24-48 hr microbial growth window</span></td><td><a href="https://graduation.escoffier.edu/filedownload.ashx/scholarship/dlFnNE/Iicrc-Water-Damage-Standard-S500.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>11</td><td>AS-IICRC S500 Press Release (2025)</td><td><a href="https://iicrc.org/wp-content/uploads/2025/04/AS-IICRC-S500-Published-Press-Release_March-2025.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>12</td><td>IICRC S500 Official Page (~$150-200)</td><td><a href="https://iicrc.org/s500/" target="_blank">Web</a></td></tr>
+      <tr><td>13</td><td>IICRC S500 (Scribd)</td><td><a href="https://www.scribd.com/document/673040884/IICRC-S500-Professional-Water-Damage-Restoration" target="_blank">Web</a></td></tr>
+      <tr><td>14</td><td>WRT/ASD Training Manual (UK, 2023)</td><td><a href="https://nationalfloodschool.co.uk/wp-content/uploads/WRT-ASD-Manual-2023-V2.1-ASD-and-WRT-August-2023.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 6. RIA -->
+<details>
+  <summary>RIA Position Statements <span class="count">5</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>15</td><td>RIA Position Paper Summary Guide</td><td><a href="http://www.restorationindustry.org/ria-position-paper-summary-guide" target="_blank">Web</a></td></tr>
+      <tr><td>16</td><td>RIA TPA Pricing Position Statements</td><td><a href="https://training.restorationindustry.org/pricing-position-statements" target="_blank">Web</a></td></tr>
+      <tr><td>17</td><td>Statements #3 & #4 Press Release (Sep 2022)</td><td><a href="https://www.restorationindustry.org/sites/default/files/docs/ria-press-release-pricing-position-statements-3-and-4-release-september-2022.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>18</td><td>TPA Statement #3 — Referral Fees</td><td><a href="https://www.restorationindustry.org/sites/default/files/docs/RIA%20TPA%20Position%20Statement%203%20-%20Referral%20Fees%20for%20Jobs%20Not%20Referred%20by%20the%20TPA.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>19</td><td>TPA Statement #5 — Deviations from Guidelines</td><td><a href="https://www.restorationindustry.org/sites/default/files/docs/RIA%20TPA%20Position%20Statement%205%20-%20Deviations%20from%20Guidelines.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 7. SLA Templates -->
+<details>
+  <summary>SLA Templates & Examples <span class="count">7</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>20</td><td>IT Toolkit SLA Templates</td><td><a href="https://www.ittoolkit.com/service-level-agreement-template-free-sla-templates-examples/" target="_blank">Web</a></td></tr>
+      <tr><td>21</td><td>SLA Template Main Site</td><td><a href="https://www.slatemplate.com" target="_blank">Web</a></td></tr>
+      <tr><td>22</td><td>BrightGauge MSA Template</td><td><a href="http://info.brightgauge.com/hubfs/Files/Managed%20Services%20Agreement%20Template.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>23</td><td>Service Desk Institute SLA Template</td><td><a href="https://www.servicedeskinstitute.com/wp-content/uploads/2024/08/Naked_Service_Desk_Series__Service_Level_Agreement_Template.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>24</td><td>ScopeStack MSA Template</td><td><a href="https://scopestack.io/wp-content/uploads/2024/07/ScopeStack-Managed-Services-Agreement-MSA-Template.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>25</td><td>Zomentum SLA Template</td><td><a href="https://www.zomentum.com/template/service-level-agreement-contract-template" target="_blank">Web</a></td></tr>
+      <tr><td>26</td><td>HelixOps SLA Examples</td><td><a href="https://blogs.helixops.ai/sla-template-examples/?print-posts=pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 8. Government RFPs -->
+<details>
+  <summary>Government TPA RFPs & Contracts <span class="count">21</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td colspan="3" class="group-label">STATE GOVERNMENT (6)</td></tr>
+      <tr><td>62</td><td>Mississippi TPA Services Contract</td><td><a href="https://srm.magic.ms.gov/SAP/EBP/DOCSERVER/?ATTKGET&KPID=8B4E7B085F0B1EEC92977028D2F619F1&KPCLASS=BBP_L_DOC&SAP-CLIENT=100" target="_blank">PDF</a></td></tr>
+      <tr><td>63</td><td>Delaware Medical TPA RFP (2025)</td><td><a href="https://dhr.delaware.gov/benefits/sebc/documents/2025/1216-medical-tpa-rfp-scope-of-services.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>64</td><td>New Mexico WC TPA RFP (24-350-4520)</td><td><a href="https://www.generalservices.state.nm.us/wp-content/uploads/Workers-compensation-third-party-administrator-rfp-24-350-4520-00001.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>65</td><td>NM Public Schools WC TPA RFP</td><td><a href="https://nmpsia.com/docs/NMPSIA_Workers_Comp_Third_Party_Claims_Adminstration_Serv_RFP_342-2023-06_12323.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>66</td><td>NM Property & Liability TPA RFP</td><td><a href="https://nmpsia.com/docs/NMPSIA%20Property%20and%20Liability%20RFP%20Final.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>67</td><td>Maryland UEF WC TPA RFP (2018)</td><td><a href="https://dbm.maryland.gov/contracts/Documents/ContractLibrary/MUEF/UEFC96102018001-UEF-WorkersCompRFP.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td colspan="3" class="group-label">COUNTY / LOCAL (7)</td></tr>
+      <tr><td>68</td><td>PA Turnpike Auto/GL TPA RFP</td><td><a href="https://www.emarketplace.state.pa.us/FileDownload.aspx?file=19-10260-8788%2FSolicitation_0.pdf&OriginalFileName=RFP+8788+AL++GL+CLAIMS+ADMIN.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>69</td><td>Fort Bend County TX P&C TPA RFP</td><td><a href="https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/purchasing-documents/current-bids-rfps-rfqs/rfp-24-005-addendum-1.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>70</td><td>Savannah GA TPA Scope RFP</td><td><a href="https://agenda.savannahga.gov/content/files/tpa-scope.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>71</td><td>Clark County WA TPA RFP (932)</td><td><a href="https://clark.wa.gov/sites/default/files/2025-08/rfp-932-insurance-brokerage-and-third-party-administrator-services.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>72</td><td>Pierce County WA Self Insurance TPA</td><td><a href="https://www.piercecountywa.gov/DocumentCenter/View/36502/RFP-1520-3rd-Party-Admin-for-Self-Insurance-Med-Plan-and-Stop-Loss-Insurance" target="_blank">PDF</a></td></tr>
+      <tr><td>73</td><td>Los Gatos CA TPA Agreement</td><td><a href="https://weblink.losgatosca.gov/WebLink/0/edoc/1719050/Attachment%201%20-%20TAG%20Agreement.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>74</td><td>Lake Worth FL P&C Services Agreement</td><td><a href="https://mccmeetingspublic.blob.core.usgovcloudapi.net/lakewthfl-meet-59ef2fa6ab07409ba02860fb8b7fcb28/ITEM-Attachment-002-fe677d59656c4dd7ac35ad7ca30be7c2.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td colspan="3" class="group-label">TRANSIT / REGULATORY / GENERAL (8)</td></tr>
+      <tr><td>75</td><td>MTA-DTO Joint TPA RFP (2023109)</td><td><a href="https://www.wegotransit.com/assets/bidpostingdocuments/RFP%202023109%20Third%20Party%20Administrator%20Services1.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>76</td><td>CA CPUC Lifeline TPA Audit (2020)</td><td><a href="https://www.cpuc.ca.gov/-/media/cpuc-website/transparency/commissioner-committees/finance-and-administration/2020/sept-2-2020-commission-meeting-items/cpuc-lifeline-tpa-contract-management-audit-presentation-9-2-2020.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>77</td><td>PRISM TPA Comparison Guide</td><td><a href="https://www.prismrisk.gov/member-services/services/vendor-services/third-party-administrators-tpas/" target="_blank">Web</a></td></tr>
+      <tr><td>78</td><td>ICRMA WC TPA Performance Standards (2023)</td><td><a href="https://www.icrma.org/assets/private/files/Policy_WC_TPA_PerformanceStandards_20230810.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>109</td><td>CA DHCS Network Provider Agreement Checklist</td><td><a href="https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/APL2019/APL19-001AttachmentA.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>110</td><td>FirstEnergy Network Access Agreement</td><td><a href="https://www.firstenergycorp.com/content/dam/supplychain/files/docs-coupa-update/Network%20Access%20Agreement.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>111</td><td>Oracle Services Provider Agreement Sample</td><td><a href="https://www.oracle.com/a/ocom/docs/billable-spa-sample.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>112</td><td>Comcast Enterprise Services SLA</td><td><a href="https://business.comcast.com/~/media/business_comcast_com/PDFs/Terms-and-Conditions---Enterprise/2024%20Terms%20and%20Conditions%20Interstate%20Wavelength%20v.1.0.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 9. Insurance Industry -->
+<details>
+  <summary>Insurance Industry TPA Documents <span class="count">8</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>79</td><td>Florida FIGA TPA ITN (2022)</td><td><a href="https://figafacts.com/wp-content/uploads/2022/06/2022-FIGA-Invitation-to-Negotiate-TPA-Services-6-1-22.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>80</td><td>Aon SLA Template</td><td><a href="https://www.aon.com/getmedia/32f8042a-0c8e-4201-9c9c-f3a2575adcf1/service_level_agreement.pdf.aspx" target="_blank">PDF</a></td></tr>
+      <tr><td>81</td><td>LSG Claims SLA</td><td><a href="https://www.lsg.com/Content/img/blogs/images-new/Generic_OCGs_-_LSG.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>82</td><td>Safire Insurance SLA</td><td><a href="https://www.safireinsurance.com/downloads/safire_sla.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>83</td><td>AdvantageRCM SLA (Medical Billing)</td><td><a href="https://client.compulinkadvantage.com/wp-content/uploads/AdvantageRCM-Service-Level-Agreement.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>88</td><td>ESIS ProClaim Playbook</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/products-services/professional-liability-esis-proclaim/documents/pdf/proclaim_playbook_online.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>89</td><td>Broadspire MyClaim User Agreements</td><td><a href="https://myclaim.choosebroadspire.com/useragreements/0" target="_blank">Web</a></td></tr>
+      <tr><td>90</td><td>SLACAL Guide to SLIP Enhanced</td><td><a href="https://www.slacal.com/docs/default-source/general-content-documents/Resources/introductory-guide-to-slip-enhanced-rev-2018.pdf?sfvrsn=50f3607c_2" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 10. NAIC & Regulatory -->
+<details>
+  <summary>NAIC & Regulatory Frameworks <span class="count">5</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>Document</th><th>Link</th></tr>
+      <tr><td>NAIC Model Guidelines GDL-1090<span class="sub">Definitive TPA regulatory framework (46 states)</span></td><td><a href="https://content.naic.org/sites/default/files/GL1090.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>NAIC Independent Adjuster Guidelines GL-1224</td><td><a href="https://content.naic.org/sites/default/files/inline-files/GDL-1224.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>NAIC State Licensing Handbook Ch. 28 (TPAs)</td><td><a href="https://content.naic.org/sites/default/files/inline-files/Chapter%2028.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>Lloyd's Premium & Claims Handling Standards</td><td><a href="https://www.lloyds.com/market-resources/delegated-authorities/market-knowledge/premium-and-claims-handling" target="_blank">Web</a></td></tr>
+      <tr><td>Sedgwick JBWCP Service Guidelines</td><td><a href="https://courts.ca.gov/system/files/file/jbwcp_sedgwick_service_guidelines.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 11. Academic -->
+<details>
+  <summary>Academic & Research Papers <span class="count">6</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>30</td><td>CAS TPA Service Pricing & Incentive Contracts</td><td><a href="https://www.casact.org/sites/default/files/database/dpp_dpp96_96dpp137.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>31</td><td>UNL TPA Service Pricing Research</td><td><a href="https://digitalcommons.unl.edu/context/joap/article/1111/viewcontent/Jeng.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>84</td><td>User-Centered Security SLA (Dissertation)</td><td><a href="https://ninercommons.charlotte.edu/record/1849/files/Alasmari_uncc_0694D_13045.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>85</td><td>Verifying Cloud SLA by Third-Party Auditor</td><td><a href="https://researchwith.stevens.edu/en/publications/verifying-cloud-service-level-agreement-by-a-third-party-auditor/" target="_blank">Web</a></td></tr>
+      <tr><td>86</td><td>SLA Management Techniques in Cloud</td><td><a href="https://www.academia.edu/35039098/A_Study_on_Service_Level_Agreement_Management_Techniques_in_Cloud" target="_blank">Web</a></td></tr>
+      <tr><td>87</td><td>Auditing Cloud SLA on VM CPU (Temple U)</td><td><a href="https://cis.temple.edu/~wu/research/publications/Publication_files/ICC2014a.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- 12. Misc -->
+<details>
+  <summary>Industry Resources & Misc <span class="count">5</span></summary>
+  <div class="detail-body">
+    <table>
+      <tr><th>#</th><th>Document</th><th>Link</th></tr>
+      <tr><td>32</td><td>WKU Facilities Management SLA</td><td><a href="https://www.wku.edu/facilities/sla_dfm22.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>33</td><td>System Automation Evoke SLA</td><td><a href="https://systemautomation.com/wp-content/uploads/2024/02/Evoke-SLA.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>34</td><td>Secured Data Technologies MSA (2025)</td><td><a href="https://www.securedatatech.com/wp-content/uploads/2025/06/Managed-Services-Agreement.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>35</td><td>Mazagon Dock SLA (penalty/remedy clauses)</td><td><a href="https://mazagondock.in/app/writereaddata/tenders/800263424202323950PMSLA-3208053.pdf" target="_blank">PDF</a></td></tr>
+      <tr><td>91</td><td>YCPARMIA "What is a TPA?" Guide</td><td><a href="http://www.ycparmia.org/risk/20.pdf" target="_blank">PDF</a></td></tr>
+    </table>
+  </div>
+</details>
+
+<!-- ============================================================ -->
+<!-- KEY FINDINGS (moved below catalogue) -->
 <!-- ============================================================ -->
 <h2 class="section-title" id="findings">Key Findings</h2>
 <p class="section-subtitle">What we learned from reading 112 documents so you don't have to read all of them.</p>
@@ -208,10 +486,10 @@
   </ul>
 </div>
 
-<div class="callout" style="border-left-color: var(--accent4);">
-  <h3 style="color: var(--accent4);">What Happens When SLAs Aren't Enforced</h3>
+<div class="callout red">
+  <h3>What Happens When SLAs Aren't Enforced</h3>
   <ul>
-    <li><strong>York Risk (Orange County audit):</strong> "Service level expectations were not closely tracked" and "no financial penalties for missing SLAs." The TPA had no accountability.</li>
+    <li><strong>York Risk (Orange County audit):</strong> "Service level expectations were not closely tracked" and "no financial penalties for missing SLAs."</li>
     <li><strong>Sedgwick (Royal Oak MI):</strong> Service level concerns led to one-year renewal instead of multi-year — a trust signal.</li>
     <li><strong>45% of contractors</strong> would prefer no TPA work at all (industry survey data).</li>
     <li><strong>Payment delays:</strong> 30-90 days standard, 60-180 days for disputed claims.</li>
@@ -219,8 +497,8 @@
   </ul>
 </div>
 
-<div class="callout" style="border-left-color: var(--accent2);">
-  <h3 style="color: var(--accent2);">Contract Terms That Protect Contractors (What to Look For)</h3>
+<div class="callout green">
+  <h3>Contract Terms That Protect Contractors</h3>
   <ul>
     <li><strong>BluSky retainage:</strong> 10% withheld until project completion — standard in subcontractor agreements.</li>
     <li><strong>BluSky fines:</strong> $25/day for dirty jobsite, $1,000 for missing safety orientation. Real consequences.</li>
@@ -247,11 +525,11 @@
   </div>
   <div class="ins-card">
     <div class="name">Alacrity</div>
-    <div class="vals"><a href="https://em.alacrity.net/Download/Insurance%20Requirements.pdf" target="_blank" style="color:var(--accent)">Full requirements PDF →</a></div>
+    <div class="vals"><a href="https://em.alacrity.net/Download/Insurance%20Requirements.pdf" target="_blank">Full requirements PDF →</a></div>
   </div>
   <div class="ins-card">
     <div class="name">Contractor Connection</div>
-    <div class="vals">Background checks required · <a href="https://apps.contractorconnection.com/contrDocs/BackGroundAddendum.pdf" target="_blank" style="color:var(--accent)">Addendum PDF →</a></div>
+    <div class="vals">Background checks required · <a href="https://apps.contractorconnection.com/contrDocs/BackGroundAddendum.pdf" target="_blank">Addendum →</a></div>
   </div>
 </div>
 
@@ -322,269 +600,13 @@
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- FULL CATALOGUE -->
-<!-- ============================================================ -->
-<h2 class="section-title" id="full-catalogue">Full Document Catalogue <span class="badge">112 DOCS</span></h2>
-<p class="section-subtitle">Click any section to expand. Every document is linked directly to its source PDF or webpage.</p>
-
-<!-- 1. Citizens Florida -->
-<details>
-  <summary>Citizens Florida Managed Repair Program <span class="count">5 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>1</td><td>Citizens-Crawford Contractor Agreement (67-page)<span class="sub">Full unredacted TPA contract</span></td><td><a href="https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2021/12/Redacted-contract-Citizens-Agreement-for-Contractor-Managed-Repair-Program.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>2</td><td>Citizens-Crawford Agreement (Alt link)</td><td><a href="https://www.propertyinsurancecoveragelaw.com/wp-content/uploads/2022/05/Citizens-Agreement-for-Contractor-Managed-Repair-Program.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>3</td><td>Citizens MRP RFI (15-0015)</td><td><a href="https://www.citizensfla.com/documents/20702/15153077/RFI+15-0015+-+Contractor+Repair+Management+Program.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>4</td><td>Citizens MRP Addendum (ITN 25-0001)</td><td><a href="https://www.citizensfla.com/documents/20702/35120301/Addendum+No.+2.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>5</td><td>Citizens MRP Brochure</td><td><a href="https://www.citizensfla.com/documents/20702/7979944/Managed+Repair+Program+Brochure.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 2. Insurance TPA SLAs -->
-<details>
-  <summary>Insurance TPA Service Level Agreements <span class="count">4 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>6</td><td>Lloyd's TPA Agreement (LMA 9008)<span class="sub">International standard with service level schedules</span></td><td><a href="https://assets.lloyds.com/assets/pdf-premium-and-claims-handling-lma-9008-third-party-administrator-agreement-1/1/pdf-premium-and-claims-handling-LMA-9008-Third-Party-Administrator-Agreement.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>7</td><td>New India Assurance TPA SLA</td><td><a href="https://newindia.co.in/cms/66272c21-8900-4312-9220-3933bb3c23c3/SAMPLE%20OF%20SLA%20AS%20PER%20CIC%20ORDER.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>8</td><td>Mississippi TPA Services Contract</td><td><a href="https://srm.magic.ms.gov/SAP/EBP/DOCSERVER/?ATTKGET&KPID=8B4E7B085F0B1EEC92977028D2F619F1&KPCLASS=BBP_L_DOC&SAP-CLIENT=100" target="_blank">PDF</a></td></tr>
-      <tr><td>9</td><td>SEC.gov TPA Agreement Template</td><td><a href="https://www.sec.gov/Archives/edgar/data/1020523/000102052302000030/exi.htm" target="_blank">Web</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 3. Major TPA Providers -->
-<details>
-  <summary>Major TPA Provider Documents (Sedgwick, GB, CorVel, Broadspire, ESIS, York) <span class="count">26 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">SEDGWICK (5)</td></tr>
-      <tr><td>36</td><td>NFIB Select Program Agreement (2023)</td><td><a href="https://tpa.sedgwick.com/wp-content/uploads/2024/02/2023-NFIB-Select-Program-Plus-Participation-Agreement-Starting-1-1.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>37</td><td>NFIB Group Agreement (2024)</td><td><a href="https://tpa.sedgwick.com/wp-content/uploads/2024/02/2024-NFIB-Group-Participation-Agreement-Starting-1-1.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>38</td><td>Brevard County Schools Service Agreement</td><td><a href="https://agenda.brevardschools.org/publishing/eAgendaTOC/06-12-2012%20Regular%20School%20Board%20Meeting%20on%20Tuesday,%20June%2012,%202012%20-%20Documents%20Backup.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>39</td><td>Orange County WC Contract (MA-017-24010669)</td><td><a href="http://cams.ocgov.com/Web_Publisher_sam/Agenda01_09_2024_files/images/O01123-000974A.PDF" target="_blank">PDF</a></td></tr>
-      <tr><td>40</td><td>Royal Oak MI Extension (2023)<span class="sub">Service level concerns noted</span></td><td><a href="https://www.romi.gov/DocumentCenter/View/36085/Workers-Comp-Sedgwick-Claims-Management-Extension-June-12-2023" target="_blank">PDF</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">GALLAGHER BASSETT (5)</td></tr>
-      <tr><td>41</td><td>Carrier Practice Overview (2023)</td><td><a href="https://insurers.gallagherbassett.com/wp-content/uploads/2023/06/US_GB-Carrier-Practice-Overview-2023.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>42</td><td>Carrier Practice Overview (2024)</td><td><a href="https://insurers.gallagherbassett.com/wp-content/uploads/2024/05/US_GB-Carrier-Practice-Overview_Final-Low-Res-3.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>43</td><td>TPA Claims System Comparison (RMIS)</td><td><a href="https://insurers.gallagherbassett.co.nz/wp-content/uploads/2020/09/TPA-Claims-System-Comparison.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>44</td><td>3 Keys to Exceptional Service for Carriers</td><td><a href="https://insurers.gallagherbassett.com/insights/3-keys-to-delivering-exceptional-service-for-carriers/" target="_blank">Web</a></td></tr>
-      <tr><td>45</td><td>Claims Management Overview</td><td><a href="https://www.ajg.com/insurance/insurance-claims-contacts/claims-management-third-party-administration/" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">CORVEL (4)</td></tr>
-      <tr><td>46</td><td>Healthcare Provider Agreement</td><td><a href="https://coloradophysicaltherapynetwork.com/wp-content/uploads/CorVelContractTerms.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>47</td><td>CorVel vs CCMSI NC Procurement Case (2021)</td><td><a href="https://www.encoah.oah.state.nc.us/publicsite/SearchDocDisplay?Type=P&ID=1981692&CaseID=168944&CodeID=525&PersonID=0&File=2019%5C09%5CCCMSI%20v.%20CorVel%20Final%20Decision.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>48</td><td>Everett WA Amendment No. 3 (2022)</td><td><a href="https://www.everettwa.gov/AgendaCenter/ViewFile/Item/14389?fileID=82277" target="_blank">PDF</a></td></tr>
-      <tr><td>49</td><td>Loudoun County VA Award (RFQ 137782)</td><td><a href="https://www.loudoun.gov/bids.aspx?bidID=636" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">BROADSPIRE / CRAWFORD (4)</td></tr>
-      <tr><td>50</td><td>Global TPA Expansion Press Release (2014)</td><td><a href="https://assets.crawfordandcompany.com/media/1580061/2014-4-28-crawfordpresrel-globaltpa-rims--final.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>51</td><td>Broadspire Service Overview</td><td><a href="https://www.choosebroadspire.com" target="_blank">Web</a></td></tr>
-      <tr><td>52</td><td>Arch Insurance WC/Auto Transition FAQ (2025)</td><td><a href="https://www.archgroup.com/wp-content/uploads/Arch_WC-and-Auto-External-FAQ-2025.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>53</td><td>TPA Service Agreement Details (Blog)</td><td><a href="https://blog.reduceyourworkerscomp.com/2021/10/details-of-the-third-party-administrator-service-agreement/" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">ESIS / CHUBB (4)</td></tr>
-      <tr><td>54</td><td>Seamless TPA Transitions White Paper</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/esis-updates/thought-leadership-articles-information/pdfs/esis-seamless-tpa-transitions.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>55</td><td>ESIS Overview (Technology & Analytics)</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/documents/esis_overview.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>56</td><td>ESIS ProClaim Overview</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/pdf/esis-proclaim-overview.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>57</td><td>ESIS ProClaim Services</td><td><a href="https://www.esis.com/esis-en/products-services/professional-liability-esis-proclaim.html" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">YORK RISK (4)</td></tr>
-      <tr><td>58</td><td>OC Performance Audit<span class="sub">SLAs not tracked, no penalties</span></td><td><a href="https://www.ocgov.com/sites/default/files/import/data/files/10718.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>59</td><td>City of York RFP Response (2018)</td><td><a href="http://www.yorkcity.org/wp-content/uploads/2018/06/INSURANCE-BROKER-Proposal1.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>60</td><td>California DIR Audit (2019)</td><td><a href="https://www.dir.ca.gov/dwc/AuditReport2019/AuditReport.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>61</td><td>York Risk Services Overview</td><td><a href="https://spruceblob01.blob.core.windows.net/stwpnjeda/pdfs/mods/York-Risk.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 4. IICRC -->
-<details>
-  <summary>IICRC Standards & Guidelines <span class="count">5 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>10</td><td>IICRC S500 Water Damage Standard Overview<span class="sub">Defines 24-48 hr microbial growth window</span></td><td><a href="https://graduation.escoffier.edu/filedownload.ashx/scholarship/dlFnNE/Iicrc-Water-Damage-Standard-S500.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>11</td><td>AS-IICRC S500 Press Release (2025)</td><td><a href="https://iicrc.org/wp-content/uploads/2025/04/AS-IICRC-S500-Published-Press-Release_March-2025.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>12</td><td>IICRC S500 Official Page (~$150-200)</td><td><a href="https://iicrc.org/s500/" target="_blank">Web</a></td></tr>
-      <tr><td>13</td><td>IICRC S500 (Scribd)</td><td><a href="https://www.scribd.com/document/673040884/IICRC-S500-Professional-Water-Damage-Restoration" target="_blank">Web</a></td></tr>
-      <tr><td>14</td><td>WRT/ASD Training Manual (UK, 2023)</td><td><a href="https://nationalfloodschool.co.uk/wp-content/uploads/WRT-ASD-Manual-2023-V2.1-ASD-and-WRT-August-2023.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 5. RIA -->
-<details>
-  <summary>RIA Position Statements <span class="count">5 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>15</td><td>RIA Position Paper Summary Guide</td><td><a href="http://www.restorationindustry.org/ria-position-paper-summary-guide" target="_blank">Web</a></td></tr>
-      <tr><td>16</td><td>RIA TPA Pricing Position Statements</td><td><a href="https://training.restorationindustry.org/pricing-position-statements" target="_blank">Web</a></td></tr>
-      <tr><td>17</td><td>Statements #3 & #4 Press Release (Sep 2022)</td><td><a href="https://www.restorationindustry.org/sites/default/files/docs/ria-press-release-pricing-position-statements-3-and-4-release-september-2022.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>18</td><td>TPA Statement #3 — Referral Fees</td><td><a href="https://www.restorationindustry.org/sites/default/files/docs/RIA%20TPA%20Position%20Statement%203%20-%20Referral%20Fees%20for%20Jobs%20Not%20Referred%20by%20the%20TPA.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>19</td><td>TPA Statement #5 — Deviations from Guidelines</td><td><a href="https://www.restorationindustry.org/sites/default/files/docs/RIA%20TPA%20Position%20Statement%205%20-%20Deviations%20from%20Guidelines.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 6. SLA Templates -->
-<details>
-  <summary>SLA Templates & Examples <span class="count">7 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>20</td><td>IT Toolkit SLA Templates</td><td><a href="https://www.ittoolkit.com/service-level-agreement-template-free-sla-templates-examples/" target="_blank">Web</a></td></tr>
-      <tr><td>21</td><td>SLA Template Main Site</td><td><a href="https://www.slatemplate.com" target="_blank">Web</a></td></tr>
-      <tr><td>22</td><td>BrightGauge MSA Template</td><td><a href="http://info.brightgauge.com/hubfs/Files/Managed%20Services%20Agreement%20Template.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>23</td><td>Service Desk Institute SLA Template</td><td><a href="https://www.servicedeskinstitute.com/wp-content/uploads/2024/08/Naked_Service_Desk_Series__Service_Level_Agreement_Template.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>24</td><td>ScopeStack MSA Template</td><td><a href="https://scopestack.io/wp-content/uploads/2024/07/ScopeStack-Managed-Services-Agreement-MSA-Template.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>25</td><td>Zomentum SLA Template</td><td><a href="https://www.zomentum.com/template/service-level-agreement-contract-template" target="_blank">Web</a></td></tr>
-      <tr><td>26</td><td>HelixOps SLA Examples</td><td><a href="https://blogs.helixops.ai/sla-template-examples/?print-posts=pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 7. Contractor Agreements -->
-<details open>
-  <summary>Restoration Contractor Agreements <span class="count">21 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td colspan="3" style="color:var(--accent2);font-weight:600;font-size:.75rem;">ALACRITY SOLUTIONS (5)</td></tr>
-      <tr><td>91</td><td>Master Contract (Complete 20+ pages)<span class="sub">★ Most valuable find</span></td><td><a href="https://em.alacrity.net/Download/Master_Contract.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>92</td><td>Network Fee Addendum<span class="sub">7% GC · 11% svc · 4% other · 5.5% tree</span></td><td><a href="https://em.alacrity.net/Download/NetworkFeeAddendum.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>93</td><td>Insurance Requirements</td><td><a href="https://em.alacrity.net/Download/Insurance%20Requirements.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>94</td><td>Contractor Network Requirements</td><td><a href="https://www.alacritysolutions.com/solutions/network-solutions/join-our-contractor-network/" target="_blank">Web</a></td></tr>
-      <tr><td>95</td><td>MRP Pre-qualification Application</td><td><a href="https://www.alacritysolutions.com/contractor-prequal/" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent2);font-weight:600;font-size:.75rem;">CONTRACTOR CONNECTION / CRAWFORD (3)</td></tr>
-      <tr><td>96</td><td>Background Screening Addendum</td><td><a href="https://apps.contractorconnection.com/contrDocs/BackGroundAddendum.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>97</td><td>Terms & Conditions<span class="sub">5-year workmanship warranty</span></td><td><a href="https://home.contractorconnection.com/terms/" target="_blank">Web</a></td></tr>
-      <tr><td>98</td><td>Resources Page</td><td><a href="https://home.contractorconnection.com/resources/" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent2);font-weight:600;font-size:.75rem;">FIRSTONSITE (4)</td></tr>
-      <tr><td>99</td><td>Client Work Agreement (Oct 2025)</td><td><a href="https://firstonsite.com/es/wp-content/uploads/client-work-agreement-terms-conditions_effective-10.10.25.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>100</td><td>California Addendum</td><td><a href="https://firstonsite.com/wp-content/uploads/california-addendum_3.29.21.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>101</td><td>Homeowner's Guide to Disaster Recovery</td><td><a href="https://firstonsite.com/en-CA/wp-content/uploads/2020/07/homeowners-guide-to-disaster-recovery.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>102</td><td>FirstService Corp AIF (2024)</td><td><a href="https://www.firstservice.com/wp-content/uploads/2025/03/Q4-2024-AIF-FINAL-21Feb25.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent2);font-weight:600;font-size:.75rem;">PAUL DAVIS (4)</td></tr>
-      <tr><td>103</td><td>Restoration Agreement (Court Filing, 2022)</td><td><a href="https://www.scribd.com/document/915206014/Paul-Davis-Restoration-Restoration-Agreement-case-number-2022cv000659-Dawn-R-Jackson-Racine-Couty-Court" target="_blank">Scribd</a></td></tr>
-      <tr><td>104</td><td>Preferred Vendor Programs</td><td><a href="https://pauldavis.com/insurance/preferred-vendors/" target="_blank">Web</a></td></tr>
-      <tr><td>105</td><td>Addressing Insurance Needs</td><td><a href="https://pauldavis.com/insurance/addressing-needs/" target="_blank">Web</a></td></tr>
-      <tr><td>106</td><td>Business / Franchise Portal</td><td><a href="https://www.pauldavisbusiness.com" target="_blank">Web</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent2);font-weight:600;font-size:.75rem;">BLUSKY (1) · SERVICECHANNEL (1) · LEGACY (3)</td></tr>
-      <tr><td>107</td><td>BluSky Subcontractor Packet (14 pages)<span class="sub">$1M GL · $500K WC · 10% retainage</span></td><td><a href="https://goblusky.com/media/subcontractor-qualification-packet-rev.-12.14.2021.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>108</td><td>ServiceChannel Provider Agreement<span class="sub">$2M GL · $1M WC · Multi-TPA platform</span></td><td><a href="https://servicechannel.com/resources-download/customer_scmprovider_services_agreement.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>27</td><td>Repair Shop Agreement (Scribd)</td><td><a href="https://www.scribd.com/document/718925335/Repair-Shop-Agreement" target="_blank">Web</a></td></tr>
-      <tr><td>28</td><td>Sweetwater Subcontractor Agreement (2021)</td><td><a href="https://sweetwaterrestoration.com/wp-content/uploads/2022/12/1-Subcontractor-Agreement-5.2021.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>29</td><td>Home Repair Contract Template Guide</td><td><a href="https://signaturely.com/contracts/home-repair-contract-template/" target="_blank">Web</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 8. Government RFPs -->
-<details>
-  <summary>Government TPA RFPs & Contracts <span class="count">21 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">STATE GOVERNMENT (6)</td></tr>
-      <tr><td>62</td><td>Mississippi TPA Services Contract</td><td><a href="https://srm.magic.ms.gov/SAP/EBP/DOCSERVER/?ATTKGET&KPID=8B4E7B085F0B1EEC92977028D2F619F1&KPCLASS=BBP_L_DOC&SAP-CLIENT=100" target="_blank">PDF</a></td></tr>
-      <tr><td>63</td><td>Delaware Medical TPA RFP (2025)</td><td><a href="https://dhr.delaware.gov/benefits/sebc/documents/2025/1216-medical-tpa-rfp-scope-of-services.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>64</td><td>New Mexico WC TPA RFP (24-350-4520)</td><td><a href="https://www.generalservices.state.nm.us/wp-content/uploads/Workers-compensation-third-party-administrator-rfp-24-350-4520-00001.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>65</td><td>NM Public Schools WC TPA RFP (342-2023-06)</td><td><a href="https://nmpsia.com/docs/NMPSIA_Workers_Comp_Third_Party_Claims_Adminstration_Serv_RFP_342-2023-06_12323.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>66</td><td>NM Property & Liability TPA RFP</td><td><a href="https://nmpsia.com/docs/NMPSIA%20Property%20and%20Liability%20RFP%20Final.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>67</td><td>Maryland UEF WC TPA RFP (2018)</td><td><a href="https://dbm.maryland.gov/contracts/Documents/ContractLibrary/MUEF/UEFC96102018001-UEF-WorkersCompRFP.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">COUNTY / LOCAL (7)</td></tr>
-      <tr><td>68</td><td>PA Turnpike Auto/GL TPA RFP</td><td><a href="https://www.emarketplace.state.pa.us/FileDownload.aspx?file=19-10260-8788%2FSolicitation_0.pdf&OriginalFileName=RFP+8788+AL++GL+CLAIMS+ADMIN.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>69</td><td>Fort Bend County TX P&C TPA RFP (24-005)</td><td><a href="https://www.fortbendcountytx.gov/sites/default/files/document-central/document-central/purchasing-documents/current-bids-rfps-rfqs/rfp-24-005-addendum-1.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>70</td><td>Savannah GA TPA Scope RFP</td><td><a href="https://agenda.savannahga.gov/content/files/tpa-scope.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>71</td><td>Clark County WA TPA RFP (932)</td><td><a href="https://clark.wa.gov/sites/default/files/2025-08/rfp-932-insurance-brokerage-and-third-party-administrator-services.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>72</td><td>Pierce County WA Self Insurance TPA RFP</td><td><a href="https://www.piercecountywa.gov/DocumentCenter/View/36502/RFP-1520-3rd-Party-Admin-for-Self-Insurance-Med-Plan-and-Stop-Loss-Insurance" target="_blank">PDF</a></td></tr>
-      <tr><td>73</td><td>Los Gatos CA TPA Agreement</td><td><a href="https://weblink.losgatosca.gov/WebLink/0/edoc/1719050/Attachment%201%20-%20TAG%20Agreement.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>74</td><td>Lake Worth FL P&C Services Agreement</td><td><a href="https://mccmeetingspublic.blob.core.usgovcloudapi.net/lakewthfl-meet-59ef2fa6ab07409ba02860fb8b7fcb28/ITEM-Attachment-002-fe677d59656c4dd7ac35ad7ca30be7c2.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td colspan="3" style="color:var(--accent);font-weight:600;font-size:.75rem;">TRANSIT / REGULATORY / GENERAL (8)</td></tr>
-      <tr><td>75</td><td>MTA-DTO Joint TPA RFP (2023109)</td><td><a href="https://www.wegotransit.com/assets/bidpostingdocuments/RFP%202023109%20Third%20Party%20Administrator%20Services1.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>76</td><td>CA CPUC Lifeline TPA Audit (2020)</td><td><a href="https://www.cpuc.ca.gov/-/media/cpuc-website/transparency/commissioner-committees/finance-and-administration/2020/sept-2-2020-commission-meeting-items/cpuc-lifeline-tpa-contract-management-audit-presentation-9-2-2020.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>77</td><td>PRISM TPA Comparison Guide</td><td><a href="https://www.prismrisk.gov/member-services/services/vendor-services/third-party-administrators-tpas/" target="_blank">Web</a></td></tr>
-      <tr><td>78</td><td>ICRMA WC TPA Performance Standards (2023)</td><td><a href="https://www.icrma.org/assets/private/files/Policy_WC_TPA_PerformanceStandards_20230810.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>109</td><td>CA DHCS Network Provider Agreement Checklist</td><td><a href="https://www.dhcs.ca.gov/formsandpubs/Documents/MMCDAPLsandPolicyLetters/APL2019/APL19-001AttachmentA.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>110</td><td>FirstEnergy Network Access Agreement</td><td><a href="https://www.firstenergycorp.com/content/dam/supplychain/files/docs-coupa-update/Network%20Access%20Agreement.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>111</td><td>Oracle Services Provider Agreement Sample</td><td><a href="https://www.oracle.com/a/ocom/docs/billable-spa-sample.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>112</td><td>Comcast Enterprise Services SLA</td><td><a href="https://business.comcast.com/~/media/business_comcast_com/PDFs/Terms-and-Conditions---Enterprise/2024%20Terms%20and%20Conditions%20Interstate%20Wavelength%20v.1.0.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 9. Insurance Industry -->
-<details>
-  <summary>Insurance Industry TPA Documents <span class="count">8 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>79</td><td>Florida FIGA TPA ITN (2022)</td><td><a href="https://figafacts.com/wp-content/uploads/2022/06/2022-FIGA-Invitation-to-Negotiate-TPA-Services-6-1-22.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>80</td><td>Aon SLA Template</td><td><a href="https://www.aon.com/getmedia/32f8042a-0c8e-4201-9c9c-f3a2575adcf1/service_level_agreement.pdf.aspx" target="_blank">PDF</a></td></tr>
-      <tr><td>81</td><td>LSG Claims SLA</td><td><a href="https://www.lsg.com/Content/img/blogs/images-new/Generic_OCGs_-_LSG.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>82</td><td>Safire Insurance SLA</td><td><a href="https://www.safireinsurance.com/downloads/safire_sla.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>83</td><td>AdvantageRCM SLA (Medical Billing TPA)</td><td><a href="https://client.compulinkadvantage.com/wp-content/uploads/AdvantageRCM-Service-Level-Agreement.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>88</td><td>ESIS ProClaim Playbook</td><td><a href="https://www.esis.com/content/dam/chubb-sites/esis/esis-en/products-services/professional-liability-esis-proclaim/documents/pdf/proclaim_playbook_online.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>89</td><td>Broadspire MyClaim User Agreements</td><td><a href="https://myclaim.choosebroadspire.com/useragreements/0" target="_blank">Web</a></td></tr>
-      <tr><td>90</td><td>SLACAL Guide to SLIP Enhanced</td><td><a href="https://www.slacal.com/docs/default-source/general-content-documents/Resources/introductory-guide-to-slip-enhanced-rev-2018.pdf?sfvrsn=50f3607c_2" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 10. Academic -->
-<details>
-  <summary>Academic & Research Papers <span class="count">6 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>30</td><td>CAS TPA Service Pricing & Incentive Contracts</td><td><a href="https://www.casact.org/sites/default/files/database/dpp_dpp96_96dpp137.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>31</td><td>UNL TPA Service Pricing Research</td><td><a href="https://digitalcommons.unl.edu/context/joap/article/1111/viewcontent/Jeng.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>84</td><td>User-Centered Security SLA (Dissertation)</td><td><a href="https://ninercommons.charlotte.edu/record/1849/files/Alasmari_uncc_0694D_13045.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>85</td><td>Verifying Cloud SLA by Third-Party Auditor</td><td><a href="https://researchwith.stevens.edu/en/publications/verifying-cloud-service-level-agreement-by-a-third-party-auditor/" target="_blank">Web</a></td></tr>
-      <tr><td>86</td><td>SLA Management Techniques in Cloud</td><td><a href="https://www.academia.edu/35039098/A_Study_on_Service_Level_Agreement_Management_Techniques_in_Cloud" target="_blank">Web</a></td></tr>
-      <tr><td>87</td><td>Auditing Cloud SLA on VM CPU (Temple U)</td><td><a href="https://cis.temple.edu/~wu/research/publications/Publication_files/ICC2014a.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 11. Regulatory -->
-<details>
-  <summary>NAIC & Regulatory Frameworks <span class="count">5 links</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>Document</th><th>Link</th></tr>
-      <tr><td>NAIC Model Guidelines GDL-1090<span class="sub">Definitive TPA regulatory framework (46 states)</span></td><td><a href="https://content.naic.org/sites/default/files/GL1090.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>NAIC Independent Adjuster Guidelines GL-1224</td><td><a href="https://content.naic.org/sites/default/files/inline-files/GDL-1224.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>NAIC State Licensing Handbook Ch. 28 (TPAs)</td><td><a href="https://content.naic.org/sites/default/files/inline-files/Chapter%2028.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>Lloyd's Premium & Claims Handling Standards</td><td><a href="https://www.lloyds.com/market-resources/delegated-authorities/market-knowledge/premium-and-claims-handling" target="_blank">Web</a></td></tr>
-      <tr><td>Sedgwick JBWCP Service Guidelines</td><td><a href="https://courts.ca.gov/system/files/file/jbwcp_sedgwick_service_guidelines.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
-<!-- 12. Industry Guides -->
-<details>
-  <summary>Industry Resources & Misc <span class="count">5 docs</span></summary>
-  <div class="detail-body">
-    <table>
-      <tr><th>#</th><th>Document</th><th>Link</th></tr>
-      <tr><td>32</td><td>WKU Facilities Management SLA</td><td><a href="https://www.wku.edu/facilities/sla_dfm22.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>33</td><td>System Automation Evoke SLA</td><td><a href="https://systemautomation.com/wp-content/uploads/2024/02/Evoke-SLA.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>34</td><td>Secured Data Technologies MSA (2025)</td><td><a href="https://www.securedatatech.com/wp-content/uploads/2025/06/Managed-Services-Agreement.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>35</td><td>Mazagon Dock SLA (penalty/remedy clauses)</td><td><a href="https://mazagondock.in/app/writereaddata/tenders/800263424202323950PMSLA-3208053.pdf" target="_blank">PDF</a></td></tr>
-      <tr><td>91</td><td>YCPARMIA "What is a TPA?" Guide</td><td><a href="http://www.ycparmia.org/risk/20.pdf" target="_blank">PDF</a></td></tr>
-    </table>
-  </div>
-</details>
-
 </div><!-- /container -->
 
+<!-- FOOTER -->
 <div class="footer">
-  <p>ReliableClaim.com TPA SLA Research · 112 documents catalogued</p>
-  <p>Full markdown version: <a href="sla-booklet.md">sla-booklet.md</a> · Source index: <a href="research/resources/RESOURCE-INDEX.md">RESOURCE-INDEX.md</a></p>
+  <div class="brand">Reli-Able Claim Solutions</div>
+  <p>TPA SLA Research · 112 documents catalogued</p>
+  <p style="margin-top:.5rem;">Full markdown: <a href="sla-booklet.md">sla-booklet.md</a> · Source index: <a href="research/resources/RESOURCE-INDEX.md">RESOURCE-INDEX.md</a> · <a href="https://reliableclaim.com">reliableclaim.com</a></p>
 </div>
 
 </body>
