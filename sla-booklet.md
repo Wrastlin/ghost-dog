@@ -574,11 +574,6 @@ For ReliableClaim.com SLA development, review in this order:
 - Repair Shop Agreement (#27) -- Managed repair contractor agreement
 - Paul Davis Restoration Agreement (#103) -- Court filing, may require Scribd access
 
-### Scribd (Free with Account)
-
-- IICRC S500 document (#13) -- May require Scribd subscription
-- Repair Shop Agreement (#27) -- Managed repair contractor agreement
-
 ### May Require Registration/Access
 
 - **ICRMA WC TPA Performance Standards (#78)** -- May require member access
